@@ -12,5 +12,6 @@ class UrbanActor:
 
 def generate(n, config):
   print("-- GENERATE POPULATION --")
+  print("Creating population of size", n)
   p = Person(23, 50000, 'male')
   ua = UrbanActor(p)
