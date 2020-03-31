@@ -43,4 +43,4 @@ else:
 
 # n is set, config is set to name of census_data file
 census_data = import_json(config)
-population = population.generate(n, census_data)
+population = population.generate(int(n), census_data)
