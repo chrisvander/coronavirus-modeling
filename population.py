@@ -31,5 +31,3 @@ def generate(n, config):
   print("-- GENERATE POPULATION --")
   print("Creating population of size", n)
   people = sample(n)
-  for p in people:
-    print(p.age, p.gender)
