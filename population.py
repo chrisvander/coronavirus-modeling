@@ -35,29 +35,25 @@ class UrbanActor:
 
 
 def generate(n, config):
+  print("-- GENERATE POPULATION --")
+  p = Person(23, 50000, 'male')
+  ua = UrbanActor(p)
 
+  if __name__ == "__main__":
+      # cols = ["PWGTP", "COW", "AGEP"]
+      # url = "https://api.census.gov/data/2018/acs/acs5/pums"
+      # query = {
+      #     "get": cols,
+      #     "ucgid": "7950000US4500103"
+      # }
 
-<< << << < HEAD
-print("-- GENERATE POPULATION --")
-p = Person(23, 50000, 'male')
-ua = UrbanActor(p)
+      url = "https://api.census.gov/data/2018/acs/acs1/pums?get=PWGTP,POWPUMA,AGEP,JWRIP,SEX,JWAP,JWDP&ucgid=7950000US3703001,7950000US3703002"
+      res = get_json(url, {})
 
+      data = np.array(res)[1:]
+      print(data[:, 0].astype(int).sum())
 
-if __name__ == "__main__":
-    # cols = ["PWGTP", "COW", "AGEP"]
-    # url = "https://api.census.gov/data/2018/acs/acs5/pums"
-    # query = {
-    #     "get": cols,
-    #     "ucgid": "7950000US4500103"
-    # }
+  # print("-- GENERATE POPULATION --")
+  # print("Creating population of size", n)
+  # people = sample(n)
 
-    url = "https://api.census.gov/data/2018/acs/acs1/pums?get=PWGTP,POWPUMA,AGEP,JWRIP,SEX,JWAP,JWDP&ucgid=7950000US3703001,7950000US3703002"
-    res = get_json(url, {})
-
-    data = np.array(res)[1:]
-    print(data[:, 0].astype(int).sum())
-== == == =
-print("-- GENERATE POPULATION --")
-print("Creating population of size", n)
-people = sample(n)
->>>>>> > 2e754b92c5130e15bdf72809985f103f17609d6d
