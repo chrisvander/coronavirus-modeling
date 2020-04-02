@@ -39,19 +39,21 @@ def generate(n, config):
   p = Person(23, 50000, 'male')
   ua = UrbanActor(p)
 
-  if __name__ == "__main__":
-      # cols = ["PWGTP", "COW", "AGEP"]
-      # url = "https://api.census.gov/data/2018/acs/acs5/pums"
-      # query = {
-      #     "get": cols,
-      #     "ucgid": "7950000US4500103"
-      # }
+  # PWGTP - Weight, 
+  # POWPUMA - Place of Work by subcounty (hotspot)
+  # AGEP  - age
+  # JWRIP - describes vehicle occupancy
+  # JWAP  - time of arrival at work
+  # JWDP  - time of departure for work
+  # PINCP - personal income
+  url = "https://api.census.gov/data/2018/acs/acs1/pums?get=PWGTP,AGEP,SEX,PINCP&ucgid=7950000US3703001,7950000US3703002"
+  res = get_json(url, {})
 
-      url = "https://api.census.gov/data/2018/acs/acs1/pums?get=PWGTP,POWPUMA,AGEP,JWRIP,SEX,JWAP,JWDP&ucgid=7950000US3703001,7950000US3703002"
-      res = get_json(url, {})
-
-      data = np.array(res)[1:]
-      print(data[:, 0].astype(int).sum())
+  headers = np.array(res)[0]
+  print(headers)
+  data = np.array(res)[1:]
+  print(data)
+  print(data[:, 0].astype(int).sum())
 
   # print("-- GENERATE POPULATION --")
   # print("Creating population of size", n)
