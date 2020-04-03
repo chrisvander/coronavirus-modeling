@@ -34,7 +34,7 @@ def generate(n):
   # PINCP - personal income
   # PUMA  - (ignore) region of no less than 10,000 people
   # ST    - State
-  url = "https://api.census.gov/data/2018/acs/acs1/pums?get=PWGTP,AGEP,SEX,PINCP&ucgid=7950000US3703001,7950000US3703002"
+  url = "https://api.census.gov/data/2018/acs/acs1/pums?get=PWGTP,AGEP,SEX,PINCP"
   res = get_json(url, {})
 
   headers = np.array(res)[0]
