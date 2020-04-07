@@ -55,7 +55,7 @@ class Household:
     print("\n--HOUSEHOLD--")
     print("People: " + str(len(self.people)))
     print(", ".join([str(person.getAge()) + person.getGender() for person in self.people]))
-    print("HH Income: $" + str(getHHIncome()))
+    print("HH Income: $" + str(self.getHHIncome()))
 
 class Person:
     def __init__(self, age, income, gender):
