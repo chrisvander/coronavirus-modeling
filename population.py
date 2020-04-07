@@ -43,13 +43,19 @@ class Household:
   def addSpouse(self, person):
     self.people.append(person)
     self.spouse = person
+  def getHead(self):
+    return self.head
+  def getSpouse(self):
+    return self.spouse
   def getSize(self):
     return len(self.people)
+  def getHHIncome(self):
+    return sum([person.getIncome() for person in self.people])
   def print(self):
     print("\n--HOUSEHOLD--")
     print("People: " + str(len(self.people)))
     print(", ".join([str(person.getAge()) + person.getGender() for person in self.people]))
-    print("HH Income: $" + str(sum([person.getIncome() for person in self.people])))
+    print("HH Income: $" + str(getHHIncome()))
 
 class Person:
     def __init__(self, age, income, gender):
