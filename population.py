@@ -49,19 +49,22 @@ class Household:
     print("\n--HOUSEHOLD--")
     print("People: " + str(len(self.people)))
     print(", ".join([str(person.getAge()) + person.getGender() for person in self.people]))
+    print("HH Income: $" + str(sum([person.getIncome() for person in self.people])))
 
 class Person:
     def __init__(self, age, income, gender):
       self.age = int(age)
       self.income = int(income)
-      if income == -19999:
-        self.income = None
+      if self.income == -19999:
+        self.income = 0
       self.gender = 'm' if gender == '1' else 'f'
       self.household = 0
     def getAge(self):
       return self.age
     def getGender(self):
       return self.gender
+    def getIncome(self):
+      return self.income
 
 class UrbanActor:
     def __init__(self, person):
@@ -164,7 +167,8 @@ def generate(n):
         print("Didn't include " + str(len(population)) + " people")
       break
   print("Generated " + str(len(households)) + " households.")
-  for i in range(10):
+  print("Sample Households: ")
+  for i in range(3):
     household = random.choice(households)
     household.print()
 
