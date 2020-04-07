@@ -113,6 +113,12 @@ def generate(n):
       w.append(rv.pdf(i-j))
     rv_weights.append(w)
 
+  wide_norm = norm(scale=50)
+  ch_weights = []
+  for i in range(0,100):
+    ch_weights.append(rv.pdf(i-10))
+  weightChildren = lambda x : ch_weights[x]
+
   print("Generating selection of households...")
   while len(population) > 0:
     # we take the list of people and select households
@@ -135,21 +141,22 @@ def generate(n):
       # -- SELECT THE REMAINDER OF THE HOUSEHOLD BY SIZE --
       hht = hh_sample[2]
       if hht != 4 and hht != 6:
-        if hht == 1:
-          # fetch spouse
-          spouse = random.choices(adult_population, k=1, weights=pop_weights)[0]
-          population.remove(spouse)
-          hh.addSpouse(spouse)
-        for i in range(int(hh_sample[2])-hh.getSize()):
-          p = random.choice(population)
-          population.remove(p)
-          hh.addPerson(p)
+        if len(population) > 0:
+          if hht == 1:
+            # fetch spouse
+            spouse = random.choices(adult_population, k=1, weights=pop_weights)[0]
+            population.remove(spouse)
+            hh.addSpouse(spouse)
+          for i in range(int(hh_sample[2])-hh.getSize()):
+            if len(population) > 0:
+              child_weights = [weightChildren(p.getAge()) for p in population]
+              p = random.choices(population, k=1, weights=child_weights)[0]
+              population.remove(p)
+              hh.addPerson(p)
       households.append(hh)
     else:
-      # At this point, we've exhausted our adult population and are left with children.
-      # Now we randomly go through households and replace adults with children
-      print([p.getAge() for p in population])
-      
+      if len(population) > 0:
+        print("Didn't include " + len(population) + "people")
       break
   print("Generated " + str(len(households)) + " households.")
 
