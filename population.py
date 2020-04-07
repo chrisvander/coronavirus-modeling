@@ -45,6 +45,10 @@ class Household:
     self.spouse = person
   def getSize(self):
     return len(self.people)
+  def print(self):
+    print("\n--HOUSEHOLD--")
+    print("People: " + str(len(self.people)))
+    print(", ".join([str(person.getAge()) + person.getGender() for person in self.people]))
 
 class Person:
     def __init__(self, age, income, gender):
@@ -52,7 +56,7 @@ class Person:
       self.income = int(income)
       if income == -19999:
         self.income = None
-      self.gender = 'm' if gender == 1 else 'f'
+      self.gender = 'm' if gender == '1' else 'f'
       self.household = 0
     def getAge(self):
       return self.age
@@ -113,7 +117,8 @@ def generate(n):
       w.append(rv.pdf(i-j))
     rv_weights.append(w)
 
-  wide_norm = norm(scale=50)
+  # weight children more heavily when selecting the rest of a household
+  wide_norm = norm(scale=30)
   ch_weights = []
   for i in range(0,100):
     ch_weights.append(rv.pdf(i-10))
@@ -127,7 +132,7 @@ def generate(n):
     hh = Household()
 
     # generate each time, population is changing
-    adult_population = list(filter(lambda p : p.getAge() >= 18, population))
+    adult_population = list(filter(lambda p : p.getAge() >= 24, population))
     if len(adult_population) > 0:
       # -- PICK HEAD OF HOUSEHOLD --
       # head age of this household (with reference to the sample data)
@@ -149,16 +154,19 @@ def generate(n):
             hh.addSpouse(spouse)
           for i in range(int(hh_sample[2])-hh.getSize()):
             if len(population) > 0:
-              child_weights = [weightChildren(p.getAge()) for p in population]
-              p = random.choices(population, k=1, weights=child_weights)[0]
+              chWeights = [weightChildren(p.getAge()) for p in population]
+              p = random.choices(population, k=1, weights=chWeights)[0]
               population.remove(p)
               hh.addPerson(p)
       households.append(hh)
     else:
       if len(population) > 0:
-        print("Didn't include " + len(population) + "people")
+        print("Didn't include " + str(len(population)) + " people")
       break
   print("Generated " + str(len(households)) + " households.")
+  for i in range(10):
+    household = random.choice(households)
+    household.print()
 
 
 
