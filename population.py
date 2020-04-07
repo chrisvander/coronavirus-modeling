@@ -117,14 +117,8 @@ def generate(n):
   adult_sample_households = list(filter(lambda hh : int(hh[1]) >= 18, sample_households))
   selectors = [int(hh[1]) >= 18 for hh in sample_households]
   adult_hh_weights = list(itertools.compress(hh_weights, selectors))
-    
+  
   rv = norm(scale=3) # normal distribution
-  rv_weights = []
-  for i in range(0,100):
-    w = []
-    for j in range(0,100):
-      w.append(rv.pdf(i-j))
-    rv_weights.append(w)
 
   # weight children more heavily when selecting the rest of a household
   wide_norm = norm(scale=30)
@@ -132,6 +126,31 @@ def generate(n):
   for i in range(0,100):
     ch_weights.append(rv.pdf(i-10))
   weightChildren = lambda x : ch_weights[x]
+  chWeights = [weightChildren(p.getAge()) for p in population]
+
+  adult_population = list(filter(lambda p : p.getAge() >= 24, population))
+
+  # pdf is slow, so we precalculate results
+  pdf_vals = []
+  for i in range(-100,100):
+    pdf_vals.append(rv.pdf(i))
+
+  rv_weights = []
+  for i in range(0,100):
+    w = []
+    for p in adult_population:
+      w.append(pdf_vals[p.getAge()-i])
+    rv_weights.append(w)
+
+  def removePerson(p):
+    if (p.getAge() >= 24): 
+      a_ind = adult_population.index(p)
+      for w in rv_weights:
+        w.pop(a_ind)
+      adult_population.remove(p)
+    p_ind = population.index(p)
+    chWeights.pop(p_ind)
+    population.remove(p)
 
   print("Generating selection of households...")
   while len(population) > 0:
@@ -140,16 +159,13 @@ def generate(n):
     hh_sample = random.choices(adult_sample_households, k=1, weights=adult_hh_weights)[0]
     hh = Household()
 
-    # generate each time, population is changing
-    adult_population = list(filter(lambda p : p.getAge() >= 24, population))
     if len(adult_population) > 0:
       # -- PICK HEAD OF HOUSEHOLD --
       # head age of this household (with reference to the sample data)
       preferred_head_age = int(hh_sample[1])
       # get population weights and grab a sample that is closest to the selected age
-      pop_weights = [rv_weights[preferred_head_age][p.getAge()] for p in adult_population]
-      hh_head = random.choices(adult_population, k=1, weights=pop_weights)[0]
-      population.remove(hh_head)
+      hh_head = random.choices(adult_population, k=1, weights=rv_weights[preferred_head_age])[0]
+      removePerson(hh_head)
       hh.addHead(hh_head)
 
       # -- SELECT THE REMAINDER OF THE HOUSEHOLD BY SIZE --
@@ -158,14 +174,13 @@ def generate(n):
         if len(population) > 0:
           if hht == 1:
             # fetch spouse
-            spouse = random.choices(adult_population, k=1, weights=pop_weights)[0]
-            population.remove(spouse)
+            spouse = random.choices(adult_population, k=1, weights=rv_weights[preferred_head_age])[0]
+            removePerson(spouse)
             hh.addSpouse(spouse)
           for i in range(int(hh_sample[2])-hh.getSize()):
             if len(population) > 0:
-              chWeights = [weightChildren(p.getAge()) for p in population]
               p = random.choices(population, k=1, weights=chWeights)[0]
-              population.remove(p)
+              removePerson(p)
               hh.addPerson(p)
       households.append(hh)
     else:
