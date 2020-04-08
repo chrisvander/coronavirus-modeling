@@ -52,10 +52,10 @@ class Household:
   def getHHIncome(self):
     return sum([person.getIncome() for person in self.people])
   def print(self):
-    print("\n--HOUSEHOLD--")
-    print("People: " + str(len(self.people)))
+    print("All People: " + str(len(self.people)))
     print(", ".join([str(person.getAge()) + person.getGender() for person in self.people]))
     print("HH Income: $" + str(self.getHHIncome()))
+    print("")
 
 class Person:
     def __init__(self, age, income, gender):
@@ -71,6 +71,10 @@ class Person:
       return self.gender
     def getIncome(self):
       return self.income
+    def print(self):
+      print("Gender: " + self.gender)
+      print("Age: " + str(self.age))
+      print("Income: $" + str(self.income) + "\n")
 
 class UrbanActor:
     def __init__(self, person):
@@ -108,6 +112,11 @@ def generate(n):
   data, weights = import_person_data()
   samples = random.choices(data, k=n, weights=weights)
   population = list(map(lambda p : Person(p[1],p[3],p[2]), samples))
+
+  print("Sample People: \n")
+  for i in range(3):
+    person = random.choice(population)
+    person.print()
 
   print("Fetching household data...")
   sample_households, hh_weights = import_household_data()
@@ -188,7 +197,7 @@ def generate(n):
         print("Didn't include " + str(len(population)) + " people")
       break
   print("Generated " + str(len(households)) + " households.")
-  print("Sample Households: ")
+  print("Sample Households: \n")
   for i in range(3):
     household = random.choice(households)
     household.print()
