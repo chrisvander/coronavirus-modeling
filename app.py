@@ -35,5 +35,6 @@ else:
   print("This file should not be imported. Please run from the command line.")
   sys.exit(2)
 
+print("\n-- COVID-19 EPIDEMIC SIMULATION --\n")
 # n is set, config is set to name of census_data file
 population = population.generate(int(n))
