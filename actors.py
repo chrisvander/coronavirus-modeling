@@ -27,6 +27,21 @@ trip_purposes = {
     97: ""
 }
 
+activity_types = {
+    1: "Home",
+    2: "Home",
+    3: "Work",
+    4: "Work",
+    5: "Other",
+    6: "Other",
+    7: "Other",
+    8: "School",
+    9: "School",
+    10: "Other",
+    11: "Shop",
+    12: "Shop"
+}
+
 family_income = {
     -7: "Prefer not to answer",
     -8: "I don't know",
@@ -45,7 +60,7 @@ family_income = {
 }
 
 trip_cols = ["HOUSEID", "PERSONID", "HHFAMINC", "WHYTO",
-             "WHYFROM", "STRTTIME", "ENDTIME"]
+             "WHYFROM", "STRTTIME", "ENDTIME", "TRPMILES"]
 
 
 class Trip:
@@ -69,9 +84,24 @@ class Trip:
         trip.person_id = dfrow["PERSONID"]
 
 
+class Activity:
+    def __init__(self, start_time, end_time, loc_type):
+        self.start_time = start_time
+        self.end_time = end_time
+        self.loc_type = loc_type
+
+
 class SyntheticPerson:
-    def __init__(self, person_id):
+    def __init__(self, person_id, trips):
         self.id = person_id
+        self.trips = trips
+        self.activities = []
+
+        self._gen_activities()
+
+    def _gen_activities(self):
+        for trip in self.trips:
+            self.activities.append(Activity(trip.start_time, trip.end_time, ))
 
     def __str__(self):
         s = f"Person {self.id}:\n"
@@ -81,8 +111,8 @@ class SyntheticPerson:
 
     @staticmethod
     def from_nhts_df(pid, df):
-        syn_person = SyntheticPerson(pid)
-        syn_person.trips = [Trip.from_dfrow(row) for i, row in df.iterrows()]
+        trips = [Trip.from_dfrow(row) for i, row in df.iterrows()]
+        syn_person = SyntheticPerson(pid, trips)
         return syn_person
 
 
@@ -131,12 +161,26 @@ def templates(df):
         yield synth_hh
 
 
+def merge_census_data(census_hhs, template_hhs):
+    pass
+
+
+def assign_locations(households):
+    pass
+
+
 if __name__ == "__main__":
     print("Reading trip data.")
     trips_df = pandas.read_csv("data/nhts/trippub.csv", ",")
 
+    # Create household templates from nhts data
     nhts_hh_templates = [hhtmp for hhtmp in templates(trips_df)]
-    # person_cols = ["HOUSEID", "PERSONID", "CNTTDTR"]
 
-    # print("Reading person data.")
-    # persons = pandas.read_csv("srtd/nhts/perpub.csv", ",")
+    # Pull census households
+    census_hhs = None
+
+    # Match census households to template households
+    synthetic_households = merge_census_data(census_hhs)
+
+    # Assign activity locations to trip destinations
+    assign_locations(synthetic_households)
