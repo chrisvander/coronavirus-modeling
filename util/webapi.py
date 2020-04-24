@@ -51,9 +51,10 @@ def get_json(url, query=None):
     md5 = hashlib.md5(url.encode('utf-8')).hexdigest()
     file = get_file(md5)
     if (file is None):
-        print("Downloading...")
+        print(url)
+        print("No cache found. Downloading...")
         raw = fetch_data(url, query)
-        print("Finished!")
+        print("Finished!\n\n")
         write_file(md5, raw)
         return json.loads(raw.decode("utf-8"))
     else:
