@@ -1,11 +1,11 @@
 import argparse
 import networkx as nx
-from actors import SyntheticHousehold, SyntheticPerson
+from actors import SyntheticHousehold, SyntheticPerson, generate_synthetic
 
 
 class EpidemicSim:
     '''
-    This simulator is an extension of the actor-based SEIRD epidemic model. It simulates
+    This simulator is an extension of the actor-based SEIQRD epidemic model. It simulates
     the diffusion of a disease through an interaction network. For more info, see:
         https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model
 
@@ -62,61 +62,51 @@ class EpidemicSim:
             self._run_one_iter()
 
 
-def generate_digraph(synth_hhs):
+def generate_graph(synth_hhs):
     '''
-    This function will generate an undirected, multi-edge, bipartite graph using
-    nx.MultiGraph().
+    Generate an undirected, multi-edge, bipartite graph using nx.MultiGraph().
     '''
-
-    '''
-    First, we generate a probability matrix to represent the transition between
-    activity locations. There are 4 anchor activity types: H (home), W (work),
-    S (shop), C (school).
-
-    Each index i, j in the matrix will represent a probability proportional to:
-        P(j|i) = A_aj * e^(b_w * D_ij)
-    where:
-        A_aj:   Attractiveness of location j for destination activity a.
-                Either 0 or 1. This is essentially a boolean mask (b/c you don't go
-                shopping at home a home location or to school at a work location).
-        e_b:    Calibration constant.
-        D_ij:   distance between locations i and j
-    '''
-
+    G = nx.MultiGraph()
     for syn_hh in synth_hhs:
         for person in syn_hh.people:
             for activity in person.activities:
-                '''
-                If the person doesn't already exist in the graph, create a person
-                node / vertex in the following way:
-                    - Create attr_dict for node: {age, hh_size, gender, income}
-                    - Use nx.Graph.add_node(n, attr_dict)
+                if not G.has_node(person.uid):
+                    G.add_node(person.uid, **person.attr_dict())
 
-                If the location doesn't already exist in the graph, create a
-                location node / verted in the following way:
-                    - Create attr_dict for node: {business_type}
-                    - Use nx.Graph.add_node(n, attr_dict)
-                '''
-                # Location is determined using the formula:
-                # Generate some
-                # Create an edge between the person and location
-                pass
+                act_loc = activity.location
+                if not G.has_node(act_loc.uid):
+                    G.add_node(act_loc.uid, **act_loc.attr_dict())
+
+                G.add_edge(person.uid, act_loc.uid)
+
+    return G
 
 
 def parse_args(argv=None):
     argparser = argparse.ArgumentParser()
-    # Graph-builer arguments
+    argparser.add_argument('--graph-in', dest='graph_in')
+    argparser.add_argument('--graph-out', dest='graph_out')
     # Simulation arguments
     return argparser.parse_args(argv)
 
 
 if __name__ == "__main__":
-    # Generate/load urban actor data
-    synth_hhs = None
+    args = parse_args()
+    print(args)
 
-    # Create graph
-    g = generate_digraph(synth_hhs)
+    G = None
+    if args.graph_in:
+        G = nx.read_gml(args.graph_in)
+    else:
+        synth_hhs = generate_synthetic(23000)
+
+        print("Generating graph.")
+        G = generate_graph(synth_hhs)
+
+        if args.graph_out:
+            print(f"Writing generated graph to {args.graph_out}")
+            nx.write_gml(G, args.graph_out)
 
     # Run simulation
-    sim = EpidemicSim()
-    sim.run()
+    # sim = EpidemicSim()
+    # sim.run()
