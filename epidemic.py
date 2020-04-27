@@ -4,6 +4,7 @@ from actors import SyntheticHousehold, SyntheticPerson, generate_synthetic
 from util.webapi import cache
 from interaction import generate_interactions
 import random
+from tqdm import tqdm
 
 default_config = {
     'infection_on_interaction': 0.8
@@ -98,7 +99,7 @@ class EpidemicSim:
 
     def run_full_simulation(self, days):
         # Sort edges of graph by timestep
-        for day in range(days):
+        for day in tqdm(range(days)):
             print(f"Day {day + 1}:")
             self._run_one_iter(generate_interactions(self.G))
 
@@ -132,9 +133,7 @@ def generate_graph(synth_hhs):
             person_count += 1
 
             # Add edge between person and location for each activity
-            print(person.trips)
             for activity in person.activities:
-                print(str(activity))
                 act_loc = activity.location
                 loc_id = f"L_{act_loc.id}"
 
