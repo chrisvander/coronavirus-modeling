@@ -141,7 +141,7 @@ class Activity:
         self.location.uid = location
 
     def attr_dict(self):
-        return {"starttime": self.start_time, "endtime": self.end_time}
+        return {"starttime": self.start_time, "endtime": self.end_time, "acttype": self.loc_type}
 
 
 class SyntheticPerson:
@@ -304,14 +304,15 @@ def assign_uids(households):
 
 
 def generate_synthetic(n):
-    print("Creating template households.")
-    nhts_hh_templates = cache('template_households', lambda: [hhtmp for hhtmp in templates()])
+    def get_templates():
+        print("Creating template households.")
+        return cache('template_households', lambda: [hhtmp for hhtmp in templates()], folder='nhts_templates')
 
     print("Generating sample population.")
     census_hhs = cache(str(n) + '_population', lambda: generate(n))
 
     print("Matching population households to template households.")
-    synthetic_households = cache(str(n) + '_synthetic', lambda: merge_census_data(census_hhs, nhts_hh_templates))
+    synthetic_households = cache(str(n) + '_hh', lambda: merge_census_data(census_hhs, get_templates()), folder='synthetic_hh')
 
     print("Assigning unique IDs")
     assign_uids(synthetic_households)

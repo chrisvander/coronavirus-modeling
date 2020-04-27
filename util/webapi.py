@@ -10,18 +10,22 @@ headers = {
     "Content-Type": "application/json"
 }
 
-def get_file(f_id):
+def get_file(f_id, folder=None):
     md5 = hashlib.md5(f_id.encode('utf-8')).hexdigest()
     filename='./cache/' + md5
+    if folder:
+        filename='./cache/' + folder + '/' + md5
     if os.path.isfile(filename):
         with open(filename, 'rb') as f:
             return pickle.load(f)
     else:
         return None
 
-def write_file(f_id, raw):
+def write_file(f_id, raw, folder=None):
     md5 = hashlib.md5(f_id.encode('utf-8')).hexdigest()
     filename='./cache/' + md5
+    if folder:
+        filename='./cache/' + folder + '/' + md5
     if not os.path.exists(os.path.dirname(filename)):
         try:
             os.makedirs(os.path.dirname(filename))
@@ -31,12 +35,12 @@ def write_file(f_id, raw):
     with open(filename, 'wb') as f:
         pickle.dump(raw, f, protocol=pickle.HIGHEST_PROTOCOL)
 
-def cache(f_id, funct):
-    res = get_file(f_id)
+def cache(f_id, funct, folder=None):
+    res = get_file(f_id, folder=folder)
     if res is None:
         print("Running one-time " + f_id + " and writing to cache")
         raw = funct()
-        write_file(f_id, raw)
+        write_file(f_id, raw, folder=folder)
         return raw
     return res
 
@@ -60,4 +64,4 @@ def fetch_data(url, query=None):
 
 def get_json(url, query=None):
     """ Perform a GET request and return the resulting JSON payload as an object. """
-    return json.loads(cache(url, lambda: fetch_data(url, query)))
+    return json.loads(cache(url, lambda: fetch_data(url, query), folder='web_requests'))
