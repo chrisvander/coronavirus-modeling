@@ -5,6 +5,13 @@ from scipy.stats import norm
 import itertools
 import random
 
+'''
+    Responsible for creating the population that the urban actor
+    model will then ingest. Just creates raw households and people
+    based on data from the U.S. Census.
+    
+'''
+
 base_url = "https://api.census.gov/data/2018/acs/acs1/pums?get="
 
 def_region = "7950000US3703001,7950000US3703002"

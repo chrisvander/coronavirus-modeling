@@ -2,6 +2,12 @@ import argparse
 import networkx as nx
 from actors import SyntheticHousehold, SyntheticPerson, generate_synthetic
 from util.webapi import cache
+from interaction import generate_interactions
+import random
+
+default_config = {
+    'infection_on_interaction': 0.8
+}
 
 
 class EpidemicSim:
@@ -21,6 +27,8 @@ class EpidemicSim:
                                        |                       |
                                        |                       +-->
                                        +--------------------------> Dead
+
+    (S), (E), (I), (Q), (R), (D)
 
     Incubation time:
         After someone is exposedDiseased typically take between several hours and
@@ -48,23 +56,65 @@ class EpidemicSim:
         individuals have spent at the location together.
     '''
 
-    def __init__(self, G):
-        self.G = G
-        pass
+    def __init__(self, graph, config={}):
+        self.config = {**default_config, **config}
+        self.G = graph
 
-    def _run_one_iter(self):
+    def update_state(self, node, state):
+        nx.set_node_attributes(self.G, {node: {'state': state, 'time_in_state': 0}})
+
+    def get_state(self, node):
+        return nx.get_node_attributes(self.G, 'state')[node]
+
+    def get_people(self):
+        return list(filter(lambda n: str(n).startswith('P_'), self.G.nodes()))
+
+    def get_all_states(self):
+        return list(nx.get_node_attributes(self.G, 'state').values())
+
+    def number_infected(self):
+        return len([n for n in self.get_all_states() if n == 'E'])
+
+    def _run_one_iter(self, interactions):
         '''
-        For each person in the graph
+        For each interaction in the graph
+
+        acttype can be one of:
+        (H)ome, (W)ork, (S)hop, s(C)hool, and (O)ther
         '''
-        pass
+
+        print(f"Number infected {self.number_infected()}")
+
+        # after checking all states, we iterate through interactions
+        print(len(interactions))
+        for u, v, time, acttype in interactions:
+            # if random.random() < self.config['infection_on_interaction']:
+            if self.get_state(u) == 'I' and self.get_state(v) == 'S':
+                self.update_state(v, 'E')
+            elif self.get_state(u) == 'S' and self.get_state(v) == 'I':
+                self.update_state(u, 'E')
+            if self.get_state(u) == 'I':
+                print(self.get_state(u))
 
     def run_full_simulation(self, days):
         # Sort edges of graph by timestep
         for day in range(days):
-            self._run_one_iter()
+            print(f"Day {day + 1}:")
+            self._run_one_iter(generate_interactions(self.G))
 
     def run(self):
         print('\n-- EPIDEMIC SIMULATION --')
+        print("Using config " + str(self.config))
+        nx.set_node_attributes(self.G, 'S', 'state')
+        # infect the first person
+        patient_zero = random.choice(self.get_people())
+        print(patient_zero)
+
+        self.update_state(patient_zero, 'I')
+        print(f"Number infected {self.number_infected()}")
+        days = 35
+        print(f'\nSimulating {days} days')
+        self.run_full_simulation(days)
 
 
 def generate_graph(synth_hhs):
@@ -114,7 +164,7 @@ if __name__ == "__main__":
         synth_hhs = cache('synthetic_pop_' + str(args.n),
                           lambda: generate_synthetic(args.n))
 
-        print("Generating graph.")
+        print("Generating environment interaction graph.")
         G = generate_graph(synth_hhs)
 
         if args.graph_out:
@@ -122,5 +172,7 @@ if __name__ == "__main__":
             nx.write_gml(G, args.graph_out)
 
     # Run simulation
-    sim = EpidemicSim(G)
+    sim = EpidemicSim(G, {
+        'infection_on_interaction': 0.7
+    })
     sim.run()
