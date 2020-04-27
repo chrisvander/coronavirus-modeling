@@ -189,7 +189,6 @@ class SyntheticPerson:
         return s
 
     def attr_dict(self):
-        print(self)
         return {"age": str(self.age), "income": str(self.income),
                 "sex": str(self.sex), "hhsize": str(len(self.household.people)) if hasattr(self, 'household') else 'NA'}
 
@@ -312,7 +311,6 @@ def merge_census_data(census_hhs, template_hhs):
 
 
 def assign_dummy_locations(households, num_locations):
-    print(num_locations)
     locations = [Location(i, "?", (0, 0, 0)) for i in range(num_locations)]
 
     for hh in households:
