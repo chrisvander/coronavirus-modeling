@@ -50,6 +50,7 @@ def parse_query(query):
     return ret
 
 def fetch_data(url, query=None):
+    print("Fetching " + url)
     res = requests.get(url, params=query, headers=headers)
     if res.status_code == 200:
         return res.content.decode("utf-8")
