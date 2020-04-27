@@ -10,6 +10,21 @@ headers = {
     "Content-Type": "application/json"
 }
 
+# def download_nhts():
+#     chunk_size = 512
+#     url = "https://nhts.ornl.gov/assets/2016/download/Csv.zip"
+#     save_path = './data/nhts.zip'
+#     r = requests.get(url, stream=True)
+#     if not os.path.exists(os.path.dirname(save_path)):
+#         try:
+#             os.makedirs(os.path.dirname(save_path))
+#         except OSError as exc: # Guard against race condition
+#             if exc.errno != errno.EEXIST:
+#                 raise
+#     with open(save_path, 'wb') as fd:
+#         for chunk in r.iter_content(chunk_size=chunk_size):
+#             fd.write(chunk)
+
 def get_file(f_id, folder=None):
     md5 = hashlib.md5(f_id.encode('utf-8')).hexdigest()
     filename='./cache/' + md5

@@ -190,7 +190,7 @@ class SyntheticPerson:
 
     def attr_dict(self):
         return {"age": str(self.age), "income": str(self.income),
-                "sex": str(self.sex), "hhsize": str(len(self.household.people)) if hasattr(self, 'household') else 'NA'}
+                "sex": str(self.sex), "hhsize": str(len(self.household.people)) if hasattr(self, 'household') and self.household is not None else 'NA'}
 
     def deepcopy(self):
         p = SyntheticPerson(self.id)
