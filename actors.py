@@ -345,7 +345,7 @@ def generate_synthetic(n):
         folder='nhts_templates')
 
     print("Generating sample population.")
-    census_hhs = cache(str(n) + '_population', lambda: generate(n), folder='population')
+    census_hhs = generate(n)
 
     print("Matching population households to template households.")
     synthetic_households = cache(
@@ -355,8 +355,8 @@ def generate_synthetic(n):
             nhts_hh_templates), folder='synthetic_hh')
 
     print("Assigning activity locations.")
-    # 6 people per location (work, home, etc)
-    assign_dummy_locations(synthetic_households, int(n / 4))
+    # 8 people per location (work, home, etc)
+    assign_dummy_locations(synthetic_households, int(n / 8))
     # assign_locations(synthetic_households)
 
     return synthetic_households
