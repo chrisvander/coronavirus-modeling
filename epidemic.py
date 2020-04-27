@@ -132,7 +132,9 @@ def generate_graph(synth_hhs):
             person_count += 1
 
             # Add edge between person and location for each activity
+            print(person.trips)
             for activity in person.activities:
+                print(str(activity))
                 act_loc = activity.location
                 loc_id = f"L_{act_loc.id}"
 

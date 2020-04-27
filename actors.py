@@ -189,8 +189,9 @@ class SyntheticPerson:
         return s
 
     def attr_dict(self):
+        print(self)
         return {"age": str(self.age), "income": str(self.income),
-                "sex": str(self.sex), "hhsize": str(len(self.household.people)) if self.household else 'NA'}
+                "sex": str(self.sex), "hhsize": str(len(self.household.people)) if hasattr(self, 'household') else 'NA'}
 
     def deepcopy(self):
         p = SyntheticPerson(self.id)
@@ -317,7 +318,7 @@ def assign_dummy_locations(households, num_locations):
     for hh in households:
         for person in hh.people:
             for activity in person.activities:
-                activity.assign_location(random.randint(0, num_locations))
+                activity.assign_location(locations[random.randint(0, num_locations-1)])
 
 
 def assign_locations(households):
@@ -353,7 +354,7 @@ def generate_synthetic(n):
         str(n) + '_synthetic',
         lambda: merge_census_data(
             census_hhs,
-            nhts_hh_templates))
+            nhts_hh_templates), folder='synthetic_hh')
 
     print("Assigning activity locations.")
     assign_dummy_locations(synthetic_households, int(n/4)) # 6 people per location (work, home, etc)

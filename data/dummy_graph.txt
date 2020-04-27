@@ -3,8001 +3,4031 @@ graph [
   node [
     id 0
     label "P_0"
-    age "67"
+    age "52"
     income "0"
-    sex "2"
+    sex "1"
     hhsize "NA"
   ]
   node [
     id 1
-    label "P_1"
-    age "36"
-    income "0"
-    sex "2"
-    hhsize "NA"
+    label "L_23"
+    coords "(0, 0, 0)"
+    loctype "?"
   ]
   node [
     id 2
-    label "P_2"
-    age "18"
-    income "0"
-    sex "1"
-    hhsize "NA"
+    label "L_17"
+    coords "(0, 0, 0)"
+    loctype "?"
   ]
   node [
     id 3
-    label "P_3"
-    age "16"
-    income "0"
-    sex "1"
-    hhsize "NA"
+    label "L_4"
+    coords "(0, 0, 0)"
+    loctype "?"
   ]
   node [
     id 4
-    label "P_4"
-    age "22"
+    label "P_1"
+    age "44"
     income "0"
-    sex "1"
+    sex "2"
     hhsize "NA"
   ]
   node [
     id 5
-    label "P_5"
-    age "59"
-    income "0"
-    sex "2"
-    hhsize "NA"
+    label "L_19"
+    coords "(0, 0, 0)"
+    loctype "?"
   ]
   node [
     id 6
-    label "P_6"
-    age "51"
-    income "0"
-    sex "1"
-    hhsize "NA"
+    label "L_6"
+    coords "(0, 0, 0)"
+    loctype "?"
   ]
   node [
     id 7
-    label "P_7"
-    age "14"
-    income "0"
-    sex "2"
-    hhsize "NA"
+    label "L_1"
+    coords "(0, 0, 0)"
+    loctype "?"
   ]
   node [
     id 8
-    label "P_8"
-    age "53"
+    label "P_2"
+    age "8"
     income "0"
     sex "1"
     hhsize "NA"
   ]
   node [
     id 9
-    label "P_9"
-    age "50"
-    income "0"
-    sex "2"
-    hhsize "NA"
+    label "L_7"
+    coords "(0, 0, 0)"
+    loctype "?"
   ]
   node [
     id 10
-    label "P_10"
-    age "19"
-    income "0"
-    sex "2"
-    hhsize "NA"
+    label "L_12"
+    coords "(0, 0, 0)"
+    loctype "?"
   ]
   node [
     id 11
-    label "P_11"
-    age "18"
+    label "P_3"
+    age "67"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 12
-    label "P_12"
-    age "17"
-    income "0"
-    sex "1"
-    hhsize "NA"
+    label "L_21"
+    coords "(0, 0, 0)"
+    loctype "?"
   ]
   node [
     id 13
-    label "P_13"
-    age "15"
-    income "0"
-    sex "1"
-    hhsize "NA"
+    label "L_20"
+    coords "(0, 0, 0)"
+    loctype "?"
   ]
   node [
     id 14
-    label "P_14"
-    age "49"
-    income "0"
-    sex "1"
-    hhsize "NA"
+    label "L_9"
+    coords "(0, 0, 0)"
+    loctype "?"
   ]
   node [
     id 15
-    label "P_15"
-    age "58"
+    label "P_4"
+    age "31"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 16
-    label "P_16"
-    age "56"
-    income "0"
-    sex "2"
-    hhsize "NA"
+    label "L_5"
+    coords "(0, 0, 0)"
+    loctype "?"
   ]
   node [
     id 17
-    label "P_17"
-    age "23"
-    income "0"
-    sex "2"
-    hhsize "NA"
+    label "L_10"
+    coords "(0, 0, 0)"
+    loctype "?"
   ]
   node [
     id 18
-    label "P_18"
-    age "35"
+    label "P_5"
+    age "31"
     income "0"
-    sex "2"
+    sex "1"
     hhsize "NA"
   ]
   node [
     id 19
-    label "P_19"
-    age "37"
-    income "0"
-    sex "1"
-    hhsize "NA"
+    label "L_11"
+    coords "(0, 0, 0)"
+    loctype "?"
   ]
   node [
     id 20
-    label "P_20"
-    age "12"
-    income "0"
-    sex "2"
-    hhsize "NA"
+    label "L_3"
+    coords "(0, 0, 0)"
+    loctype "?"
   ]
   node [
     id 21
-    label "P_21"
-    age "11"
-    income "0"
-    sex "2"
-    hhsize "NA"
+    label "L_24"
+    coords "(0, 0, 0)"
+    loctype "?"
   ]
   node [
     id 22
-    label "P_22"
-    age "62"
+    label "P_6"
+    age "10"
     income "0"
-    sex "2"
+    sex "1"
     hhsize "NA"
   ]
   node [
     id 23
-    label "P_23"
-    age "58"
-    income "0"
-    sex "1"
-    hhsize "NA"
+    label "L_14"
+    coords "(0, 0, 0)"
+    loctype "?"
   ]
   node [
     id 24
-    label "P_24"
-    age "69"
-    income "0"
-    sex "1"
-    hhsize "NA"
+    label "L_13"
+    coords "(0, 0, 0)"
+    loctype "?"
   ]
   node [
     id 25
-    label "P_25"
-    age "18"
+    label "P_7"
+    age "6"
     income "0"
     sex "1"
     hhsize "NA"
   ]
   node [
     id 26
-    label "P_26"
-    age "50"
-    income "0"
-    sex "2"
-    hhsize "NA"
+    label "L_8"
+    coords "(0, 0, 0)"
+    loctype "?"
   ]
   node [
     id 27
-    label "P_27"
-    age "49"
-    income "0"
-    sex "1"
-    hhsize "NA"
+    label "L_18"
+    coords "(0, 0, 0)"
+    loctype "?"
   ]
   node [
     id 28
-    label "P_28"
-    age "28"
+    label "P_8"
+    age "12"
     income "0"
-    sex "1"
+    sex "2"
     hhsize "NA"
   ]
   node [
     id 29
-    label "P_29"
-    age "71"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 30
-    label "P_30"
-    age "64"
+    label "P_9"
+    age "14"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
+    id 30
+    label "L_16"
+    coords "(0, 0, 0)"
+    loctype "?"
+  ]
+  node [
     id 31
-    label "P_31"
-    age "28"
+    label "P_10"
+    age "9"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 32
-    label "P_32"
-    age "77"
-    income "0"
-    sex "2"
-    hhsize "NA"
+    label "L_15"
+    coords "(0, 0, 0)"
+    loctype "?"
   ]
   node [
     id 33
-    label "P_33"
-    age "71"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 34
-    label "P_34"
-    age "73"
+    label "P_11"
+    age "76"
     income "0"
     sex "1"
     hhsize "NA"
   ]
   node [
+    id 34
+    label "L_0"
+    coords "(0, 0, 0)"
+    loctype "?"
+  ]
+  node [
     id 35
-    label "P_35"
-    age "61"
+    label "P_12"
+    age "67"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 36
-    label "P_36"
-    age "30"
+    label "P_13"
+    age "40"
     income "0"
-    sex "1"
+    sex "2"
     hhsize "NA"
   ]
   node [
     id 37
-    label "P_37"
-    age "19"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 38
-    label "P_38"
-    age "36"
+    label "P_14"
+    age "31"
     income "0"
     sex "1"
     hhsize "NA"
   ]
   node [
+    id 38
+    label "L_2"
+    coords "(0, 0, 0)"
+    loctype "?"
+  ]
+  node [
     id 39
-    label "P_39"
-    age "37"
+    label "P_15"
+    age "12"
     income "0"
-    sex "2"
+    sex "1"
     hhsize "NA"
   ]
   node [
     id 40
-    label "P_40"
-    age "15"
-    income "0"
-    sex "2"
-    hhsize "NA"
+    label "L_22"
+    coords "(0, 0, 0)"
+    loctype "?"
   ]
   node [
     id 41
-    label "P_41"
-    age "14"
+    label "P_16"
+    age "51"
     income "0"
     sex "1"
     hhsize "NA"
   ]
   node [
     id 42
-    label "P_42"
-    age "11"
+    label "P_17"
+    age "82"
     income "0"
     sex "1"
     hhsize "NA"
   ]
   node [
     id 43
-    label "P_43"
-    age "9"
+    label "P_18"
+    age "75"
     income "0"
-    sex "2"
+    sex "1"
     hhsize "NA"
   ]
   node [
     id 44
-    label "P_44"
-    age "5"
+    label "P_19"
+    age "62"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 45
-    label "P_45"
-    age "35"
+    label "P_20"
+    age "70"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 46
-    label "P_46"
-    age "8"
+    label "P_21"
+    age "70"
     income "0"
     sex "1"
     hhsize "NA"
   ]
   node [
     id 47
-    label "P_47"
-    age "5"
+    label "P_22"
+    age "46"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 48
-    label "P_48"
-    age "65"
+    label "P_23"
+    age "47"
     income "0"
     sex "1"
     hhsize "NA"
   ]
   node [
     id 49
-    label "P_49"
-    age "68"
+    label "P_24"
+    age "41"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 50
-    label "P_50"
-    age "48"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 51
-    label "P_51"
-    age "41"
+    label "P_25"
+    age "54"
     income "0"
     sex "1"
     hhsize "NA"
   ]
   node [
+    id 51
+    label "P_26"
+    age "58"
+    income "0"
+    sex "2"
+    hhsize "NA"
+  ]
+  node [
     id 52
-    label "P_52"
-    age "11"
+    label "P_27"
+    age "41"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 53
-    label "P_53"
-    age "11"
+    label "P_28"
+    age "51"
     income "0"
     sex "1"
     hhsize "NA"
   ]
   node [
     id 54
-    label "P_54"
-    age "8"
+    label "P_29"
+    age "40"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 55
-    label "P_55"
-    age "6"
+    label "P_30"
+    age "17"
     income "0"
-    sex "2"
+    sex "1"
     hhsize "NA"
   ]
   node [
     id 56
-    label "P_56"
-    age "23"
+    label "P_31"
+    age "15"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 57
-    label "P_57"
-    age "60"
+    label "P_32"
+    age "12"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 58
-    label "P_58"
-    age "50"
+    label "P_33"
+    age "9"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 59
-    label "P_59"
-    age "77"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 60
-    label "P_60"
-    age "35"
+    label "P_34"
+    age "69"
     income "0"
     sex "1"
     hhsize "NA"
   ]
   node [
-    id 61
-    label "P_61"
-    age "32"
+    id 60
+    label "P_35"
+    age "68"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
+    id 61
+    label "P_36"
+    age "56"
+    income "0"
+    sex "1"
+    hhsize "NA"
+  ]
+  node [
     id 62
-    label "P_62"
-    age "35"
+    label "P_37"
+    age "64"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 63
-    label "P_63"
+    label "P_38"
     age "31"
     income "0"
-    sex "1"
+    sex "2"
     hhsize "NA"
   ]
   node [
     id 64
-    label "P_64"
-    age "14"
+    label "P_39"
+    age "27"
     income "0"
-    sex "1"
+    sex "2"
     hhsize "NA"
   ]
   node [
     id 65
-    label "P_65"
-    age "12"
+    label "P_40"
+    age "27"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 66
-    label "P_66"
-    age "9"
+    label "P_41"
+    age "16"
     income "0"
     sex "1"
     hhsize "NA"
   ]
   node [
     id 67
-    label "P_67"
-    age "8"
+    label "P_42"
+    age "18"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 68
-    label "P_68"
-    age "38"
+    label "P_43"
+    age "46"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 69
-    label "P_69"
-    age "65"
+    label "P_44"
+    age "46"
     income "0"
     sex "1"
     hhsize "NA"
   ]
   node [
     id 70
-    label "P_70"
-    age "42"
+    label "P_45"
+    age "24"
     income "0"
-    sex "1"
+    sex "2"
     hhsize "NA"
   ]
   node [
     id 71
-    label "P_71"
-    age "50"
+    label "P_46"
+    age "18"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 72
-    label "P_72"
-    age "58"
+    label "P_47"
+    age "14"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 73
-    label "P_73"
-    age "45"
+    label "P_48"
+    age "11"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 74
-    label "P_74"
-    age "44"
+    label "P_49"
+    age "8"
     income "0"
-    sex "1"
+    sex "2"
     hhsize "NA"
   ]
   node [
     id 75
-    label "P_75"
-    age "17"
+    label "P_50"
+    age "61"
     income "0"
     sex "1"
     hhsize "NA"
   ]
   node [
     id 76
-    label "P_76"
-    age "15"
+    label "P_51"
+    age "60"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 77
-    label "P_77"
-    age "12"
+    label "P_52"
+    age "22"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 78
-    label "P_78"
-    age "7"
+    label "P_53"
+    age "52"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 79
-    label "P_79"
-    age "71"
+    label "P_54"
+    age "56"
     income "0"
-    sex "2"
+    sex "1"
     hhsize "NA"
   ]
   node [
     id 80
-    label "P_80"
-    age "74"
+    label "P_55"
+    age "45"
     income "0"
     sex "1"
     hhsize "NA"
   ]
   node [
     id 81
-    label "P_81"
-    age "45"
+    label "P_56"
+    age "71"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 82
-    label "P_82"
-    age "39"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 83
-    label "P_83"
-    age "14"
+    label "P_57"
+    age "75"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
-    id 84
-    label "P_84"
-    age "11"
+    id 83
+    label "P_58"
+    age "56"
     income "0"
     sex "1"
+    hhsize "NA"
+  ]
+  node [
+    id 84
+    label "P_59"
+    age "54"
+    income "0"
+    sex "2"
     hhsize "NA"
   ]
   node [
     id 85
-    label "P_85"
-    age "8"
+    label "P_60"
+    age "24"
     income "0"
-    sex "1"
+    sex "2"
     hhsize "NA"
   ]
   node [
     id 86
-    label "P_86"
-    age "64"
+    label "P_61"
+    age "34"
     income "0"
-    sex "1"
+    sex "2"
     hhsize "NA"
   ]
   node [
     id 87
-    label "P_87"
-    age "75"
+    label "P_62"
+    age "30"
     income "0"
     sex "1"
     hhsize "NA"
   ]
   node [
     id 88
-    label "P_88"
-    age "60"
+    label "P_63"
+    age "57"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 89
-    label "P_89"
-    age "51"
+    label "P_64"
+    age "83"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 90
-    label "P_90"
-    age "16"
+    label "P_65"
+    age "60"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 91
-    label "P_91"
-    age "13"
+    label "P_66"
+    age "66"
+    income "0"
+    sex "2"
+    hhsize "NA"
+  ]
+  node [
+    id 92
+    label "P_67"
+    age "57"
     income "0"
     sex "1"
     hhsize "NA"
   ]
   node [
-    id 92
-    label "P_92"
-    age "11"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
     id 93
-    label "P_93"
-    age "44"
+    label "P_68"
+    age "68"
     income "0"
-    sex "2"
+    sex "1"
     hhsize "NA"
   ]
   node [
     id 94
-    label "P_94"
-    age "22"
+    label "P_69"
+    age "66"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 95
-    label "P_95"
-    age "16"
+    label "P_70"
+    age "19"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 96
-    label "P_96"
-    age "7"
+    label "P_71"
+    age "42"
     income "0"
     sex "1"
     hhsize "NA"
   ]
   node [
     id 97
-    label "P_97"
-    age "61"
+    label "P_72"
+    age "40"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 98
-    label "P_98"
-    age "50"
+    label "P_73"
+    age "11"
     income "0"
-    sex "2"
+    sex "1"
     hhsize "NA"
   ]
   node [
     id 99
-    label "P_99"
-    age "81"
+    label "P_74"
+    age "9"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 100
-    label "P_100"
-    age "35"
+    label "P_75"
+    age "8"
     income "0"
     sex "1"
     hhsize "NA"
   ]
   node [
     id 101
-    label "P_101"
-    age "14"
+    label "P_76"
+    age "6"
     income "0"
     sex "1"
     hhsize "NA"
   ]
   node [
     id 102
-    label "P_102"
-    age "10"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 103
-    label "P_103"
-    age "8"
+    label "P_77"
+    age "31"
     income "0"
     sex "1"
     hhsize "NA"
   ]
   node [
+    id 103
+    label "P_78"
+    age "65"
+    income "0"
+    sex "2"
+    hhsize "NA"
+  ]
+  node [
     id 104
-    label "P_104"
-    age "5"
+    label "P_79"
+    age "64"
     income "0"
     sex "1"
     hhsize "NA"
   ]
   node [
     id 105
-    label "P_105"
-    age "20"
+    label "P_80"
+    age "32"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 106
-    label "P_106"
-    age "49"
+    label "P_81"
+    age "33"
     income "0"
-    sex "2"
+    sex "1"
     hhsize "NA"
   ]
   node [
     id 107
-    label "P_107"
-    age "45"
+    label "P_82"
+    age "9"
     income "0"
     sex "1"
     hhsize "NA"
   ]
   node [
     id 108
-    label "P_108"
-    age "12"
+    label "P_83"
+    age "7"
     income "0"
-    sex "2"
+    sex "1"
     hhsize "NA"
   ]
   node [
     id 109
-    label "P_109"
-    age "36"
+    label "P_84"
+    age "5"
     income "0"
-    sex "2"
+    sex "1"
     hhsize "NA"
   ]
   node [
     id 110
-    label "P_110"
-    age "40"
+    label "P_85"
+    age "45"
     income "0"
     sex "1"
     hhsize "NA"
   ]
   node [
     id 111
-    label "P_111"
-    age "19"
+    label "P_86"
+    age "41"
     income "0"
-    sex "1"
+    sex "2"
     hhsize "NA"
   ]
   node [
     id 112
-    label "P_112"
-    age "15"
+    label "P_87"
+    age "17"
     income "0"
-    sex "1"
+    sex "2"
     hhsize "NA"
   ]
   node [
     id 113
-    label "P_113"
-    age "12"
+    label "P_88"
+    age "14"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 114
-    label "P_114"
-    age "9"
+    label "P_89"
+    age "11"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 115
-    label "P_115"
-    age "5"
+    label "P_90"
+    age "7"
     income "0"
     sex "1"
     hhsize "NA"
   ]
   node [
     id 116
-    label "P_116"
-    age "25"
+    label "P_91"
+    age "74"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 117
-    label "P_117"
-    age "30"
+    label "P_92"
+    age "70"
+    income "0"
+    sex "2"
+    hhsize "NA"
+  ]
+  node [
+    id 118
+    label "P_93"
+    age "47"
     income "0"
     sex "1"
     hhsize "NA"
   ]
   node [
-    id 118
-    label "P_118"
-    age "7"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
     id 119
-    label "P_119"
-    age "5"
+    label "P_94"
+    age "22"
     income "0"
-    sex "2"
+    sex "1"
     hhsize "NA"
   ]
   node [
     id 120
-    label "P_120"
-    age "43"
+    label "P_95"
+    age "49"
     income "0"
     sex "2"
     hhsize "NA"
   ]
   node [
     id 121
-    label "P_121"
-    age "47"
+    label "P_96"
+    age "20"
     income "0"
-    sex "1"
+    sex "2"
     hhsize "NA"
   ]
   node [
     id 122
-    label "P_122"
-    age "84"
+    label "P_97"
+    age "31"
     income "0"
-    sex "1"
+    sex "2"
     hhsize "NA"
   ]
   node [
     id 123
-    label "P_123"
-    age "15"
+    label "P_98"
+    age "35"
     income "0"
     sex "1"
     hhsize "NA"
   ]
   node [
     id 124
-    label "P_124"
+    label "P_99"
     age "10"
     income "0"
     sex "2"
     hhsize "NA"
   ]
-  node [
-    id 125
-    label "P_125"
-    age "7"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 126
-    label "P_126"
-    age "57"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 127
-    label "P_127"
-    age "51"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 128
-    label "P_128"
-    age "38"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 129
-    label "P_129"
-    age "15"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 130
-    label "P_130"
-    age "14"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 131
-    label "P_131"
-    age "12"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 132
-    label "P_132"
-    age "9"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 133
-    label "P_133"
-    age "82"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 134
-    label "P_134"
-    age "53"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 135
-    label "P_135"
-    age "50"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 136
-    label "P_136"
-    age "62"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 137
-    label "P_137"
-    age "80"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 138
-    label "P_138"
-    age "65"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 139
-    label "P_139"
-    age "63"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 140
-    label "P_140"
-    age "67"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 141
-    label "P_141"
-    age "50"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 142
-    label "P_142"
-    age "51"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 143
-    label "P_143"
-    age "74"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 144
-    label "P_144"
-    age "14"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 145
-    label "P_145"
-    age "12"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 146
-    label "P_146"
-    age "65"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 147
-    label "P_147"
-    age "51"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 148
-    label "P_148"
-    age "11"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 149
-    label "P_149"
-    age "8"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 150
-    label "P_150"
-    age "60"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 151
-    label "P_151"
-    age "24"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 152
-    label "P_152"
-    age "30"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 153
-    label "P_153"
-    age "13"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 154
-    label "P_154"
-    age "9"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 155
-    label "P_155"
-    age "41"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 156
-    label "P_156"
-    age "15"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 157
-    label "P_157"
-    age "18"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 158
-    label "P_158"
-    age "25"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 159
-    label "P_159"
-    age "80"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 160
-    label "P_160"
-    age "75"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 161
-    label "P_161"
-    age "41"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 162
-    label "P_162"
-    age "42"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 163
-    label "P_163"
-    age "11"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 164
-    label "P_164"
-    age "75"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 165
-    label "P_165"
-    age "74"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 166
-    label "P_166"
-    age "30"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 167
-    label "P_167"
-    age "46"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 168
-    label "P_168"
-    age "49"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 169
-    label "P_169"
-    age "15"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 170
-    label "P_170"
-    age "13"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 171
-    label "P_171"
-    age "12"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 172
-    label "P_172"
-    age "10"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 173
-    label "P_173"
-    age "46"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 174
-    label "P_174"
-    age "45"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 175
-    label "P_175"
-    age "10"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 176
-    label "P_176"
-    age "8"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 177
-    label "P_177"
-    age "46"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 178
-    label "P_178"
-    age "63"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 179
-    label "P_179"
-    age "60"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 180
-    label "P_180"
-    age "42"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 181
-    label "P_181"
-    age "20"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 182
-    label "P_182"
-    age "17"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 183
-    label "P_183"
-    age "16"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 184
-    label "P_184"
-    age "48"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 185
-    label "P_185"
-    age "53"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 186
-    label "P_186"
-    age "14"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 187
-    label "P_187"
-    age "73"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 188
-    label "P_188"
-    age "44"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 189
-    label "P_189"
-    age "12"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 190
-    label "P_190"
-    age "7"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 191
-    label "P_191"
-    age "30"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 192
-    label "P_192"
-    age "31"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 193
-    label "P_193"
-    age "63"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 194
-    label "P_194"
-    age "63"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 195
-    label "P_195"
-    age "24"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 196
-    label "P_196"
-    age "41"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 197
-    label "P_197"
-    age "66"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 198
-    label "P_198"
-    age "23"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 199
-    label "P_199"
-    age "59"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 200
-    label "P_200"
-    age "31"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 201
-    label "P_201"
-    age "32"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 202
-    label "P_202"
-    age "29"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 203
-    label "P_203"
-    age "76"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 204
-    label "P_204"
-    age "54"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 205
-    label "P_205"
-    age "66"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 206
-    label "P_206"
-    age "69"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 207
-    label "P_207"
-    age "83"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 208
-    label "P_208"
-    age "66"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 209
-    label "P_209"
-    age "57"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 210
-    label "P_210"
-    age "50"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 211
-    label "P_211"
-    age "11"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 212
-    label "P_212"
-    age "13"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 213
-    label "P_213"
-    age "61"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 214
-    label "P_214"
-    age "32"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 215
-    label "P_215"
-    age "55"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 216
-    label "P_216"
-    age "51"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 217
-    label "P_217"
-    age "15"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 218
-    label "P_218"
-    age "12"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 219
-    label "P_219"
-    age "9"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 220
-    label "P_220"
-    age "80"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 221
-    label "P_221"
-    age "31"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 222
-    label "P_222"
-    age "55"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 223
-    label "P_223"
-    age "49"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 224
-    label "P_224"
-    age "11"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 225
-    label "P_225"
-    age "88"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 226
-    label "P_226"
-    age "26"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 227
-    label "P_227"
-    age "35"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 228
-    label "P_228"
-    age "41"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 229
-    label "P_229"
-    age "17"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 230
-    label "P_230"
-    age "6"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 231
-    label "P_231"
-    age "69"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 232
-    label "P_232"
-    age "63"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 233
-    label "P_233"
-    age "65"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 234
-    label "P_234"
-    age "51"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 235
-    label "P_235"
-    age "11"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 236
-    label "P_236"
-    age "8"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 237
-    label "P_237"
-    age "60"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 238
-    label "P_238"
-    age "24"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 239
-    label "P_239"
-    age "60"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 240
-    label "P_240"
-    age "26"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 241
-    label "P_241"
-    age "33"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 242
-    label "P_242"
-    age "13"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 243
-    label "P_243"
-    age "9"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 244
-    label "P_244"
-    age "5"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 245
-    label "P_245"
-    age "68"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 246
-    label "P_246"
-    age "59"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 247
-    label "P_247"
-    age "83"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 248
-    label "P_248"
-    age "37"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 249
-    label "P_249"
-    age "40"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 250
-    label "P_250"
-    age "16"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 251
-    label "P_251"
-    age "42"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 252
-    label "P_252"
-    age "73"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 253
-    label "P_253"
-    age "75"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 254
-    label "P_254"
-    age "68"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 255
-    label "P_255"
-    age "64"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 256
-    label "P_256"
-    age "65"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 257
-    label "P_257"
-    age "30"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 258
-    label "P_258"
-    age "42"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 259
-    label "P_259"
-    age "41"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 260
-    label "P_260"
-    age "69"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 261
-    label "P_261"
-    age "41"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 262
-    label "P_262"
-    age "55"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 263
-    label "P_263"
-    age "56"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 264
-    label "P_264"
-    age "25"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 265
-    label "P_265"
-    age "67"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 266
-    label "P_266"
-    age "55"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 267
-    label "P_267"
-    age "33"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 268
-    label "P_268"
-    age "15"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 269
-    label "P_269"
-    age "14"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 270
-    label "P_270"
-    age "10"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 271
-    label "P_271"
-    age "7"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 272
-    label "P_272"
-    age "51"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 273
-    label "P_273"
-    age "17"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 274
-    label "P_274"
-    age "10"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 275
-    label "P_275"
-    age "13"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 276
-    label "P_276"
-    age "6"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 277
-    label "P_277"
-    age "5"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 278
-    label "P_278"
-    age "64"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 279
-    label "P_279"
-    age "32"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 280
-    label "P_280"
-    age "36"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 281
-    label "P_281"
-    age "6"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 282
-    label "P_282"
-    age "5"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 283
-    label "P_283"
-    age "69"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 284
-    label "P_284"
-    age "82"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 285
-    label "P_285"
-    age "36"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 286
-    label "P_286"
-    age "8"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 287
-    label "P_287"
-    age "5"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 288
-    label "P_288"
-    age "62"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 289
-    label "P_289"
-    age "49"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 290
-    label "P_290"
-    age "53"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 291
-    label "P_291"
-    age "21"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 292
-    label "P_292"
-    age "8"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 293
-    label "P_293"
-    age "34"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 294
-    label "P_294"
-    age "40"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 295
-    label "P_295"
-    age "19"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 296
-    label "P_296"
-    age "8"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 297
-    label "P_297"
-    age "16"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 298
-    label "P_298"
-    age "15"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 299
-    label "P_299"
-    age "81"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 300
-    label "P_300"
-    age "78"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 301
-    label "P_301"
-    age "78"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 302
-    label "P_302"
-    age "66"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 303
-    label "P_303"
-    age "49"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 304
-    label "P_304"
-    age "64"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 305
-    label "P_305"
-    age "42"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 306
-    label "P_306"
-    age "43"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 307
-    label "P_307"
-    age "14"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 308
-    label "P_308"
-    age "8"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 309
-    label "P_309"
-    age "50"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 310
-    label "P_310"
-    age "65"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 311
-    label "P_311"
-    age "70"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 312
-    label "P_312"
-    age "70"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 313
-    label "P_313"
-    age "74"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 314
-    label "P_314"
-    age "50"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 315
-    label "P_315"
-    age "32"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 316
-    label "P_316"
-    age "11"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 317
-    label "P_317"
-    age "9"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 318
-    label "P_318"
-    age "6"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 319
-    label "P_319"
-    age "34"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 320
-    label "P_320"
-    age "35"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 321
-    label "P_321"
-    age "14"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 322
-    label "P_322"
-    age "13"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 323
-    label "P_323"
-    age "10"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 324
-    label "P_324"
-    age "6"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 325
-    label "P_325"
-    age "38"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 326
-    label "P_326"
-    age "16"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 327
-    label "P_327"
-    age "13"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 328
-    label "P_328"
-    age "8"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 329
-    label "P_329"
-    age "6"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 330
-    label "P_330"
-    age "48"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 331
-    label "P_331"
-    age "40"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 332
-    label "P_332"
-    age "20"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 333
-    label "P_333"
-    age "18"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 334
-    label "P_334"
-    age "16"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 335
-    label "P_335"
-    age "12"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 336
-    label "P_336"
-    age "81"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 337
-    label "P_337"
-    age "42"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 338
-    label "P_338"
-    age "59"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 339
-    label "P_339"
-    age "12"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 340
-    label "P_340"
-    age "59"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 341
-    label "P_341"
-    age "40"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 342
-    label "P_342"
-    age "19"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 343
-    label "P_343"
-    age "12"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 344
-    label "P_344"
-    age "47"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 345
-    label "P_345"
-    age "77"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 346
-    label "P_346"
-    age "30"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 347
-    label "P_347"
-    age "32"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 348
-    label "P_348"
-    age "7"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 349
-    label "P_349"
-    age "57"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 350
-    label "P_350"
-    age "51"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 351
-    label "P_351"
-    age "29"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 352
-    label "P_352"
-    age "25"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 353
-    label "P_353"
-    age "66"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 354
-    label "P_354"
-    age "46"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 355
-    label "P_355"
-    age "39"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 356
-    label "P_356"
-    age "18"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 357
-    label "P_357"
-    age "17"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 358
-    label "P_358"
-    age "9"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 359
-    label "P_359"
-    age "54"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 360
-    label "P_360"
-    age "50"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 361
-    label "P_361"
-    age "44"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 362
-    label "P_362"
-    age "51"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 363
-    label "P_363"
-    age "14"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 364
-    label "P_364"
-    age "12"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 365
-    label "P_365"
-    age "9"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 366
-    label "P_366"
-    age "6"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 367
-    label "P_367"
-    age "54"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 368
-    label "P_368"
-    age "16"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 369
-    label "P_369"
-    age "15"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 370
-    label "P_370"
-    age "13"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 371
-    label "P_371"
-    age "13"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 372
-    label "P_372"
-    age "43"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 373
-    label "P_373"
-    age "32"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 374
-    label "P_374"
-    age "15"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 375
-    label "P_375"
-    age "63"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 376
-    label "P_376"
-    age "81"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 377
-    label "P_377"
-    age "57"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 378
-    label "P_378"
-    age "92"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 379
-    label "P_379"
-    age "82"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 380
-    label "P_380"
-    age "57"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 381
-    label "P_381"
-    age "36"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 382
-    label "P_382"
-    age "15"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 383
-    label "P_383"
-    age "13"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 384
-    label "P_384"
-    age "12"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 385
-    label "P_385"
-    age "10"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 386
-    label "P_386"
-    age "52"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 387
-    label "P_387"
-    age "47"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 388
-    label "P_388"
-    age "19"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 389
-    label "P_389"
-    age "18"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 390
-    label "P_390"
-    age "14"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 391
-    label "P_391"
-    age "13"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 392
-    label "P_392"
-    age "8"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 393
-    label "P_393"
-    age "73"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 394
-    label "P_394"
-    age "49"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 395
-    label "P_395"
-    age "16"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 396
-    label "P_396"
-    age "27"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 397
-    label "P_397"
-    age "66"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 398
-    label "P_398"
-    age "82"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 399
-    label "P_399"
-    age "64"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 400
-    label "P_400"
-    age "54"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 401
-    label "P_401"
-    age "46"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 402
-    label "P_402"
-    age "51"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 403
-    label "P_403"
-    age "11"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 404
-    label "P_404"
-    age "9"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 405
-    label "P_405"
-    age "10"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 406
-    label "P_406"
-    age "7"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 407
-    label "P_407"
-    age "38"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 408
-    label "P_408"
-    age "84"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 409
-    label "P_409"
-    age "33"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 410
-    label "P_410"
-    age "13"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 411
-    label "P_411"
-    age "13"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 412
-    label "P_412"
-    age "12"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 413
-    label "P_413"
-    age "10"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 414
-    label "P_414"
-    age "7"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 415
-    label "P_415"
-    age "68"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 416
-    label "P_416"
-    age "41"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 417
-    label "P_417"
-    age "41"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 418
-    label "P_418"
-    age "18"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 419
-    label "P_419"
-    age "16"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 420
-    label "P_420"
-    age "15"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 421
-    label "P_421"
-    age "14"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 422
-    label "P_422"
-    age "7"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 423
-    label "P_423"
-    age "44"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 424
-    label "P_424"
-    age "44"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 425
-    label "P_425"
-    age "10"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 426
-    label "P_426"
-    age "54"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 427
-    label "P_427"
-    age "61"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 428
-    label "P_428"
-    age "61"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 429
-    label "P_429"
-    age "28"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 430
-    label "P_430"
-    age "65"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 431
-    label "P_431"
-    age "77"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 432
-    label "P_432"
-    age "55"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 433
-    label "P_433"
-    age "73"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 434
-    label "P_434"
-    age "82"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 435
-    label "P_435"
-    age "83"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 436
-    label "P_436"
-    age "65"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 437
-    label "P_437"
-    age "66"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 438
-    label "P_438"
-    age "69"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 439
-    label "P_439"
-    age "41"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 440
-    label "P_440"
-    age "15"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 441
-    label "P_441"
-    age "12"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 442
-    label "P_442"
-    age "52"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 443
-    label "P_443"
-    age "21"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 444
-    label "P_444"
-    age "23"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 445
-    label "P_445"
-    age "63"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 446
-    label "P_446"
-    age "53"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 447
-    label "P_447"
-    age "50"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 448
-    label "P_448"
-    age "51"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 449
-    label "P_449"
-    age "18"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 450
-    label "P_450"
-    age "16"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 451
-    label "P_451"
-    age "13"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 452
-    label "P_452"
-    age "57"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 453
-    label "P_453"
-    age "69"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 454
-    label "P_454"
-    age "67"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 455
-    label "P_455"
-    age "55"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 456
-    label "P_456"
-    age "31"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 457
-    label "P_457"
-    age "82"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 458
-    label "P_458"
-    age "41"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 459
-    label "P_459"
-    age "39"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 460
-    label "P_460"
-    age "62"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 461
-    label "P_461"
-    age "7"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 462
-    label "P_462"
-    age "50"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 463
-    label "P_463"
-    age "15"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 464
-    label "P_464"
-    age "14"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 465
-    label "P_465"
-    age "38"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 466
-    label "P_466"
-    age "37"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 467
-    label "P_467"
-    age "10"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 468
-    label "P_468"
-    age "9"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 469
-    label "P_469"
-    age "8"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 470
-    label "P_470"
-    age "5"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 471
-    label "P_471"
-    age "56"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 472
-    label "P_472"
-    age "56"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 473
-    label "P_473"
-    age "46"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 474
-    label "P_474"
-    age "31"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 475
-    label "P_475"
-    age "11"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 476
-    label "P_476"
-    age "11"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 477
-    label "P_477"
-    age "9"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 478
-    label "P_478"
-    age "7"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 479
-    label "P_479"
-    age "5"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 480
-    label "P_480"
-    age "38"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 481
-    label "P_481"
-    age "37"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 482
-    label "P_482"
-    age "10"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 483
-    label "P_483"
-    age "9"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 484
-    label "P_484"
-    age "8"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 485
-    label "P_485"
-    age "5"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 486
-    label "P_486"
-    age "45"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 487
-    label "P_487"
-    age "39"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 488
-    label "P_488"
-    age "41"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 489
-    label "P_489"
-    age "11"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 490
-    label "P_490"
-    age "6"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 491
-    label "P_491"
-    age "31"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 492
-    label "P_492"
-    age "73"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 493
-    label "P_493"
-    age "62"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 494
-    label "P_494"
-    age "61"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 495
-    label "P_495"
-    age "60"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 496
-    label "P_496"
-    age "64"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 497
-    label "P_497"
-    age "78"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 498
-    label "P_498"
-    age "44"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 499
-    label "P_499"
-    age "39"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 500
-    label "P_500"
-    age "16"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 501
-    label "P_501"
-    age "15"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 502
-    label "P_502"
-    age "11"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 503
-    label "P_503"
-    age "8"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 504
-    label "P_504"
-    age "73"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 505
-    label "P_505"
-    age "66"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 506
-    label "P_506"
-    age "49"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 507
-    label "P_507"
-    age "47"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 508
-    label "P_508"
-    age "11"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 509
-    label "P_509"
-    age "37"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 510
-    label "P_510"
-    age "38"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 511
-    label "P_511"
-    age "12"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 512
-    label "P_512"
-    age "10"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 513
-    label "P_513"
-    age "7"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 514
-    label "P_514"
-    age "5"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 515
-    label "P_515"
-    age "50"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 516
-    label "P_516"
-    age "62"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 517
-    label "P_517"
-    age "24"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 518
-    label "P_518"
-    age "24"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 519
-    label "P_519"
-    age "21"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 520
-    label "P_520"
-    age "7"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 521
-    label "P_521"
-    age "27"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 522
-    label "P_522"
-    age "83"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 523
-    label "P_523"
-    age "40"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 524
-    label "P_524"
-    age "40"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 525
-    label "P_525"
-    age "14"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 526
-    label "P_526"
-    age "12"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 527
-    label "P_527"
-    age "10"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 528
-    label "P_528"
-    age "45"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 529
-    label "P_529"
-    age "46"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 530
-    label "P_530"
-    age "43"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 531
-    label "P_531"
-    age "11"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 532
-    label "P_532"
-    age "37"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 533
-    label "P_533"
-    age "15"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 534
-    label "P_534"
-    age "73"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 535
-    label "P_535"
-    age "59"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 536
-    label "P_536"
-    age "67"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 537
-    label "P_537"
-    age "65"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 538
-    label "P_538"
-    age "69"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 539
-    label "P_539"
-    age "47"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 540
-    label "P_540"
-    age "44"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 541
-    label "P_541"
-    age "22"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 542
-    label "P_542"
-    age "16"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 543
-    label "P_543"
-    age "13"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 544
-    label "P_544"
-    age "15"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 545
-    label "P_545"
-    age "8"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 546
-    label "P_546"
-    age "73"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 547
-    label "P_547"
-    age "63"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 548
-    label "P_548"
-    age "53"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 549
-    label "P_549"
-    age "56"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 550
-    label "P_550"
-    age "24"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 551
-    label "P_551"
-    age "22"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 552
-    label "P_552"
-    age "21"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 553
-    label "P_553"
-    age "17"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 554
-    label "P_554"
-    age "68"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 555
-    label "P_555"
-    age "67"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 556
-    label "P_556"
-    age "33"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 557
-    label "P_557"
-    age "37"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 558
-    label "P_558"
-    age "13"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 559
-    label "P_559"
-    age "45"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 560
-    label "P_560"
-    age "42"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 561
-    label "P_561"
-    age "19"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 562
-    label "P_562"
-    age "15"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 563
-    label "P_563"
-    age "15"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 564
-    label "P_564"
-    age "12"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 565
-    label "P_565"
-    age "10"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 566
-    label "P_566"
-    age "38"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 567
-    label "P_567"
-    age "12"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 568
-    label "P_568"
-    age "36"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 569
-    label "P_569"
-    age "29"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 570
-    label "P_570"
-    age "10"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 571
-    label "P_571"
-    age "58"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 572
-    label "P_572"
-    age "50"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 573
-    label "P_573"
-    age "63"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 574
-    label "P_574"
-    age "60"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 575
-    label "P_575"
-    age "27"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 576
-    label "P_576"
-    age "56"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 577
-    label "P_577"
-    age "54"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 578
-    label "P_578"
-    age "58"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 579
-    label "P_579"
-    age "55"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 580
-    label "P_580"
-    age "22"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 581
-    label "P_581"
-    age "61"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 582
-    label "P_582"
-    age "47"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 583
-    label "P_583"
-    age "46"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 584
-    label "P_584"
-    age "20"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 585
-    label "P_585"
-    age "17"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 586
-    label "P_586"
-    age "14"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 587
-    label "P_587"
-    age "12"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 588
-    label "P_588"
-    age "7"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 589
-    label "P_589"
-    age "92"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 590
-    label "P_590"
-    age "56"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 591
-    label "P_591"
-    age "85"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 592
-    label "P_592"
-    age "64"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 593
-    label "P_593"
-    age "69"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 594
-    label "P_594"
-    age "73"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 595
-    label "P_595"
-    age "57"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 596
-    label "P_596"
-    age "52"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 597
-    label "P_597"
-    age "52"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 598
-    label "P_598"
-    age "18"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 599
-    label "P_599"
-    age "44"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 600
-    label "P_600"
-    age "46"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 601
-    label "P_601"
-    age "16"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 602
-    label "P_602"
-    age "55"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 603
-    label "P_603"
-    age "63"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 604
-    label "P_604"
-    age "63"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 605
-    label "P_605"
-    age "54"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 606
-    label "P_606"
-    age "73"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 607
-    label "P_607"
-    age "35"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 608
-    label "P_608"
-    age "42"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 609
-    label "P_609"
-    age "11"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 610
-    label "P_610"
-    age "8"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 611
-    label "P_611"
-    age "72"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 612
-    label "P_612"
-    age "46"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 613
-    label "P_613"
-    age "65"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 614
-    label "P_614"
-    age "74"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 615
-    label "P_615"
-    age "33"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 616
-    label "P_616"
-    age "36"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 617
-    label "P_617"
-    age "60"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 618
-    label "P_618"
-    age "13"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 619
-    label "P_619"
-    age "66"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 620
-    label "P_620"
-    age "70"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 621
-    label "P_621"
-    age "74"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 622
-    label "P_622"
-    age "61"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 623
-    label "P_623"
-    age "60"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 624
-    label "P_624"
-    age "55"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 625
-    label "P_625"
-    age "26"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 626
-    label "P_626"
-    age "24"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 627
-    label "P_627"
-    age "49"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 628
-    label "P_628"
-    age "37"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 629
-    label "P_629"
-    age "37"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 630
-    label "P_630"
-    age "18"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 631
-    label "P_631"
-    age "17"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 632
-    label "P_632"
-    age "15"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 633
-    label "P_633"
-    age "64"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 634
-    label "P_634"
-    age "61"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 635
-    label "P_635"
-    age "60"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 636
-    label "P_636"
-    age "45"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 637
-    label "P_637"
-    age "47"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 638
-    label "P_638"
-    age "16"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 639
-    label "P_639"
-    age "14"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 640
-    label "P_640"
-    age "11"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 641
-    label "P_641"
-    age "51"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 642
-    label "P_642"
-    age "49"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 643
-    label "P_643"
-    age "17"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 644
-    label "P_644"
-    age "15"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 645
-    label "P_645"
-    age "8"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 646
-    label "P_646"
-    age "66"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 647
-    label "P_647"
-    age "37"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 648
-    label "P_648"
-    age "25"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 649
-    label "P_649"
-    age "43"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 650
-    label "P_650"
-    age "45"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 651
-    label "P_651"
-    age "42"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 652
-    label "P_652"
-    age "19"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 653
-    label "P_653"
-    age "15"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 654
-    label "P_654"
-    age "15"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 655
-    label "P_655"
-    age "12"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 656
-    label "P_656"
-    age "10"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 657
-    label "P_657"
-    age "46"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 658
-    label "P_658"
-    age "47"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 659
-    label "P_659"
-    age "18"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 660
-    label "P_660"
-    age "15"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 661
-    label "P_661"
-    age "36"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 662
-    label "P_662"
-    age "67"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 663
-    label "P_663"
-    age "42"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 664
-    label "P_664"
-    age "44"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 665
-    label "P_665"
-    age "12"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 666
-    label "P_666"
-    age "8"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 667
-    label "P_667"
-    age "72"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 668
-    label "P_668"
-    age "63"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 669
-    label "P_669"
-    age "44"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 670
-    label "P_670"
-    age "43"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 671
-    label "P_671"
-    age "15"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 672
-    label "P_672"
-    age "14"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 673
-    label "P_673"
-    age "12"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 674
-    label "P_674"
-    age "47"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 675
-    label "P_675"
-    age "37"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 676
-    label "P_676"
-    age "36"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 677
-    label "P_677"
-    age "9"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 678
-    label "P_678"
-    age "8"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 679
-    label "P_679"
-    age "6"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 680
-    label "P_680"
-    age "60"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 681
-    label "P_681"
-    age "63"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 682
-    label "P_682"
-    age "36"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 683
-    label "P_683"
-    age "35"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 684
-    label "P_684"
-    age "40"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 685
-    label "P_685"
-    age "31"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 686
-    label "P_686"
-    age "5"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 687
-    label "P_687"
-    age "71"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 688
-    label "P_688"
-    age "50"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 689
-    label "P_689"
-    age "59"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 690
-    label "P_690"
-    age "47"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 691
-    label "P_691"
-    age "47"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 692
-    label "P_692"
-    age "19"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 693
-    label "P_693"
-    age "17"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 694
-    label "P_694"
-    age "13"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 695
-    label "P_695"
-    age "69"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 696
-    label "P_696"
-    age "70"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 697
-    label "P_697"
-    age "44"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 698
-    label "P_698"
-    age "47"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 699
-    label "P_699"
-    age "16"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 700
-    label "P_700"
-    age "14"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 701
-    label "P_701"
-    age "10"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 702
-    label "P_702"
-    age "57"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 703
-    label "P_703"
-    age "65"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 704
-    label "P_704"
-    age "31"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 705
-    label "P_705"
-    age "60"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 706
-    label "P_706"
-    age "55"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 707
-    label "P_707"
-    age "78"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 708
-    label "P_708"
-    age "71"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 709
-    label "P_709"
-    age "69"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 710
-    label "P_710"
-    age "77"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 711
-    label "P_711"
-    age "44"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 712
-    label "P_712"
-    age "75"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 713
-    label "P_713"
-    age "68"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 714
-    label "P_714"
-    age "50"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 715
-    label "P_715"
-    age "51"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 716
-    label "P_716"
-    age "16"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 717
-    label "P_717"
-    age "13"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 718
-    label "P_718"
-    age "42"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 719
-    label "P_719"
-    age "40"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 720
-    label "P_720"
-    age "11"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 721
-    label "P_721"
-    age "9"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 722
-    label "P_722"
-    age "8"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 723
-    label "P_723"
-    age "6"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 724
-    label "P_724"
-    age "53"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 725
-    label "P_725"
-    age "41"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 726
-    label "P_726"
-    age "10"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 727
-    label "P_727"
-    age "67"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 728
-    label "P_728"
-    age "45"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 729
-    label "P_729"
-    age "42"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 730
-    label "P_730"
-    age "19"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 731
-    label "P_731"
-    age "15"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 732
-    label "P_732"
-    age "15"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 733
-    label "P_733"
-    age "12"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 734
-    label "P_734"
-    age "10"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 735
-    label "P_735"
-    age "69"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 736
-    label "P_736"
-    age "44"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 737
-    label "P_737"
-    age "44"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 738
-    label "P_738"
-    age "13"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 739
-    label "P_739"
-    age "11"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 740
-    label "P_740"
-    age "8"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 741
-    label "P_741"
-    age "6"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 742
-    label "P_742"
-    age "57"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 743
-    label "P_743"
-    age "36"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 744
-    label "P_744"
-    age "34"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 745
-    label "P_745"
-    age "7"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 746
-    label "P_746"
-    age "64"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 747
-    label "P_747"
-    age "52"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 748
-    label "P_748"
-    age "25"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 749
-    label "P_749"
-    age "20"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 750
-    label "P_750"
-    age "86"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 751
-    label "P_751"
-    age "44"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 752
-    label "P_752"
-    age "42"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 753
-    label "P_753"
-    age "17"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 754
-    label "P_754"
-    age "69"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 755
-    label "P_755"
-    age "60"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 756
-    label "P_756"
-    age "70"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 757
-    label "P_757"
-    age "78"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 758
-    label "P_758"
-    age "59"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 759
-    label "P_759"
-    age "57"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 760
-    label "P_760"
-    age "20"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 761
-    label "P_761"
-    age "35"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 762
-    label "P_762"
-    age "6"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 763
-    label "P_763"
-    age "58"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 764
-    label "P_764"
-    age "51"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 765
-    label "P_765"
-    age "22"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 766
-    label "P_766"
-    age "20"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 767
-    label "P_767"
-    age "12"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 768
-    label "P_768"
-    age "11"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 769
-    label "P_769"
-    age "11"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 770
-    label "P_770"
-    age "68"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 771
-    label "P_771"
-    age "69"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 772
-    label "P_772"
-    age "50"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 773
-    label "P_773"
-    age "62"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 774
-    label "P_774"
-    age "24"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 775
-    label "P_775"
-    age "24"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 776
-    label "P_776"
-    age "21"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 777
-    label "P_777"
-    age "7"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 778
-    label "P_778"
-    age "82"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 779
-    label "P_779"
-    age "47"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 780
-    label "P_780"
-    age "47"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 781
-    label "P_781"
-    age "13"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 782
-    label "P_782"
-    age "9"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 783
-    label "P_783"
-    age "40"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 784
-    label "P_784"
-    age "53"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 785
-    label "P_785"
-    age "15"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 786
-    label "P_786"
-    age "13"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 787
-    label "P_787"
-    age "10"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 788
-    label "P_788"
-    age "7"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 789
-    label "P_789"
-    age "64"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 790
-    label "P_790"
-    age "80"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 791
-    label "P_791"
-    age "48"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 792
-    label "P_792"
-    age "46"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 793
-    label "P_793"
-    age "16"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 794
-    label "P_794"
-    age "14"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 795
-    label "P_795"
-    age "56"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 796
-    label "P_796"
-    age "63"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 797
-    label "P_797"
-    age "63"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 798
-    label "P_798"
-    age "66"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 799
-    label "P_799"
-    age "52"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 800
-    label "P_800"
-    age "52"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 801
-    label "P_801"
-    age "15"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 802
-    label "P_802"
-    age "15"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 803
-    label "P_803"
-    age "12"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 804
-    label "P_804"
-    age "10"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 805
-    label "P_805"
-    age "38"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 806
-    label "P_806"
-    age "63"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 807
-    label "P_807"
-    age "66"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 808
-    label "P_808"
-    age "62"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 809
-    label "P_809"
-    age "92"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 810
-    label "P_810"
-    age "33"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 811
-    label "P_811"
-    age "35"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 812
-    label "P_812"
-    age "9"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 813
-    label "P_813"
-    age "7"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 814
-    label "P_814"
-    age "19"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 815
-    label "P_815"
-    age "40"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 816
-    label "P_816"
-    age "43"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 817
-    label "P_817"
-    age "15"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 818
-    label "P_818"
-    age "9"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 819
-    label "P_819"
-    age "8"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 820
-    label "P_820"
-    age "31"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 821
-    label "P_821"
-    age "73"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 822
-    label "P_822"
-    age "41"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 823
-    label "P_823"
-    age "52"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 824
-    label "P_824"
-    age "14"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 825
-    label "P_825"
-    age "11"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 826
-    label "P_826"
-    age "57"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 827
-    label "P_827"
-    age "58"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 828
-    label "P_828"
-    age "24"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 829
-    label "P_829"
-    age "29"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 830
-    label "P_830"
-    age "78"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 831
-    label "P_831"
-    age "81"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 832
-    label "P_832"
-    age "27"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 833
-    label "P_833"
-    age "29"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 834
-    label "P_834"
-    age "49"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 835
-    label "P_835"
-    age "36"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 836
-    label "P_836"
-    age "39"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 837
-    label "P_837"
-    age "50"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 838
-    label "P_838"
-    age "44"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 839
-    label "P_839"
-    age "15"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 840
-    label "P_840"
-    age "63"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 841
-    label "P_841"
-    age "84"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 842
-    label "P_842"
-    age "56"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 843
-    label "P_843"
-    age "64"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 844
-    label "P_844"
-    age "32"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 845
-    label "P_845"
-    age "42"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 846
-    label "P_846"
-    age "8"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 847
-    label "P_847"
-    age "62"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 848
-    label "P_848"
-    age "46"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 849
-    label "P_849"
-    age "35"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 850
-    label "P_850"
-    age "37"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 851
-    label "P_851"
-    age "8"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 852
-    label "P_852"
-    age "58"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 853
-    label "P_853"
-    age "79"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 854
-    label "P_854"
-    age "38"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 855
-    label "P_855"
-    age "36"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 856
-    label "P_856"
-    age "13"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 857
-    label "P_857"
-    age "5"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 858
-    label "P_858"
-    age "58"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 859
-    label "P_859"
-    age "67"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 860
-    label "P_860"
-    age "36"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 861
-    label "P_861"
-    age "39"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 862
-    label "P_862"
-    age "78"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 863
-    label "P_863"
-    age "58"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 864
-    label "P_864"
-    age "57"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 865
-    label "P_865"
-    age "59"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 866
-    label "P_866"
-    age "63"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 867
-    label "P_867"
-    age "73"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 868
-    label "P_868"
-    age "45"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 869
-    label "P_869"
-    age "23"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 870
-    label "P_870"
-    age "46"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 871
-    label "P_871"
-    age "36"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 872
-    label "P_872"
-    age "19"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 873
-    label "P_873"
-    age "15"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 874
-    label "P_874"
-    age "13"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 875
-    label "P_875"
-    age "11"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 876
-    label "P_876"
-    age "66"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 877
-    label "P_877"
-    age "68"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 878
-    label "P_878"
-    age "51"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 879
-    label "P_879"
-    age "43"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 880
-    label "P_880"
-    age "15"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 881
-    label "P_881"
-    age "13"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 882
-    label "P_882"
-    age "12"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 883
-    label "P_883"
-    age "11"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 884
-    label "P_884"
-    age "38"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 885
-    label "P_885"
-    age "55"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 886
-    label "P_886"
-    age "42"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 887
-    label "P_887"
-    age "41"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 888
-    label "P_888"
-    age "12"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 889
-    label "P_889"
-    age "12"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 890
-    label "P_890"
-    age "10"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 891
-    label "P_891"
-    age "10"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 892
-    label "P_892"
-    age "79"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 893
-    label "P_893"
-    age "71"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 894
-    label "P_894"
-    age "50"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 895
-    label "P_895"
-    age "51"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 896
-    label "P_896"
-    age "14"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 897
-    label "P_897"
-    age "12"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 898
-    label "P_898"
-    age "11"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 899
-    label "P_899"
-    age "10"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 900
-    label "P_900"
-    age "64"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 901
-    label "P_901"
-    age "64"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 902
-    label "P_902"
-    age "27"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 903
-    label "P_903"
-    age "29"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 904
-    label "P_904"
-    age "59"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 905
-    label "P_905"
-    age "30"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 906
-    label "P_906"
-    age "33"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 907
-    label "P_907"
-    age "69"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 908
-    label "P_908"
-    age "62"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 909
-    label "P_909"
-    age "50"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 910
-    label "P_910"
-    age "72"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 911
-    label "P_911"
-    age "49"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 912
-    label "P_912"
-    age "49"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 913
-    label "P_913"
-    age "14"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 914
-    label "P_914"
-    age "39"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 915
-    label "P_915"
-    age "38"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 916
-    label "P_916"
-    age "9"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 917
-    label "P_917"
-    age "59"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 918
-    label "P_918"
-    age "62"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 919
-    label "P_919"
-    age "23"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 920
-    label "P_920"
-    age "23"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 921
-    label "P_921"
-    age "76"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 922
-    label "P_922"
-    age "49"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 923
-    label "P_923"
-    age "48"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 924
-    label "P_924"
-    age "22"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 925
-    label "P_925"
-    age "18"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 926
-    label "P_926"
-    age "16"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 927
-    label "P_927"
-    age "15"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 928
-    label "P_928"
-    age "63"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 929
-    label "P_929"
-    age "69"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 930
-    label "P_930"
-    age "40"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 931
-    label "P_931"
-    age "39"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 932
-    label "P_932"
-    age "17"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 933
-    label "P_933"
-    age "12"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 934
-    label "P_934"
-    age "19"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 935
-    label "P_935"
-    age "51"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 936
-    label "P_936"
-    age "50"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 937
-    label "P_937"
-    age "24"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 938
-    label "P_938"
-    age "50"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 939
-    label "P_939"
-    age "45"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 940
-    label "P_940"
-    age "6"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 941
-    label "P_941"
-    age "8"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 942
-    label "P_942"
-    age "19"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 943
-    label "P_943"
-    age "45"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 944
-    label "P_944"
-    age "44"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 945
-    label "P_945"
-    age "66"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 946
-    label "P_946"
-    age "15"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 947
-    label "P_947"
-    age "13"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 948
-    label "P_948"
-    age "11"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 949
-    label "P_949"
-    age "42"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 950
-    label "P_950"
-    age "41"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 951
-    label "P_951"
-    age "11"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 952
-    label "P_952"
-    age "9"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 953
-    label "P_953"
-    age "6"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 954
-    label "P_954"
-    age "6"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 955
-    label "P_955"
-    age "64"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 956
-    label "P_956"
-    age "52"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 957
-    label "P_957"
-    age "64"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 958
-    label "P_958"
-    age "16"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 959
-    label "P_959"
-    age "59"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 960
-    label "P_960"
-    age "45"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 961
-    label "P_961"
-    age "44"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 962
-    label "P_962"
-    age "9"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 963
-    label "P_963"
-    age "53"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 964
-    label "P_964"
-    age "57"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 965
-    label "P_965"
-    age "24"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 966
-    label "P_966"
-    age "21"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 967
-    label "P_967"
-    age "32"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 968
-    label "P_968"
-    age "73"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 969
-    label "P_969"
-    age "67"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 970
-    label "P_970"
-    age "49"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 971
-    label "P_971"
-    age "61"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 972
-    label "P_972"
-    age "68"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 973
-    label "P_973"
-    age "60"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 974
-    label "P_974"
-    age "75"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 975
-    label "P_975"
-    age "31"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 976
-    label "P_976"
-    age "84"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 977
-    label "P_977"
-    age "49"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 978
-    label "P_978"
-    age "49"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 979
-    label "P_979"
-    age "20"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 980
-    label "P_980"
-    age "15"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 981
-    label "P_981"
-    age "70"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 982
-    label "P_982"
-    age "69"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 983
-    label "P_983"
-    age "36"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 984
-    label "P_984"
-    age "30"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 985
-    label "P_985"
-    age "42"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 986
-    label "P_986"
-    age "41"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 987
-    label "P_987"
-    age "11"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 988
-    label "P_988"
-    age "9"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 989
-    label "P_989"
-    age "6"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 990
-    label "P_990"
-    age "6"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 991
-    label "P_991"
-    age "80"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 992
-    label "P_992"
-    age "79"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 993
-    label "P_993"
-    age "70"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 994
-    label "P_994"
-    age "68"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 995
-    label "P_995"
-    age "72"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 996
-    label "P_996"
-    age "53"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 997
-    label "P_997"
-    age "52"
-    income "0"
-    sex "1"
-    hhsize "NA"
-  ]
-  node [
-    id 998
-    label "P_998"
-    age "52"
-    income "0"
-    sex "2"
-    hhsize "NA"
-  ]
-  node [
-    id 999
-    label "P_999"
-    age "14"
-    income "0"
-    sex "2"
-    hhsize "NA"
+  edge [
+    source 0
+    target 1
+    key 0
+    starttime 520
+    endtime 555
+    acttype "W"
+  ]
+  edge [
+    source 0
+    target 2
+    key 0
+    starttime 1430
+    endtime 1600
+    acttype "O"
+  ]
+  edge [
+    source 0
+    target 3
+    key 0
+    starttime 1603
+    endtime 1615
+    acttype "H"
+  ]
+  edge [
+    source 1
+    target 8
+    key 0
+    starttime 645
+    endtime 715
+    acttype "C"
+  ]
+  edge [
+    source 1
+    target 18
+    key 0
+    starttime 1100
+    endtime 1102
+    acttype "O"
+  ]
+  edge [
+    source 1
+    target 37
+    key 0
+    starttime 1530
+    endtime 1600
+    acttype "O"
+  ]
+  edge [
+    source 1
+    target 39
+    key 0
+    starttime 1500
+    endtime 1600
+    acttype "O"
+  ]
+  edge [
+    source 1
+    target 42
+    key 0
+    starttime 1310
+    endtime 1330
+    acttype "S"
+  ]
+  edge [
+    source 1
+    target 49
+    key 0
+    starttime 1210
+    endtime 1225
+    acttype "S"
+  ]
+  edge [
+    source 1
+    target 50
+    key 0
+    starttime 1340
+    endtime 1345
+    acttype "S"
+  ]
+  edge [
+    source 1
+    target 63
+    key 0
+    starttime 1658
+    endtime 1706
+    acttype "H"
+  ]
+  edge [
+    source 1
+    target 73
+    key 0
+    starttime 1805
+    endtime 1830
+    acttype "S"
+  ]
+  edge [
+    source 1
+    target 76
+    key 0
+    starttime 830
+    endtime 838
+    acttype "W"
+  ]
+  edge [
+    source 1
+    target 79
+    key 0
+    starttime 1058
+    endtime 1103
+    acttype "W"
+  ]
+  edge [
+    source 1
+    target 84
+    key 0
+    starttime 1720
+    endtime 1725
+    acttype "H"
+  ]
+  edge [
+    source 1
+    target 86
+    key 0
+    starttime 945
+    endtime 1000
+    acttype "W"
+  ]
+  edge [
+    source 1
+    target 90
+    key 0
+    starttime 1945
+    endtime 2045
+    acttype "O"
+  ]
+  edge [
+    source 1
+    target 96
+    key 0
+    starttime 1715
+    endtime 1730
+    acttype "H"
+  ]
+  edge [
+    source 1
+    target 105
+    key 0
+    starttime 1820
+    endtime 1845
+    acttype "H"
+  ]
+  edge [
+    source 1
+    target 112
+    key 0
+    starttime 740
+    endtime 746
+    acttype "C"
+  ]
+  edge [
+    source 1
+    target 116
+    key 0
+    starttime 1432
+    endtime 1448
+    acttype "S"
+  ]
+  edge [
+    source 1
+    target 121
+    key 0
+    starttime 1800
+    endtime 1830
+    acttype "W"
+  ]
+  edge [
+    source 2
+    target 35
+    key 0
+    starttime 1330
+    endtime 1340
+    acttype "H"
+  ]
+  edge [
+    source 2
+    target 37
+    key 0
+    starttime 1630
+    endtime 1715
+    acttype "O"
+  ]
+  edge [
+    source 2
+    target 47
+    key 0
+    starttime 1000
+    endtime 1020
+    acttype "S"
+  ]
+  edge [
+    source 2
+    target 56
+    key 0
+    starttime 2100
+    endtime 2115
+    acttype "H"
+  ]
+  edge [
+    source 2
+    target 62
+    key 0
+    starttime 640
+    endtime 651
+    acttype "O"
+  ]
+  edge [
+    source 2
+    target 71
+    key 0
+    starttime 1430
+    endtime 1450
+    acttype "O"
+  ]
+  edge [
+    source 2
+    target 83
+    key 0
+    starttime 2333
+    endtime 2350
+    acttype "H"
+  ]
+  edge [
+    source 2
+    target 88
+    key 0
+    starttime 700
+    endtime 720
+    acttype "H"
+  ]
+  edge [
+    source 2
+    target 95
+    key 0
+    starttime 1900
+    endtime 1907
+    acttype "O"
+  ]
+  edge [
+    source 2
+    target 96
+    key 0
+    starttime 1855
+    endtime 1900
+    acttype "O"
+  ]
+  edge [
+    source 2
+    target 116
+    key 0
+    starttime 1400
+    endtime 1406
+    acttype "O"
+  ]
+  edge [
+    source 2
+    target 116
+    key 1
+    starttime 1412
+    endtime 1416
+    acttype "S"
+  ]
+  edge [
+    source 3
+    target 33
+    key 0
+    starttime 1630
+    endtime 1655
+    acttype "S"
+  ]
+  edge [
+    source 3
+    target 36
+    key 0
+    starttime 1630
+    endtime 1715
+    acttype "O"
+  ]
+  edge [
+    source 3
+    target 39
+    key 0
+    starttime 1630
+    endtime 1715
+    acttype "O"
+  ]
+  edge [
+    source 3
+    target 44
+    key 0
+    starttime 1340
+    endtime 1353
+    acttype "O"
+  ]
+  edge [
+    source 3
+    target 47
+    key 0
+    starttime 1500
+    endtime 1545
+    acttype "H"
+  ]
+  edge [
+    source 3
+    target 48
+    key 0
+    starttime 1500
+    endtime 1545
+    acttype "H"
+  ]
+  edge [
+    source 3
+    target 48
+    key 1
+    starttime 1615
+    endtime 1700
+    acttype "O"
+  ]
+  edge [
+    source 3
+    target 55
+    key 0
+    starttime 1830
+    endtime 1845
+    acttype "O"
+  ]
+  edge [
+    source 3
+    target 68
+    key 0
+    starttime 1730
+    endtime 1750
+    acttype "O"
+  ]
+  edge [
+    source 3
+    target 82
+    key 0
+    starttime 1345
+    endtime 1350
+    acttype "S"
+  ]
+  edge [
+    source 3
+    target 93
+    key 0
+    starttime 938
+    endtime 945
+    acttype "O"
+  ]
+  edge [
+    source 3
+    target 93
+    key 1
+    starttime 2007
+    endtime 2014
+    acttype "H"
+  ]
+  edge [
+    source 3
+    target 94
+    key 0
+    starttime 1420
+    endtime 1425
+    acttype "H"
+  ]
+  edge [
+    source 3
+    target 112
+    key 0
+    starttime 1840
+    endtime 1849
+    acttype "H"
+  ]
+  edge [
+    source 3
+    target 117
+    key 0
+    starttime 1834
+    endtime 1855
+    acttype "H"
+  ]
+  edge [
+    source 3
+    target 118
+    key 0
+    starttime 645
+    endtime 720
+    acttype "W"
+  ]
+  edge [
+    source 3
+    target 118
+    key 1
+    starttime 1630
+    endtime 1700
+    acttype "H"
+  ]
+  edge [
+    source 4
+    target 5
+    key 0
+    starttime 615
+    endtime 620
+    acttype "O"
+  ]
+  edge [
+    source 4
+    target 6
+    key 0
+    starttime 621
+    endtime 715
+    acttype "W"
+  ]
+  edge [
+    source 4
+    target 6
+    key 1
+    starttime 1945
+    endtime 2000
+    acttype "H"
+  ]
+  edge [
+    source 4
+    target 7
+    key 0
+    starttime 1800
+    endtime 1920
+    acttype "S"
+  ]
+  edge [
+    source 5
+    target 41
+    key 0
+    starttime 1332
+    endtime 1346
+    acttype "O"
+  ]
+  edge [
+    source 5
+    target 45
+    key 0
+    starttime 830
+    endtime 845
+    acttype "O"
+  ]
+  edge [
+    source 5
+    target 50
+    key 0
+    starttime 1310
+    endtime 1315
+    acttype "S"
+  ]
+  edge [
+    source 5
+    target 51
+    key 0
+    starttime 1107
+    endtime 1123
+    acttype "W"
+  ]
+  edge [
+    source 5
+    target 55
+    key 0
+    starttime 1715
+    endtime 1730
+    acttype "H"
+  ]
+  edge [
+    source 5
+    target 65
+    key 0
+    starttime 1608
+    endtime 1610
+    acttype "S"
+  ]
+  edge [
+    source 5
+    target 70
+    key 0
+    starttime 945
+    endtime 1000
+    acttype "W"
+  ]
+  edge [
+    source 5
+    target 95
+    key 0
+    starttime 2000
+    endtime 2014
+    acttype "H"
+  ]
+  edge [
+    source 5
+    target 104
+    key 0
+    starttime 906
+    endtime 935
+    acttype "H"
+  ]
+  edge [
+    source 5
+    target 104
+    key 1
+    starttime 1923
+    endtime 1947
+    acttype "H"
+  ]
+  edge [
+    source 5
+    target 107
+    key 0
+    starttime 808
+    endtime 817
+    acttype "C"
+  ]
+  edge [
+    source 5
+    target 107
+    key 1
+    starttime 1420
+    endtime 1518
+    acttype "H"
+  ]
+  edge [
+    source 5
+    target 111
+    key 0
+    starttime 845
+    endtime 936
+    acttype "H"
+  ]
+  edge [
+    source 5
+    target 111
+    key 1
+    starttime 1236
+    endtime 1237
+    acttype "O"
+  ]
+  edge [
+    source 5
+    target 113
+    key 0
+    starttime 730
+    endtime 740
+    acttype "C"
+  ]
+  edge [
+    source 5
+    target 116
+    key 0
+    starttime 1624
+    endtime 1630
+    acttype "H"
+  ]
+  edge [
+    source 5
+    target 119
+    key 0
+    starttime 1730
+    endtime 1800
+    acttype "H"
+  ]
+  edge [
+    source 6
+    target 36
+    key 0
+    starttime 1500
+    endtime 1600
+    acttype "O"
+  ]
+  edge [
+    source 6
+    target 37
+    key 0
+    starttime 900
+    endtime 905
+    acttype "O"
+  ]
+  edge [
+    source 6
+    target 37
+    key 1
+    starttime 940
+    endtime 942
+    acttype "O"
+  ]
+  edge [
+    source 6
+    target 61
+    key 0
+    starttime 710
+    endtime 805
+    acttype "W"
+  ]
+  edge [
+    source 6
+    target 68
+    key 0
+    starttime 1945
+    endtime 2000
+    acttype "H"
+  ]
+  edge [
+    source 6
+    target 87
+    key 0
+    starttime 1300
+    endtime 1400
+    acttype "W"
+  ]
+  edge [
+    source 6
+    target 97
+    key 0
+    starttime 1445
+    endtime 1500
+    acttype "O"
+  ]
+  edge [
+    source 6
+    target 98
+    key 0
+    starttime 1600
+    endtime 1645
+    acttype "H"
+  ]
+  edge [
+    source 7
+    target 8
+    key 0
+    starttime 1520
+    endtime 1540
+    acttype "O"
+  ]
+  edge [
+    source 7
+    target 18
+    key 0
+    starttime 1206
+    endtime 1208
+    acttype "H"
+  ]
+  edge [
+    source 7
+    target 18
+    key 1
+    starttime 1235
+    endtime 1239
+    acttype "H"
+  ]
+  edge [
+    source 7
+    target 29
+    key 0
+    starttime 720
+    endtime 725
+    acttype "O"
+  ]
+  edge [
+    source 7
+    target 29
+    key 1
+    starttime 740
+    endtime 815
+    acttype "C"
+  ]
+  edge [
+    source 7
+    target 36
+    key 0
+    starttime 1230
+    endtime 1330
+    acttype "O"
+  ]
+  edge [
+    source 7
+    target 49
+    key 0
+    starttime 1340
+    endtime 1345
+    acttype "S"
+  ]
+  edge [
+    source 7
+    target 53
+    key 0
+    starttime 1300
+    endtime 1315
+    acttype "W"
+  ]
+  edge [
+    source 7
+    target 57
+    key 0
+    starttime 715
+    endtime 730
+    acttype "C"
+  ]
+  edge [
+    source 7
+    target 62
+    key 0
+    starttime 1515
+    endtime 1520
+    acttype "S"
+  ]
+  edge [
+    source 7
+    target 63
+    key 0
+    starttime 915
+    endtime 930
+    acttype "O"
+  ]
+  edge [
+    source 7
+    target 67
+    key 0
+    starttime 2200
+    endtime 2215
+    acttype "H"
+  ]
+  edge [
+    source 7
+    target 77
+    key 0
+    starttime 600
+    endtime 645
+    acttype "W"
+  ]
+  edge [
+    source 7
+    target 83
+    key 0
+    starttime 745
+    endtime 750
+    acttype "O"
+  ]
+  edge [
+    source 7
+    target 83
+    key 1
+    starttime 1030
+    endtime 1039
+    acttype "S"
+  ]
+  edge [
+    source 7
+    target 84
+    key 0
+    starttime 1616
+    endtime 1633
+    acttype "O"
+  ]
+  edge [
+    source 7
+    target 89
+    key 0
+    starttime 1535
+    endtime 1610
+    acttype "O"
+  ]
+  edge [
+    source 7
+    target 92
+    key 0
+    starttime 550
+    endtime 805
+    acttype "W"
+  ]
+  edge [
+    source 7
+    target 94
+    key 0
+    starttime 1635
+    endtime 1640
+    acttype "H"
+  ]
+  edge [
+    source 7
+    target 97
+    key 0
+    starttime 720
+    endtime 730
+    acttype "O"
+  ]
+  edge [
+    source 7
+    target 103
+    key 0
+    starttime 1615
+    endtime 1708
+    acttype "O"
+  ]
+  edge [
+    source 7
+    target 106
+    key 0
+    starttime 1501
+    endtime 1518
+    acttype "H"
+  ]
+  edge [
+    source 7
+    target 114
+    key 0
+    starttime 1535
+    endtime 1557
+    acttype "H"
+  ]
+  edge [
+    source 8
+    target 9
+    key 0
+    starttime 605
+    endtime 620
+    acttype "O"
+  ]
+  edge [
+    source 8
+    target 10
+    key 0
+    starttime 1600
+    endtime 1615
+    acttype "H"
+  ]
+  edge [
+    source 9
+    target 28
+    key 0
+    starttime 1645
+    endtime 1650
+    acttype "H"
+  ]
+  edge [
+    source 9
+    target 31
+    key 0
+    starttime 740
+    endtime 815
+    acttype "C"
+  ]
+  edge [
+    source 9
+    target 31
+    key 1
+    starttime 1600
+    endtime 1644
+    acttype "O"
+  ]
+  edge [
+    source 9
+    target 46
+    key 0
+    starttime 1515
+    endtime 1520
+    acttype "H"
+  ]
+  edge [
+    source 9
+    target 47
+    key 0
+    starttime 1145
+    endtime 1200
+    acttype "O"
+  ]
+  edge [
+    source 9
+    target 50
+    key 0
+    starttime 1400
+    endtime 1405
+    acttype "S"
+  ]
+  edge [
+    source 9
+    target 51
+    key 0
+    starttime 1500
+    endtime 1520
+    acttype "S"
+  ]
+  edge [
+    source 9
+    target 62
+    key 0
+    starttime 1544
+    endtime 1550
+    acttype "S"
+  ]
+  edge [
+    source 9
+    target 62
+    key 1
+    starttime 1658
+    endtime 1706
+    acttype "H"
+  ]
+  edge [
+    source 9
+    target 69
+    key 0
+    starttime 1750
+    endtime 1805
+    acttype "H"
+  ]
+  edge [
+    source 9
+    target 72
+    key 0
+    starttime 1430
+    endtime 1450
+    acttype "O"
+  ]
+  edge [
+    source 9
+    target 79
+    key 0
+    starttime 830
+    endtime 833
+    acttype "O"
+  ]
+  edge [
+    source 9
+    target 79
+    key 1
+    starttime 840
+    endtime 857
+    acttype "S"
+  ]
+  edge [
+    source 9
+    target 93
+    key 0
+    starttime 1120
+    endtime 1125
+    acttype "H"
+  ]
+  edge [
+    source 9
+    target 95
+    key 0
+    starttime 1420
+    endtime 1430
+    acttype "H"
+  ]
+  edge [
+    source 9
+    target 98
+    key 0
+    starttime 2000
+    endtime 2015
+    acttype "H"
+  ]
+  edge [
+    source 9
+    target 122
+    key 0
+    starttime 1300
+    endtime 1307
+    acttype "H"
+  ]
+  edge [
+    source 10
+    target 25
+    key 0
+    starttime 740
+    endtime 815
+    acttype "C"
+  ]
+  edge [
+    source 10
+    target 31
+    key 0
+    starttime 1645
+    endtime 1650
+    acttype "H"
+  ]
+  edge [
+    source 10
+    target 36
+    key 0
+    starttime 945
+    endtime 950
+    acttype "H"
+  ]
+  edge [
+    source 10
+    target 44
+    key 0
+    starttime 420
+    endtime 426
+    acttype "W"
+  ]
+  edge [
+    source 10
+    target 48
+    key 0
+    starttime 1000
+    endtime 1020
+    acttype "S"
+  ]
+  edge [
+    source 10
+    target 49
+    key 0
+    starttime 1300
+    endtime 1310
+    acttype "S"
+  ]
+  edge [
+    source 10
+    target 49
+    key 1
+    starttime 1435
+    endtime 1445
+    acttype "H"
+  ]
+  edge [
+    source 10
+    target 52
+    key 0
+    starttime 850
+    endtime 915
+    acttype "W"
+  ]
+  edge [
+    source 10
+    target 71
+    key 0
+    starttime 1820
+    endtime 1835
+    acttype "H"
+  ]
+  edge [
+    source 10
+    target 74
+    key 0
+    starttime 1945
+    endtime 2000
+    acttype "H"
+  ]
+  edge [
+    source 10
+    target 75
+    key 0
+    starttime 1130
+    endtime 1250
+    acttype "W"
+  ]
+  edge [
+    source 10
+    target 75
+    key 1
+    starttime 1955
+    endtime 2030
+    acttype "H"
+  ]
+  edge [
+    source 10
+    target 90
+    key 0
+    starttime 1615
+    endtime 1635
+    acttype "H"
+  ]
+  edge [
+    source 10
+    target 93
+    key 0
+    starttime 1420
+    endtime 1425
+    acttype "H"
+  ]
+  edge [
+    source 11
+    target 12
+    key 0
+    starttime 815
+    endtime 825
+    acttype "W"
+  ]
+  edge [
+    source 11
+    target 13
+    key 0
+    starttime 1600
+    endtime 1610
+    acttype "O"
+  ]
+  edge [
+    source 11
+    target 14
+    key 0
+    starttime 1611
+    endtime 1620
+    acttype "H"
+  ]
+  edge [
+    source 12
+    target 18
+    key 0
+    starttime 1154
+    endtime 1156
+    acttype "O"
+  ]
+  edge [
+    source 12
+    target 22
+    key 0
+    starttime 720
+    endtime 725
+    acttype "O"
+  ]
+  edge [
+    source 12
+    target 22
+    key 1
+    starttime 740
+    endtime 815
+    acttype "C"
+  ]
+  edge [
+    source 12
+    target 28
+    key 0
+    starttime 740
+    endtime 815
+    acttype "C"
+  ]
+  edge [
+    source 12
+    target 37
+    key 0
+    starttime 930
+    endtime 932
+    acttype "S"
+  ]
+  edge [
+    source 12
+    target 41
+    key 0
+    starttime 1932
+    endtime 1942
+    acttype "O"
+  ]
+  edge [
+    source 12
+    target 57
+    key 0
+    starttime 1520
+    endtime 1535
+    acttype "H"
+  ]
+  edge [
+    source 12
+    target 63
+    key 0
+    starttime 1510
+    endtime 1520
+    acttype "S"
+  ]
+  edge [
+    source 12
+    target 64
+    key 0
+    starttime 1544
+    endtime 1550
+    acttype "S"
+  ]
+  edge [
+    source 12
+    target 66
+    key 0
+    starttime 704
+    endtime 715
+    acttype "H"
+  ]
+  edge [
+    source 12
+    target 68
+    key 0
+    starttime 1900
+    endtime 1920
+    acttype "S"
+  ]
+  edge [
+    source 12
+    target 70
+    key 0
+    starttime 1715
+    endtime 1720
+    acttype "S"
+  ]
+  edge [
+    source 12
+    target 81
+    key 0
+    starttime 1025
+    endtime 1035
+    acttype "S"
+  ]
+  edge [
+    source 12
+    target 81
+    key 1
+    starttime 1140
+    endtime 1200
+    acttype "H"
+  ]
+  edge [
+    source 12
+    target 86
+    key 0
+    starttime 1700
+    endtime 1720
+    acttype "H"
+  ]
+  edge [
+    source 12
+    target 89
+    key 0
+    starttime 1645
+    endtime 1710
+    acttype "O"
+  ]
+  edge [
+    source 12
+    target 94
+    key 0
+    starttime 1615
+    endtime 1630
+    acttype "O"
+  ]
+  edge [
+    source 12
+    target 110
+    key 0
+    starttime 1538
+    endtime 1543
+    acttype "H"
+  ]
+  edge [
+    source 13
+    target 18
+    key 0
+    starttime 1645
+    endtime 1650
+    acttype "H"
+  ]
+  edge [
+    source 13
+    target 41
+    key 0
+    starttime 2105
+    endtime 2115
+    acttype "H"
+  ]
+  edge [
+    source 13
+    target 48
+    key 0
+    starttime 1300
+    endtime 1315
+    acttype "O"
+  ]
+  edge [
+    source 13
+    target 59
+    key 0
+    starttime 1900
+    endtime 2130
+    acttype "H"
+  ]
+  edge [
+    source 13
+    target 78
+    key 0
+    starttime 715
+    endtime 720
+    acttype "W"
+  ]
+  edge [
+    source 13
+    target 82
+    key 0
+    starttime 1412
+    endtime 1430
+    acttype "O"
+  ]
+  edge [
+    source 13
+    target 91
+    key 0
+    starttime 1800
+    endtime 1830
+    acttype "S"
+  ]
+  edge [
+    source 13
+    target 100
+    key 0
+    starttime 2000
+    endtime 2015
+    acttype "H"
+  ]
+  edge [
+    source 13
+    target 108
+    key 0
+    starttime 1420
+    endtime 1518
+    acttype "H"
+  ]
+  edge [
+    source 13
+    target 124
+    key 0
+    starttime 700
+    endtime 732
+    acttype "C"
+  ]
+  edge [
+    source 14
+    target 36
+    key 0
+    starttime 940
+    endtime 942
+    acttype "O"
+  ]
+  edge [
+    source 14
+    target 55
+    key 0
+    starttime 2100
+    endtime 2115
+    acttype "H"
+  ]
+  edge [
+    source 14
+    target 65
+    key 0
+    starttime 1658
+    endtime 1706
+    acttype "H"
+  ]
+  edge [
+    source 14
+    target 74
+    key 0
+    starttime 1805
+    endtime 1830
+    acttype "S"
+  ]
+  edge [
+    source 14
+    target 74
+    key 1
+    starttime 1900
+    endtime 1920
+    acttype "S"
+  ]
+  edge [
+    source 14
+    target 79
+    key 0
+    starttime 1137
+    endtime 1140
+    acttype "W"
+  ]
+  edge [
+    source 14
+    target 80
+    key 0
+    starttime 1200
+    endtime 1330
+    acttype "S"
+  ]
+  edge [
+    source 14
+    target 85
+    key 0
+    starttime 714
+    endtime 740
+    acttype "H"
+  ]
+  edge [
+    source 14
+    target 87
+    key 0
+    starttime 430
+    endtime 530
+    acttype "H"
+  ]
+  edge [
+    source 14
+    target 92
+    key 0
+    starttime 1710
+    endtime 1947
+    acttype "H"
+  ]
+  edge [
+    source 14
+    target 102
+    key 0
+    starttime 1630
+    endtime 1640
+    acttype "H"
+  ]
+  edge [
+    source 14
+    target 104
+    key 0
+    starttime 1639
+    endtime 1708
+    acttype "O"
+  ]
+  edge [
+    source 14
+    target 109
+    key 0
+    starttime 1501
+    endtime 1518
+    acttype "H"
+  ]
+  edge [
+    source 14
+    target 111
+    key 0
+    starttime 1405
+    endtime 1410
+    acttype "H"
+  ]
+  edge [
+    source 14
+    target 114
+    key 0
+    starttime 719
+    endtime 729
+    acttype "C"
+  ]
+  edge [
+    source 14
+    target 117
+    key 0
+    starttime 1735
+    endtime 1749
+    acttype "O"
+  ]
+  edge [
+    source 15
+    target 16
+    key 0
+    starttime 1640
+    endtime 1642
+    acttype "O"
+  ]
+  edge [
+    source 15
+    target 17
+    key 0
+    starttime 1645
+    endtime 1650
+    acttype "H"
+  ]
+  edge [
+    source 16
+    target 25
+    key 0
+    starttime 720
+    endtime 725
+    acttype "O"
+  ]
+  edge [
+    source 16
+    target 41
+    key 0
+    starttime 1351
+    endtime 1403
+    acttype "W"
+  ]
+  edge [
+    source 16
+    target 47
+    key 0
+    starttime 1300
+    endtime 1315
+    acttype "O"
+  ]
+  edge [
+    source 16
+    target 50
+    key 0
+    starttime 1215
+    endtime 1225
+    acttype "S"
+  ]
+  edge [
+    source 16
+    target 62
+    key 0
+    starttime 1608
+    endtime 1610
+    acttype "S"
+  ]
+  edge [
+    source 16
+    target 65
+    key 0
+    starttime 1544
+    endtime 1550
+    acttype "S"
+  ]
+  edge [
+    source 16
+    target 69
+    key 0
+    starttime 530
+    endtime 615
+    acttype "W"
+  ]
+  edge [
+    source 16
+    target 73
+    key 0
+    starttime 1945
+    endtime 2000
+    acttype "H"
+  ]
+  edge [
+    source 16
+    target 74
+    key 0
+    starttime 1730
+    endtime 1750
+    acttype "O"
+  ]
+  edge [
+    source 16
+    target 82
+    key 0
+    starttime 1145
+    endtime 1150
+    acttype "O"
+  ]
+  edge [
+    source 16
+    target 84
+    key 0
+    starttime 800
+    endtime 814
+    acttype "W"
+  ]
+  edge [
+    source 16
+    target 91
+    key 0
+    starttime 1835
+    endtime 1920
+    acttype "H"
+  ]
+  edge [
+    source 16
+    target 109
+    key 0
+    starttime 808
+    endtime 817
+    acttype "O"
+  ]
+  edge [
+    source 16
+    target 111
+    key 0
+    starttime 1245
+    endtime 1246
+    acttype "H"
+  ]
+  edge [
+    source 17
+    target 18
+    key 0
+    starttime 1230
+    endtime 1233
+    acttype "O"
+  ]
+  edge [
+    source 17
+    target 39
+    key 0
+    starttime 1900
+    endtime 1915
+    acttype "H"
+  ]
+  edge [
+    source 17
+    target 41
+    key 0
+    starttime 655
+    endtime 700
+    acttype "W"
+  ]
+  edge [
+    source 17
+    target 41
+    key 1
+    starttime 1756
+    endtime 1806
+    acttype "O"
+  ]
+  edge [
+    source 17
+    target 53
+    key 0
+    starttime 505
+    endtime 520
+    acttype "W"
+  ]
+  edge [
+    source 17
+    target 54
+    key 0
+    starttime 700
+    endtime 730
+    acttype "W"
+  ]
+  edge [
+    source 17
+    target 56
+    key 0
+    starttime 1715
+    endtime 1730
+    acttype "H"
+  ]
+  edge [
+    source 17
+    target 62
+    key 0
+    starttime 704
+    endtime 715
+    acttype "H"
+  ]
+  edge [
+    source 17
+    target 79
+    key 0
+    starttime 1741
+    endtime 1804
+    acttype "H"
+  ]
+  edge [
+    source 17
+    target 100
+    key 0
+    starttime 1850
+    endtime 1900
+    acttype "O"
+  ]
+  edge [
+    source 17
+    target 101
+    key 0
+    starttime 1520
+    endtime 1530
+    acttype "H"
+  ]
+  edge [
+    source 17
+    target 111
+    key 0
+    starttime 1645
+    endtime 2313
+    acttype "O"
+  ]
+  edge [
+    source 17
+    target 112
+    key 0
+    starttime 2235
+    endtime 2243
+    acttype "H"
+  ]
+  edge [
+    source 17
+    target 116
+    key 0
+    starttime 1220
+    endtime 1225
+    acttype "O"
+  ]
+  edge [
+    source 18
+    target 19
+    key 0
+    starttime 1132
+    endtime 1134
+    acttype "H"
+  ]
+  edge [
+    source 18
+    target 20
+    key 0
+    starttime 1223
+    endtime 1225
+    acttype "O"
+  ]
+  edge [
+    source 18
+    target 21
+    key 0
+    starttime 1640
+    endtime 1642
+    acttype "O"
+  ]
+  edge [
+    source 19
+    target 28
+    key 0
+    starttime 720
+    endtime 725
+    acttype "O"
+  ]
+  edge [
+    source 19
+    target 36
+    key 0
+    starttime 930
+    endtime 932
+    acttype "S"
+  ]
+  edge [
+    source 19
+    target 37
+    key 0
+    starttime 945
+    endtime 950
+    acttype "H"
+  ]
+  edge [
+    source 19
+    target 66
+    key 0
+    starttime 540
+    endtime 551
+    acttype "C"
+  ]
+  edge [
+    source 19
+    target 68
+    key 0
+    starttime 1805
+    endtime 1830
+    acttype "S"
+  ]
+  edge [
+    source 19
+    target 69
+    key 0
+    starttime 1645
+    endtime 1730
+    acttype "O"
+  ]
+  edge [
+    source 19
+    target 70
+    key 0
+    starttime 1740
+    endtime 1750
+    acttype "H"
+  ]
+  edge [
+    source 19
+    target 80
+    key 0
+    starttime 800
+    endtime 900
+    acttype "O"
+  ]
+  edge [
+    source 19
+    target 85
+    key 0
+    starttime 1510
+    endtime 1545
+    acttype "H"
+  ]
+  edge [
+    source 19
+    target 98
+    key 0
+    starttime 815
+    endtime 820
+    acttype "O"
+  ]
+  edge [
+    source 20
+    target 28
+    key 0
+    starttime 1600
+    endtime 1644
+    acttype "O"
+  ]
+  edge [
+    source 20
+    target 48
+    key 0
+    starttime 1145
+    endtime 1200
+    acttype "O"
+  ]
+  edge [
+    source 20
+    target 63
+    key 0
+    starttime 1120
+    endtime 1130
+    acttype "S"
+  ]
+  edge [
+    source 20
+    target 64
+    key 0
+    starttime 1658
+    endtime 1706
+    acttype "H"
+  ]
+  edge [
+    source 20
+    target 80
+    key 0
+    starttime 1945
+    endtime 2000
+    acttype "H"
+  ]
+  edge [
+    source 20
+    target 93
+    key 0
+    starttime 1405
+    endtime 1415
+    acttype "O"
+  ]
+  edge [
+    source 20
+    target 96
+    key 0
+    starttime 1615
+    endtime 1700
+    acttype "S"
+  ]
+  edge [
+    source 20
+    target 97
+    key 0
+    starttime 750
+    endtime 805
+    acttype "H"
+  ]
+  edge [
+    source 20
+    target 102
+    key 0
+    starttime 735
+    endtime 745
+    acttype "W"
+  ]
+  edge [
+    source 20
+    target 115
+    key 0
+    starttime 2045
+    endtime 2056
+    acttype "H"
+  ]
+  edge [
+    source 20
+    target 116
+    key 0
+    starttime 1645
+    endtime 1700
+    acttype "O"
+  ]
+  edge [
+    source 21
+    target 35
+    key 0
+    starttime 1230
+    endtime 1240
+    acttype "S"
+  ]
+  edge [
+    source 21
+    target 37
+    key 0
+    starttime 1230
+    endtime 1300
+    acttype "O"
+  ]
+  edge [
+    source 21
+    target 53
+    key 0
+    starttime 1700
+    endtime 1715
+    acttype "H"
+  ]
+  edge [
+    source 21
+    target 55
+    key 0
+    starttime 730
+    endtime 745
+    acttype "C"
+  ]
+  edge [
+    source 21
+    target 56
+    key 0
+    starttime 715
+    endtime 730
+    acttype "C"
+  ]
+  edge [
+    source 21
+    target 63
+    key 0
+    starttime 1608
+    endtime 1610
+    acttype "S"
+  ]
+  edge [
+    source 21
+    target 63
+    key 1
+    starttime 1900
+    endtime 1920
+    acttype "O"
+  ]
+  edge [
+    source 21
+    target 75
+    key 0
+    starttime 1600
+    endtime 1735
+    acttype "W"
+  ]
+  edge [
+    source 21
+    target 80
+    key 0
+    starttime 1830
+    endtime 1930
+    acttype "S"
+  ]
+  edge [
+    source 21
+    target 81
+    key 0
+    starttime 1042
+    endtime 1055
+    acttype "S"
+  ]
+  edge [
+    source 21
+    target 84
+    key 0
+    starttime 1656
+    endtime 1710
+    acttype "S"
+  ]
+  edge [
+    source 21
+    target 93
+    key 0
+    starttime 1900
+    endtime 1907
+    acttype "O"
+  ]
+  edge [
+    source 21
+    target 94
+    key 0
+    starttime 2009
+    endtime 2014
+    acttype "H"
+  ]
+  edge [
+    source 21
+    target 106
+    key 0
+    starttime 924
+    endtime 934
+    acttype "H"
+  ]
+  edge [
+    source 21
+    target 106
+    key 1
+    starttime 1420
+    endtime 1430
+    acttype "O"
+  ]
+  edge [
+    source 21
+    target 109
+    key 0
+    starttime 924
+    endtime 934
+    acttype "H"
+  ]
+  edge [
+    source 21
+    target 110
+    key 0
+    starttime 719
+    endtime 729
+    acttype "O"
+  ]
+  edge [
+    source 21
+    target 119
+    key 0
+    starttime 900
+    endtime 930
+    acttype "W"
+  ]
+  edge [
+    source 21
+    target 120
+    key 0
+    starttime 900
+    endtime 920
+    acttype "H"
+  ]
+  edge [
+    source 22
+    target 23
+    key 0
+    starttime 1600
+    endtime 1644
+    acttype "O"
+  ]
+  edge [
+    source 22
+    target 24
+    key 0
+    starttime 1645
+    endtime 1650
+    acttype "H"
+  ]
+  edge [
+    source 23
+    target 58
+    key 0
+    starttime 1520
+    endtime 1535
+    acttype "H"
+  ]
+  edge [
+    source 23
+    target 62
+    key 0
+    starttime 540
+    endtime 551
+    acttype "O"
+  ]
+  edge [
+    source 23
+    target 79
+    key 0
+    starttime 1010
+    endtime 1023
+    acttype "W"
+  ]
+  edge [
+    source 23
+    target 79
+    key 1
+    starttime 1117
+    endtime 1125
+    acttype "O"
+  ]
+  edge [
+    source 23
+    target 83
+    key 0
+    starttime 1050
+    endtime 1110
+    acttype "H"
+  ]
+  edge [
+    source 23
+    target 90
+    key 0
+    starttime 1430
+    endtime 1515
+    acttype "S"
+  ]
+  edge [
+    source 23
+    target 93
+    key 0
+    starttime 915
+    endtime 917
+    acttype "O"
+  ]
+  edge [
+    source 23
+    target 93
+    key 1
+    starttime 1047
+    endtime 1100
+    acttype "S"
+  ]
+  edge [
+    source 23
+    target 93
+    key 2
+    starttime 1625
+    endtime 1630
+    acttype "O"
+  ]
+  edge [
+    source 23
+    target 94
+    key 0
+    starttime 1410
+    endtime 1415
+    acttype "O"
+  ]
+  edge [
+    source 23
+    target 98
+    key 0
+    starttime 830
+    endtime 900
+    acttype "C"
+  ]
+  edge [
+    source 23
+    target 98
+    key 1
+    starttime 1845
+    endtime 1900
+    acttype "O"
+  ]
+  edge [
+    source 23
+    target 99
+    key 0
+    starttime 1520
+    endtime 1550
+    acttype "H"
+  ]
+  edge [
+    source 23
+    target 112
+    key 0
+    starttime 2033
+    endtime 2044
+    acttype "O"
+  ]
+  edge [
+    source 23
+    target 115
+    key 0
+    starttime 801
+    endtime 841
+    acttype "O"
+  ]
+  edge [
+    source 23
+    target 121
+    key 0
+    starttime 2300
+    endtime 2330
+    acttype "H"
+  ]
+  edge [
+    source 23
+    target 123
+    key 0
+    starttime 900
+    endtime 917
+    acttype "S"
+  ]
+  edge [
+    source 24
+    target 42
+    key 0
+    starttime 1430
+    endtime 1500
+    acttype "H"
+  ]
+  edge [
+    source 24
+    target 43
+    key 0
+    starttime 1200
+    endtime 1206
+    acttype "S"
+  ]
+  edge [
+    source 24
+    target 44
+    key 0
+    starttime 1405
+    endtime 1415
+    acttype "H"
+  ]
+  edge [
+    source 24
+    target 49
+    key 0
+    starttime 1400
+    endtime 1405
+    acttype "S"
+  ]
+  edge [
+    source 24
+    target 51
+    key 0
+    starttime 1245
+    endtime 1300
+    acttype "H"
+  ]
+  edge [
+    source 24
+    target 63
+    key 0
+    starttime 2110
+    endtime 2130
+    acttype "H"
+  ]
+  edge [
+    source 24
+    target 75
+    key 0
+    starttime 745
+    endtime 830
+    acttype "W"
+  ]
+  edge [
+    source 24
+    target 78
+    key 0
+    starttime 1630
+    endtime 1645
+    acttype "O"
+  ]
+  edge [
+    source 24
+    target 83
+    key 0
+    starttime 845
+    endtime 907
+    acttype "S"
+  ]
+  edge [
+    source 24
+    target 99
+    key 0
+    starttime 720
+    endtime 730
+    acttype "C"
+  ]
+  edge [
+    source 24
+    target 103
+    key 0
+    starttime 1923
+    endtime 1947
+    acttype "H"
+  ]
+  edge [
+    source 24
+    target 111
+    key 0
+    starttime 1347
+    endtime 1350
+    acttype "S"
+  ]
+  edge [
+    source 24
+    target 122
+    key 0
+    starttime 1530
+    endtime 1540
+    acttype "O"
+  ]
+  edge [
+    source 24
+    target 123
+    key 0
+    starttime 1000
+    endtime 1012
+    acttype "H"
+  ]
+  edge [
+    source 24
+    target 124
+    key 0
+    starttime 1425
+    endtime 1447
+    acttype "H"
+  ]
+  edge [
+    source 25
+    target 26
+    key 0
+    starttime 1600
+    endtime 1644
+    acttype "O"
+  ]
+  edge [
+    source 25
+    target 27
+    key 0
+    starttime 1645
+    endtime 1650
+    acttype "H"
+  ]
+  edge [
+    source 26
+    target 33
+    key 0
+    starttime 1710
+    endtime 1740
+    acttype "H"
+  ]
+  edge [
+    source 26
+    target 45
+    key 0
+    starttime 900
+    endtime 935
+    acttype "H"
+  ]
+  edge [
+    source 26
+    target 60
+    key 0
+    starttime 1350
+    endtime 1400
+    acttype "H"
+  ]
+  edge [
+    source 26
+    target 63
+    key 0
+    starttime 1220
+    endtime 1230
+    acttype "H"
+  ]
+  edge [
+    source 26
+    target 63
+    key 1
+    starttime 1544
+    endtime 1550
+    acttype "S"
+  ]
+  edge [
+    source 26
+    target 66
+    key 0
+    starttime 1420
+    endtime 1430
+    acttype "H"
+  ]
+  edge [
+    source 26
+    target 73
+    key 0
+    starttime 1900
+    endtime 1920
+    acttype "S"
+  ]
+  edge [
+    source 26
+    target 89
+    key 0
+    starttime 1711
+    endtime 1728
+    acttype "H"
+  ]
+  edge [
+    source 26
+    target 104
+    key 0
+    starttime 830
+    endtime 857
+    acttype "O"
+  ]
+  edge [
+    source 26
+    target 108
+    key 0
+    starttime 808
+    endtime 817
+    acttype "C"
+  ]
+  edge [
+    source 26
+    target 115
+    key 0
+    starttime 2033
+    endtime 2044
+    acttype "O"
+  ]
+  edge [
+    source 26
+    target 116
+    key 0
+    starttime 1540
+    endtime 1555
+    acttype "S"
+  ]
+  edge [
+    source 26
+    target 120
+    key 0
+    starttime 430
+    endtime 500
+    acttype "W"
+  ]
+  edge [
+    source 27
+    target 33
+    key 0
+    starttime 1100
+    endtime 1125
+    acttype "S"
+  ]
+  edge [
+    source 27
+    target 46
+    key 0
+    starttime 1500
+    endtime 1510
+    acttype "O"
+  ]
+  edge [
+    source 27
+    target 48
+    key 0
+    starttime 1915
+    endtime 2010
+    acttype "H"
+  ]
+  edge [
+    source 27
+    target 51
+    key 0
+    starttime 1400
+    endtime 1415
+    acttype "O"
+  ]
+  edge [
+    source 27
+    target 51
+    key 1
+    starttime 1530
+    endtime 1540
+    acttype "H"
+  ]
+  edge [
+    source 27
+    target 60
+    key 0
+    starttime 1235
+    endtime 1245
+    acttype "O"
+  ]
+  edge [
+    source 27
+    target 65
+    key 0
+    starttime 1510
+    endtime 1520
+    acttype "S"
+  ]
+  edge [
+    source 27
+    target 72
+    key 0
+    starttime 1805
+    endtime 1815
+    acttype "S"
+  ]
+  edge [
+    source 27
+    target 79
+    key 0
+    starttime 905
+    endtime 910
+    acttype "W"
+  ]
+  edge [
+    source 27
+    target 96
+    key 0
+    starttime 2005
+    endtime 2015
+    acttype "H"
+  ]
+  edge [
+    source 29
+    target 30
+    key 0
+    starttime 1600
+    endtime 1644
+    acttype "O"
+  ]
+  edge [
+    source 29
+    target 30
+    key 1
+    starttime 1645
+    endtime 1650
+    acttype "H"
+  ]
+  edge [
+    source 30
+    target 51
+    key 0
+    starttime 1000
+    endtime 1030
+    acttype "H"
+  ]
+  edge [
+    source 30
+    target 60
+    key 0
+    starttime 1200
+    endtime 1210
+    acttype "O"
+  ]
+  edge [
+    source 30
+    target 62
+    key 0
+    starttime 602
+    endtime 611
+    acttype "H"
+  ]
+  edge [
+    source 30
+    target 64
+    key 0
+    starttime 1608
+    endtime 1610
+    acttype "S"
+  ]
+  edge [
+    source 30
+    target 69
+    key 0
+    starttime 1600
+    endtime 1615
+    acttype "S"
+  ]
+  edge [
+    source 30
+    target 70
+    key 0
+    starttime 1655
+    endtime 1705
+    acttype "S"
+  ]
+  edge [
+    source 30
+    target 72
+    key 0
+    starttime 1820
+    endtime 1835
+    acttype "H"
+  ]
+  edge [
+    source 30
+    target 78
+    key 0
+    starttime 1735
+    endtime 1745
+    acttype "H"
+  ]
+  edge [
+    source 30
+    target 89
+    key 0
+    starttime 1520
+    endtime 1530
+    acttype "O"
+  ]
+  edge [
+    source 30
+    target 91
+    key 0
+    starttime 600
+    endtime 1039
+    acttype "O"
+  ]
+  edge [
+    source 30
+    target 93
+    key 0
+    starttime 1300
+    endtime 1305
+    acttype "O"
+  ]
+  edge [
+    source 30
+    target 95
+    key 0
+    starttime 1300
+    endtime 1305
+    acttype "O"
+  ]
+  edge [
+    source 30
+    target 96
+    key 0
+    starttime 600
+    endtime 630
+    acttype "W"
+  ]
+  edge [
+    source 30
+    target 97
+    key 0
+    starttime 1535
+    endtime 1550
+    acttype "H"
+  ]
+  edge [
+    source 30
+    target 105
+    key 0
+    starttime 816
+    endtime 835
+    acttype "W"
+  ]
+  edge [
+    source 30
+    target 110
+    key 0
+    starttime 2045
+    endtime 2056
+    acttype "H"
+  ]
+  edge [
+    source 30
+    target 116
+    key 0
+    starttime 1457
+    endtime 1500
+    acttype "S"
+  ]
+  edge [
+    source 30
+    target 117
+    key 0
+    starttime 1640
+    endtime 1655
+    acttype "S"
+  ]
+  edge [
+    source 30
+    target 122
+    key 0
+    starttime 1045
+    endtime 1054
+    acttype "O"
+  ]
+  edge [
+    source 31
+    target 32
+    key 0
+    starttime 720
+    endtime 725
+    acttype "O"
+  ]
+  edge [
+    source 32
+    target 36
+    key 0
+    starttime 900
+    endtime 905
+    acttype "O"
+  ]
+  edge [
+    source 32
+    target 36
+    key 1
+    starttime 1830
+    endtime 1915
+    acttype "H"
+  ]
+  edge [
+    source 32
+    target 50
+    key 0
+    starttime 1430
+    endtime 1445
+    acttype "H"
+  ]
+  edge [
+    source 32
+    target 52
+    key 0
+    starttime 1645
+    endtime 1715
+    acttype "H"
+  ]
+  edge [
+    source 32
+    target 78
+    key 0
+    starttime 1600
+    endtime 1615
+    acttype "H"
+  ]
+  edge [
+    source 32
+    target 80
+    key 0
+    starttime 600
+    endtime 700
+    acttype "H"
+  ]
+  edge [
+    source 32
+    target 80
+    key 1
+    starttime 1530
+    endtime 1730
+    acttype "H"
+  ]
+  edge [
+    source 32
+    target 85
+    key 0
+    starttime 900
+    endtime 925
+    acttype "O"
+  ]
+  edge [
+    source 32
+    target 90
+    key 0
+    starttime 1145
+    endtime 1230
+    acttype "O"
+  ]
+  edge [
+    source 32
+    target 93
+    key 0
+    starttime 1635
+    endtime 1640
+    acttype "H"
+  ]
+  edge [
+    source 32
+    target 94
+    key 0
+    starttime 1900
+    endtime 1907
+    acttype "O"
+  ]
+  edge [
+    source 32
+    target 100
+    key 0
+    starttime 1520
+    endtime 1530
+    acttype "H"
+  ]
+  edge [
+    source 32
+    target 115
+    key 0
+    starttime 1535
+    endtime 1620
+    acttype "H"
+  ]
+  edge [
+    source 33
+    target 34
+    key 0
+    starttime 1137
+    endtime 1220
+    acttype "O"
+  ]
+  edge [
+    source 34
+    target 43
+    key 0
+    starttime 1210
+    endtime 1220
+    acttype "H"
+  ]
+  edge [
+    source 34
+    target 48
+    key 0
+    starttime 800
+    endtime 845
+    acttype "O"
+  ]
+  edge [
+    source 34
+    target 54
+    key 0
+    starttime 1130
+    endtime 1145
+    acttype "H"
+  ]
+  edge [
+    source 34
+    target 56
+    key 0
+    starttime 1830
+    endtime 1845
+    acttype "O"
+  ]
+  edge [
+    source 34
+    target 58
+    key 0
+    starttime 715
+    endtime 730
+    acttype "C"
+  ]
+  edge [
+    source 34
+    target 66
+    key 0
+    starttime 730
+    endtime 750
+    acttype "C"
+  ]
+  edge [
+    source 34
+    target 67
+    key 0
+    starttime 2130
+    endtime 2145
+    acttype "S"
+  ]
+  edge [
+    source 34
+    target 76
+    key 0
+    starttime 1800
+    endtime 1815
+    acttype "H"
+  ]
+  edge [
+    source 34
+    target 77
+    key 0
+    starttime 1915
+    endtime 2000
+    acttype "H"
+  ]
+  edge [
+    source 34
+    target 90
+    key 0
+    starttime 945
+    endtime 1000
+    acttype "S"
+  ]
+  edge [
+    source 34
+    target 95
+    key 0
+    starttime 1410
+    endtime 1415
+    acttype "O"
+  ]
+  edge [
+    source 34
+    target 100
+    key 0
+    starttime 720
+    endtime 730
+    acttype "C"
+  ]
+  edge [
+    source 34
+    target 101
+    key 0
+    starttime 720
+    endtime 730
+    acttype "C"
+  ]
+  edge [
+    source 34
+    target 109
+    key 0
+    starttime 1420
+    endtime 1430
+    acttype "O"
+  ]
+  edge [
+    source 34
+    target 110
+    key 0
+    starttime 2033
+    endtime 2044
+    acttype "O"
+  ]
+  edge [
+    source 34
+    target 111
+    key 0
+    starttime 801
+    endtime 841
+    acttype "O"
+  ]
+  edge [
+    source 34
+    target 113
+    key 0
+    starttime 1924
+    endtime 1935
+    acttype "H"
+  ]
+  edge [
+    source 34
+    target 116
+    key 0
+    starttime 1750
+    endtime 1802
+    acttype "H"
+  ]
+  edge [
+    source 37
+    target 38
+    key 0
+    starttime 1900
+    endtime 1915
+    acttype "H"
+  ]
+  edge [
+    source 38
+    target 64
+    key 0
+    starttime 810
+    endtime 850
+    acttype "H"
+  ]
+  edge [
+    source 38
+    target 71
+    key 0
+    starttime 1805
+    endtime 1815
+    acttype "S"
+  ]
+  edge [
+    source 38
+    target 83
+    key 0
+    starttime 1405
+    endtime 1431
+    acttype "W"
+  ]
+  edge [
+    source 38
+    target 90
+    key 0
+    starttime 1015
+    endtime 1025
+    acttype "H"
+  ]
+  edge [
+    source 38
+    target 122
+    key 0
+    starttime 1630
+    endtime 1640
+    acttype "H"
+  ]
+  edge [
+    source 39
+    target 40
+    key 0
+    starttime 1230
+    endtime 1300
+    acttype "O"
+  ]
+  edge [
+    source 40
+    target 47
+    key 0
+    starttime 800
+    endtime 845
+    acttype "O"
+  ]
+  edge [
+    source 40
+    target 53
+    key 0
+    starttime 900
+    endtime 915
+    acttype "H"
+  ]
+  edge [
+    source 40
+    target 61
+    key 0
+    starttime 945
+    endtime 1030
+    acttype "H"
+  ]
+  edge [
+    source 40
+    target 64
+    key 0
+    starttime 1510
+    endtime 1520
+    acttype "S"
+  ]
+  edge [
+    source 40
+    target 73
+    key 0
+    starttime 1730
+    endtime 1750
+    acttype "O"
+  ]
+  edge [
+    source 40
+    target 85
+    key 0
+    starttime 615
+    endtime 630
+    acttype "O"
+  ]
+  edge [
+    source 40
+    target 94
+    key 0
+    starttime 1300
+    endtime 1305
+    acttype "O"
+  ]
+  edge [
+    source 40
+    target 106
+    key 0
+    starttime 808
+    endtime 817
+    acttype "O"
+  ]
+  edge [
+    source 40
+    target 110
+    key 0
+    starttime 730
+    endtime 736
+    acttype "W"
   ]
 ]
