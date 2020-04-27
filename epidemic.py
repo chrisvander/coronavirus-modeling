@@ -4,6 +4,7 @@ from actors import SyntheticHousehold, SyntheticPerson, generate_synthetic
 from util.webapi import cache
 from interaction import generate_interactions, sample_interactions
 import random
+from tqdm import tqdm
 import numpy as np
 from scipy.stats import norm
 import pprint
@@ -16,16 +17,16 @@ import pprint
 default_config = {
     'infection_on_interaction': 0.8,
     'social_distancing': False,
-    'percent_interaction': 0.5, # if two people are at a location, how likely is it they'll interact
-    'test_rate': 0.06, # percent of people that get tested after showing symptoms
+    'percent_interaction': 0.5,  # if two people are at a location, how likely is it they'll interact
+    'test_rate': 0.06,  # percent of people that get tested after showing symptoms
     'death_ratio_gender': {
-        '1': 0.62, # male
+        '1': 0.62,  # male
         '2': 0.38  # female
     },
-    'deaths_by_age': { # if you have covid, what's the chance you'll die?
-        80: .148, # 80+
+    'deaths_by_age': {  # if you have covid, what's the chance you'll die?
+        80: .148,  # 80+
         70: .08,  # 70-79
-        60: .036, # etc
+        60: .036,  # etc
         50: .013,
         40: .004,
         30: .002,
@@ -33,13 +34,13 @@ default_config = {
         10: .002,
         0: 0.0001,
     },
-    'distancing': { # percent of activities occurring
-        'H': 1,        
+    'distancing': {  # percent of activities occurring
+        'H': 1,
         'W': 0.3,
         'S': 0.2,
         'C': 0,
         'O': 1,
-        'enable_after_confirmed': True # enables only after first confirmed case
+        'enable_after_confirmed': True  # enables only after first confirmed case
     },
     'days': 1000
 }
@@ -103,8 +104,6 @@ class EpidemicSim:
             return self.config['infection_on_interaction'] * 0.1
         return self.config['infection_on_interaction']
 
-        
-
     def __init__(self, graph, plot, config={}):
         self.config = {**default_config, **config}
         self.G = graph
@@ -115,46 +114,48 @@ class EpidemicSim:
         weights = []
         for i in range(2, 14):
             weights.append(rv.pdf(i - 8))
-        self.sampleIncubation = lambda: random.choices(list(range(2, 14)), k=1, weights=weights)[0]
+        self.sampleIncubation = lambda: random.choices(
+            list(range(2, 14)), k=1, weights=weights)[0]
 
         rv = norm(scale=6)
         weights = []
         for i in range(14, 26):
             weights.append(rv.pdf(i - 20))
-        self.sampleInfectionLength = lambda: random.choices(list(range(14, 26)), k=1, weights=weights)[0]
+        self.sampleInfectionLength = lambda: random.choices(
+            list(range(14, 26)), k=1, weights=weights)[0]
 
         self.people = list(filter(lambda n: str(n).startswith('P_'), self.G.nodes()))
         self.confirmed = 0
 
     def update_state(self, node, state):
-        nx.set_node_attributes(self.G, {node: {'state': state }})
+        nx.set_node_attributes(self.G, {node: {'state': state}})
         # if they're exposed, we want a timeline until they show symptoms, and estimates
         # on virus length and death
         if state == 'E':
             death = self.will_die(self.get_attr(node, 'age'), self.get_attr(node, 'sex'))
             nx.set_node_attributes(self.G, {node: {
-                'incubation': self.sampleIncubation(), 
+                'incubation': self.sampleIncubation(),
                 'time_infected': 0,
                 'will_die': death,
                 'infection_length': self.sampleInfectionLength(),
             }})
         if state == "I":
             nx.set_node_attributes(self.G, {node: {
-                'test_submitted': False, 
+                'test_submitted': False,
                 'days_since_submitted_test': 0,
-                'test_turnaround': random.randint(1,4)
+                'test_turnaround': random.randint(1, 4)
             }})
 
     def increment_time(self, node):
-        n=self.get_attr(node, 'time_infected')
-        self.set_attr(node, 'time_infected', n+1)
+        n = self.get_attr(node, 'time_infected')
+        self.set_attr(node, 'time_infected', n + 1)
 
     def get_attr(self, node, attr):
         return self.G.node[node][attr]
 
     def set_attr(self, node, attr, val):
         self.G.node[node][attr] = val
-    
+
     def get_state(self, node):
         return self.get_attr(node, 'state')
 
@@ -162,8 +163,8 @@ class EpidemicSim:
         return self.people
 
     def get_all_states(self):
-        attr=nx.get_node_attributes(self.G, 'state')
-        nodes=self.get_people()
+        attr = nx.get_node_attributes(self.G, 'state')
+        nodes = self.get_people()
         return [attr[n] for n in nodes]
 
     def _run_one_iter(self, interactions):
@@ -178,20 +179,22 @@ class EpidemicSim:
             state = self.get_state(n)
             if state is 'E' or state is 'I' or state is 'Q':
                 self.increment_time(n)
-                if self.get_attr(n, 'infection_length') <= self.get_attr(n, 'time_infected'):
+                if self.get_attr(n, 'infection_length') <= self.get_attr(
+                        n, 'time_infected'):
                     if self.get_attr(n, 'will_die'):
                         self.update_state(n, 'D')
                     else:
                         self.update_state(n, 'R')
             if state == 'E' and \
-                self.get_attr(n, 'incubation') == self.get_attr(n, 'time_infected'):
+                    self.get_attr(n, 'incubation') == self.get_attr(n, 'time_infected'):
                 self.update_state(n, 'I')
-            if state == 'I': # determine whether they should quarantine
+            if state == 'I':  # determine whether they should quarantine
                 if self.get_attr(n, 'test_submitted'):
-                    self.set_attr(n, 'days_since_submitted_test', 
-                        self.get_attr(n, 'days_since_submitted_test') + 1
-                    )
-                    if self.get_attr(n, 'days_since_submitted_test') == self.get_attr(n, 'test_turnaround'):
+                    self.set_attr(n, 'days_since_submitted_test',
+                                  self.get_attr(n, 'days_since_submitted_test') + 1
+                                  )
+                    if self.get_attr(n, 'days_since_submitted_test') == self.get_attr(
+                            n, 'test_turnaround'):
                         self.update_state(n, 'Q')
                         self.confirmed += 1
                 elif random.random() < self.config['test_rate']:
@@ -211,7 +214,6 @@ class EpidemicSim:
             if u_state == 'D' or v_state == 'D':
                 continue
 
-
             if random.random() < self.get_infection_on_interaction():
                 if u_state == 'I' and v_state == 'S':
                     self.update_state(v, 'E')
@@ -222,24 +224,28 @@ class EpidemicSim:
         # Sort edges of graph by timestep
         potential_interactions = generate_interactions(self.G)
         finished = False
-        infected=[]
-        recovered=[]
-        dead=[]
+        infected = []
+        recovered = []
+        dead = []
         for day in range(days):
             states = np.array(self.get_all_states())
-            interactions = sample_interactions(self, potential_interactions, self.config['percent_interaction'], self.config['distancing'])
-            print(f"Day {day + 1}\t" + \
-                f"S: {(states == 'S').sum()}" + \
-                f"\tE: {(states == 'E').sum()}" + \
-                f"\tI: {(states == 'I').sum()}" + \
-                f"\tQ: {(states == 'Q').sum()}" + \
-                f"\tR: {(states == 'R').sum()}" + \
-                f"\tD: {(states == 'D').sum()}")
+            interactions = sample_interactions(
+                self,
+                potential_interactions,
+                self.config['percent_interaction'],
+                self.config['distancing'])
+            print(f"Day {day + 1}\t" +
+                  f"S: {(states == 'S').sum()}" +
+                  f"\tE: {(states == 'E').sum()}" +
+                  f"\tI: {(states == 'I').sum()}" +
+                  f"\tQ: {(states == 'Q').sum()}" +
+                  f"\tR: {(states == 'R').sum()}" +
+                  f"\tD: {(states == 'D').sum()}")
             infected.append((states == 'I').sum())
             recovered.append((states == 'R').sum())
             dead.append((states == 'D').sum())
             if ((states == 'E').sum() + (states == 'I').sum() + (states == 'Q').sum()) == 0:
-                finished=True
+                finished = True
                 break
             self._run_one_iter(interactions)
 
@@ -257,7 +263,7 @@ class EpidemicSim:
 
             if self.plot:
                 import matplotlib.pyplot as plt
-                days = list(range(day+1))
+                days = list(range(day + 1))
                 plt.plot(days, infected, days, recovered, days, dead)
                 plt.legend(['Infected', 'Recovered', 'Dead'])
                 plt.ylabel('Number of People')
@@ -272,7 +278,7 @@ class EpidemicSim:
         pprint.pprint(self.config)
         nx.set_node_attributes(self.G, 'S', 'state')
         nx.set_node_attributes(self.G, 0, 'time_infected')
-        
+
         if self.config['social_distancing']:
             print("\nSOCIAL DISTANCING ENABLED. Infection rate multipler = 0.1")
 
@@ -319,7 +325,12 @@ def parse_args(argv=None):
     argparser.add_argument('--graph-in', '-i', dest='graph_in')
     argparser.add_argument('--graph-out', '-o', dest='graph_out')
     argparser.add_argument('--population-size', '-n', dest='n', type=int, default=1000)
-    argparser.add_argument('--social-distancing', '-s', dest='sd', action='store_true', default=False)
+    argparser.add_argument(
+        '--social-distancing',
+        '-s',
+        dest='sd',
+        action='store_true',
+        default=False)
     argparser.add_argument('--test-rate', '-t', dest='t', type=float, default=0.05)
     argparser.add_argument('--plot', '-p', dest='p', action='store_true', default=False)
     argparser.add_argument('--days', '-d', dest='d', type=int, default=1000)
@@ -351,5 +362,3 @@ if __name__ == "__main__":
         'days': args.d
     })
     sim.run()
-
-    

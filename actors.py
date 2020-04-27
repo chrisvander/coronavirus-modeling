@@ -316,7 +316,7 @@ def assign_dummy_locations(households, num_locations):
     for hh in households:
         for person in hh.people:
             for activity in person.activities:
-                activity.assign_location(locations[random.randint(0, num_locations-1)])
+                activity.assign_location(locations[random.randint(0, num_locations - 1)])
 
 
 def assign_locations(households):
@@ -342,7 +342,7 @@ def generate_synthetic(n):
     nhts_hh_templates = cache(
         'template_households', lambda: [
             hhtmp for hhtmp in templates()],
-            folder='nhts_templates')
+        folder='nhts_templates')
 
     print("Generating sample population.")
     census_hhs = generate(n)
@@ -355,7 +355,8 @@ def generate_synthetic(n):
             nhts_hh_templates), folder='synthetic_hh')
 
     print("Assigning activity locations.")
-    assign_dummy_locations(synthetic_households, int(n/8)) # 8 people per location (work, home, etc)
+    # 8 people per location (work, home, etc)
+    assign_dummy_locations(synthetic_households, int(n / 8))
     # assign_locations(synthetic_households)
 
     return synthetic_households
