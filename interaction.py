@@ -4,7 +4,7 @@ import random
 # the chance you'll interact with a given person at a location
 # if you are both there at the same time
 # this is a face-to-face interaction, less than 6 feet
-percent_interaction=.6
+percent_interaction=1
 
 '''
 Responsible for converting the environment interaction graph 
@@ -58,4 +58,5 @@ def generate_interactions(G):
               # we have an interaction!
               interactions.append((person1, person2, random.choice(overlap), edge['acttype']))
   # sorted interactions by timestep
-  return sorted(interactions, key=lambda el: el[2])
+  sorted_interations = sorted(interactions, key=lambda el: el[2])
+  return sorted_interations
