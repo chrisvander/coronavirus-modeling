@@ -3,6 +3,7 @@ import random
 import pandas
 from tqdm import tqdm
 from population import generate
+from util.webapi import cache
 
 trip_purposes = {
     1: "Home",
@@ -254,11 +255,13 @@ def merge_census_data(census_hhs, template_hhs):
 
     # Select census_hh
     matches = []
-    for census_hh in census_hhs:
-        # Select matching template_hh
-        matching = matching_template_households(census_hh)
-        if len(matching) > 0:
-            matches.append(random.choice(matching))
+    with tqdm(total=len(census_hhs)) as pbar:
+        for census_hh in census_hhs:
+            # Select matching template_hh
+            matching = matching_template_households(census_hh)
+            if len(matching) > 0:
+                matches.append(random.choice(matching))
+            pbar.update(1)
 
     return matches
 
@@ -302,7 +305,7 @@ def generate_synthetic(n):
     trips_df = pandas.read_csv("data/nhts/trippub.csv", ",")
 
     print("Creating template households.")
-    nhts_hh_templates = [hhtmp for hhtmp in templates(trips_df)]
+    nhts_hh_templates = cache('template_households', lambda: [hhtmp for hhtmp in templates(trips_df)])
 
     print("Generating sample population.")
     census_hhs = generate(n)

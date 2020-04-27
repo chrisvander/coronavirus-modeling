@@ -1,4 +1,5 @@
 from util.webapi import get_json, parse_query
+from tqdm import tqdm
 import numpy as np
 from scipy.stats import norm
 import itertools
@@ -130,18 +131,17 @@ def import_household_data():
 
 
 def generate(n):
-    print("-- GENERATE POPULATION --")
+    print("\n-- GENERATE POPULATION --")
     print("Sampling a population of size " + str(n) + "...")
     data, weights = import_person_data()
     samples = random.choices(data, k=n, weights=weights)
     population = list(map(lambda p: Person(p[1], p[3], p[2]), samples))
 
-    print("Sample People: \n")
-    for i in range(3):
-        person = random.choice(population)
-        person.print()
+    # print("Sample People: \n")
+    # for i in range(3):
+    #     person = random.choice(population)
+    #     person.print()
 
-    print("Fetching household data...")
     sample_households, hh_weights = import_household_data()
     households = []
 
@@ -168,8 +168,9 @@ def generate(n):
     for i in range(-100, 100):
         pdf_vals.append(rv.pdf(i))
 
+    print("Generating probability distributions...")
     rv_weights = []
-    for i in range(0, 100):
+    for i in tqdm(range(0, 100)):
         w = []
         for p in adult_population:
             w.append(pdf_vals[p.getAge() - i])
@@ -186,51 +187,55 @@ def generate(n):
         population.remove(p)
 
     print("Generating selection of households...")
-    while len(population) > 0:
-        # we take the list of people and select households
-        # first, grab a household that we will select upon (filtered by adult presence)
-        hh_sample = random.choices(
-            adult_sample_households,
-            k=1,
-            weights=adult_hh_weights)[0]
-        hh = Household()
-
-        if len(adult_population) > 0:
-            # -- PICK HEAD OF HOUSEHOLD --
-            # head age of this household (with reference to the sample data)
-            preferred_head_age = int(hh_sample[1])
-            # get population weights and grab a sample that is closest to the selected age
-            hh_head = random.choices(
-                adult_population,
+    t = len(population)
+    with tqdm(total=t) as pbar:
+        while len(population) > 0:
+            before=len(population)
+            # we take the list of people and select households
+            # first, grab a household that we will select upon (filtered by adult presence)
+            hh_sample = random.choices(
+                adult_sample_households,
                 k=1,
-                weights=rv_weights[preferred_head_age])[0]
-            removePerson(hh_head)
-            hh.addHead(hh_head)
+                weights=adult_hh_weights)[0]
+            hh = Household()
 
-            # -- SELECT THE REMAINDER OF THE HOUSEHOLD BY SIZE --
-            hht = hh_sample[2]
-            if hht != 4 and hht != 6:
+            if len(adult_population) > 0:
+                # -- PICK HEAD OF HOUSEHOLD --
+                # head age of this household (with reference to the sample data)
+                preferred_head_age = int(hh_sample[1])
+                # get population weights and grab a sample that is closest to the selected age
+                hh_head = random.choices(
+                    adult_population,
+                    k=1,
+                    weights=rv_weights[preferred_head_age])[0]
+                removePerson(hh_head)
+                hh.addHead(hh_head)
+
+                # -- SELECT THE REMAINDER OF THE HOUSEHOLD BY SIZE --
+                hht = hh_sample[2]
+                if hht != 4 and hht != 6:
+                    if len(population) > 0:
+                        if hht == 1:
+                            # fetch spouse
+                            spouse = random.choices(
+                                adult_population, k=1, weights=rv_weights[preferred_head_age])[0]
+                            removePerson(spouse)
+                            hh.addSpouse(spouse)
+                        for i in range(int(hh_sample[2]) - hh.getSize()):
+                            if len(population) > 0:
+                                p = random.choices(population, k=1, weights=chWeights)[0]
+                                removePerson(p)
+                                hh.addPerson(p)
+                households.append(hh)
+            else:
                 if len(population) > 0:
-                    if hht == 1:
-                        # fetch spouse
-                        spouse = random.choices(
-                            adult_population, k=1, weights=rv_weights[preferred_head_age])[0]
-                        removePerson(spouse)
-                        hh.addSpouse(spouse)
-                    for i in range(int(hh_sample[2]) - hh.getSize()):
-                        if len(population) > 0:
-                            p = random.choices(population, k=1, weights=chWeights)[0]
-                            removePerson(p)
-                            hh.addPerson(p)
-            households.append(hh)
-        else:
-            if len(population) > 0:
-                print("Didn't include " + str(len(population)) + " people")
-            break
+                    print("Didn't include " + str(len(population)) + " people")
+                break
+            pbar.update(before-len(population))
     print("Generated " + str(len(households)) + " households.")
-    print("Sample Households: \n")
-    for i in range(3):
-        household = random.choice(households)
-        household.print()
+    # print("Sample Households: \n")
+    # for i in range(3):
+    #     household = random.choice(households)
+    #     household.print()
 
     return households

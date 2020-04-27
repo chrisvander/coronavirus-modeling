@@ -86,19 +86,19 @@ def parse_args(argv=None):
     argparser = argparse.ArgumentParser()
     argparser.add_argument('--graph-in', dest='graph_in')
     argparser.add_argument('--graph-out', dest='graph_out')
+    argparser.add_argument('--population-size', '-n', dest='n', default=10000)
     # Simulation arguments
     return argparser.parse_args(argv)
 
 
 if __name__ == "__main__":
     args = parse_args()
-    print(args)
 
     G = None
     if args.graph_in:
         G = nx.read_gml(args.graph_in)
     else:
-        synth_hhs = generate_synthetic(23000)
+        synth_hhs = generate_synthetic(int(args.n))
 
         print("Generating graph.")
         G = generate_graph(synth_hhs)
