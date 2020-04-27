@@ -73,7 +73,6 @@ def generate_graph(synth_hhs):
     '''
     G = nx.MultiGraph()
     for syn_hh in synth_hhs:
-        print(syn_hh)
         for person in syn_hh.people:
             for activity in person.activities:
                 if not G.has_node(person.uid):
