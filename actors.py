@@ -139,12 +139,8 @@ class Activity:
         return act
 
     def attr_dict(self):
-<<<<<<< HEAD
-        return {"starttime": self.start_time, "endtime": self.end_time, "acttype": self.loc_type}
-=======
         return {"starttime": self.start_time,
                 "endtime": self.end_time, "acttype": self.loc_type}
->>>>>>> 0d45940653673d1f02f4921b897977d31c5ec471
 
 
 class SyntheticPerson:
