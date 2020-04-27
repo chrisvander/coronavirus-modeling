@@ -83,7 +83,7 @@ def generate_graph(synth_hhs):
                 if not G.has_node(act_loc.uid):
                     G.add_node(act_loc.uid, **act_loc.attr_dict())
 
-                G.add_edge(person.uid, act_loc.uid)
+                G.add_edge(person.uid, act_loc.uid, **activity.attr_dict())
 
     return G
 

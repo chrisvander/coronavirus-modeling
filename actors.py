@@ -141,7 +141,7 @@ class Activity:
         self.location.uid = location
 
     def attr_dict(self):
-        return {""}
+        return {"start-time": self.start_time, "end-time": self.end_time}
 
 
 class SyntheticPerson:
