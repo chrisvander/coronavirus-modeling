@@ -1,7 +1,7 @@
 import argparse
 import networkx as nx
 from actors import SyntheticHousehold, SyntheticPerson, generate_synthetic
-
+from util.webapi import cache
 
 class EpidemicSim:
     '''
@@ -47,7 +47,8 @@ class EpidemicSim:
         individuals have spent at the location together.
     '''
 
-    def __init__(self):
+    def __init__(self, G):
+        self.G = G
         pass
 
     def _run_one_iter(self):
@@ -61,6 +62,10 @@ class EpidemicSim:
         for day in range(days):
             self._run_one_iter()
 
+    def run(self):
+        print('\n-- EPIDEMIC SIMULATION --')
+
+
 
 def generate_graph(synth_hhs):
     '''
@@ -68,6 +73,7 @@ def generate_graph(synth_hhs):
     '''
     G = nx.MultiGraph()
     for syn_hh in synth_hhs:
+        print(syn_hh)
         for person in syn_hh.people:
             for activity in person.activities:
                 if not G.has_node(person.uid):
@@ -98,7 +104,7 @@ if __name__ == "__main__":
     if args.graph_in:
         G = nx.read_gml(args.graph_in)
     else:
-        synth_hhs = generate_synthetic(int(args.n))
+        synth_hhs = cache('synthetic_pop_' + args.n, lambda: generate_synthetic(int(args.n)))
 
         print("Generating graph.")
         G = generate_graph(synth_hhs)
@@ -108,5 +114,5 @@ if __name__ == "__main__":
             nx.write_gml(G, args.graph_out)
 
     # Run simulation
-    # sim = EpidemicSim()
-    # sim.run()
+    sim = EpidemicSim(G)
+    sim.run()

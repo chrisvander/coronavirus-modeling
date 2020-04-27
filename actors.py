@@ -218,7 +218,10 @@ class SyntheticHousehold:
         return s
 
 
-def templates(df):
+def templates():
+    print("Reading NHTS trip data.")
+    df = pandas.read_csv("data/nhts/trippub.csv", ",")
+
     df.sort_values(by=["HOUSEID", "PERSONID", "STRTTIME"], inplace=True)
 
     # Filter out "other" trip purposes
@@ -301,11 +304,8 @@ def assign_uids(households):
 
 
 def generate_synthetic(n):
-    print("Reading NHTS trip data.")
-    trips_df = pandas.read_csv("data/nhts/trippub.csv", ",")
-
     print("Creating template households.")
-    nhts_hh_templates = cache('template_households', lambda: [hhtmp for hhtmp in templates(trips_df)])
+    nhts_hh_templates = cache('template_households', lambda: [hhtmp for hhtmp in templates()])
 
     print("Generating sample population.")
     census_hhs = cache(str(n) + '_population', lambda: generate(n))
