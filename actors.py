@@ -308,10 +308,10 @@ def generate_synthetic(n):
     nhts_hh_templates = cache('template_households', lambda: [hhtmp for hhtmp in templates(trips_df)])
 
     print("Generating sample population.")
-    census_hhs = generate(n)
+    census_hhs = cache(str(n) + '_population', lambda: generate(n))
 
     print("Matching population households to template households.")
-    synthetic_households = merge_census_data(census_hhs, nhts_hh_templates)
+    synthetic_households = cache(str(n) + '_synthetic', lambda: merge_census_data(census_hhs, nhts_hh_templates))
 
     print("Assigning unique IDs")
     assign_uids(synthetic_households)
