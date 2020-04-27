@@ -157,10 +157,7 @@ class SyntheticPerson:
         self.sex = 0
 
         self.trips = []
-
-        # Convert trips to activities
         self.activities = []
-        self._gen_activities()
 
     def _gen_activities(self):
         '''Generate persons daily activities using trip data.'''
@@ -208,6 +205,7 @@ class SyntheticPerson:
     def from_nhts_df(pid, df):
         syn_person = SyntheticPerson(pid)
         syn_person.trips = [Trip.from_dfrow(row) for i, row in df.iterrows()]
+        syn_person._gen_activities()
         syn_person.age = df.iloc[0]["R_AGE_IMP"]
         syn_person.sex = df.iloc[0]["R_SEX_IMP"]
         syn_person.income = 0

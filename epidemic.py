@@ -3,6 +3,7 @@ import networkx as nx
 from actors import SyntheticHousehold, SyntheticPerson, generate_synthetic
 from util.webapi import cache
 
+
 class EpidemicSim:
     '''
     This simulator is an extension of the actor-based SEIQRD epidemic model. It simulates
@@ -66,7 +67,6 @@ class EpidemicSim:
         print('\n-- EPIDEMIC SIMULATION --')
 
 
-
 def generate_graph(synth_hhs):
     '''
     Generate an undirected, multi-edge, bipartite graph using nx.MultiGraph().
@@ -99,7 +99,7 @@ def parse_args(argv=None):
     argparser = argparse.ArgumentParser()
     argparser.add_argument('--graph-in', dest='graph_in')
     argparser.add_argument('--graph-out', dest='graph_out')
-    argparser.add_argument('--population-size', '-n', dest='n', default=10000)
+    argparser.add_argument('--population-size', '-n', dest='n', type=int, default=10000)
     # Simulation arguments
     return argparser.parse_args(argv)
 
@@ -111,7 +111,8 @@ if __name__ == "__main__":
     if args.graph_in:
         G = nx.read_gml(args.graph_in)
     else:
-        synth_hhs = cache('synthetic_pop_' + args.n, lambda: generate_synthetic(int(args.n)))
+        synth_hhs = cache('synthetic_pop_' + str(args.n),
+                          lambda: generate_synthetic(args.n))
 
         print("Generating graph.")
         G = generate_graph(synth_hhs)
