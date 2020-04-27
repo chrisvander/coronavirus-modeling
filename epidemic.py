@@ -161,8 +161,7 @@ if __name__ == "__main__":
     if args.graph_in:
         G = nx.read_gml(args.graph_in)
     else:
-        synth_hhs = cache('synthetic_pop_' + str(args.n),
-                          lambda: generate_synthetic(args.n))
+        synth_hhs = generate_synthetic(args.n)
 
         print("Generating environment interaction graph.")
         G = generate_graph(synth_hhs)

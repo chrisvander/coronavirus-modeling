@@ -311,6 +311,7 @@ def merge_census_data(census_hhs, template_hhs):
 
 
 def assign_dummy_locations(households, num_locations):
+    print(num_locations)
     locations = [Location(i, "?", (0, 0, 0)) for i in range(num_locations)]
 
     for hh in households:
@@ -341,10 +342,11 @@ def generate_synthetic(n):
     print("Creating template households.")
     nhts_hh_templates = cache(
         'template_households', lambda: [
-            hhtmp for hhtmp in templates()])
+            hhtmp for hhtmp in templates()],
+            folder='nhts_templates')
 
     print("Generating sample population.")
-    census_hhs = cache(str(n) + '_population', lambda: generate(n))
+    census_hhs = cache(str(n) + '_population', lambda: generate(n), folder='population')
 
     print("Matching population households to template households.")
     synthetic_households = cache(
