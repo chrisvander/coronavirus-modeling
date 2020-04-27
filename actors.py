@@ -24,8 +24,7 @@ trip_purposes = {
     16: "",
     17: "",
     18: "",
-    19: "",
-    97: ""
+    19: ""
 }
 
 activity_type = {
@@ -48,14 +47,9 @@ activity_type = {
     17: "O",
     18: "O",
     19: "O",
-    97: "O"
-
 }
 
 family_income = {
-    -7: "Prefer not to answer",
-    -8: "I don't know",
-    -9: "Not ascertained",
     1: "< $10,000",
     2: "$10,000 to $14,999",
     3: "$15,000 to $24,999",
@@ -95,10 +89,12 @@ def income_bracket(income):
 
 
 trip_cols = ["HOUSEID", "PERSONID", "HHFAMINC", "WHYTO",
-             "WHYFROM", "STRTTIME", "ENDTIME", "TRPMILES", "R_AGE", "R_SEX_IMP"]
+             "WHYFROM", "STRTTIME", "ENDTIME", "TRPMILES", "R_AGE_IMP", "R_SEX_IMP"]
 
 
 class Trip:
+    '''A trip between two unspecified locations for one person.'''
+
     def __init__(self, st_time, end_time, whyfrom, whyto):
         self.start_time = st_time
         self.end_time = end_time
@@ -107,6 +103,10 @@ class Trip:
 
     def __str__(self):
         return ", ".join([f"{k}: {v}" for k, v in self.__dict__.items()])
+
+    def deepcopy(self):
+        trip = Trip(self.start_time, self.end_time, self.whyfrom, self.whyto)
+        return trip
 
     @staticmethod
     def from_dfrow(dfrow):
@@ -120,15 +120,9 @@ class Trip:
         return trip
 
 
-class Location:
-    def __init__(self):
-        self.uid = 0
-
-    def attr_dict(self):
-        return {"coords": "None", "type": "None"}
-
-
 class Activity:
+    '''Data type used to represent where a person is and for how long.'''
+
     def __init__(self, start_time, end_time, loc_type):
         self.start_time = start_time
         self.end_time = end_time
@@ -137,33 +131,59 @@ class Activity:
         self.location = None
 
     def assign_location(self, location):
-        self.location = Location()
-        self.location.uid = location
+        self.location = location
+
+    def deepcopy(self):
+        act = Activity(self.start_time, self.end_time, self.loc_type)
+        act.location = self.location
+        return act
 
     def attr_dict(self):
-        return {"start-time": self.start_time, "end-time": self.end_time}
+        return {"starttime": self.start_time,
+                "endtime": self.end_time, "acttype": self.loc_type}
 
 
 class SyntheticPerson:
-    def __init__(self, person_id, trips):
-        self.id = person_id
-        self.trips = trips
-        self.activities = []
-        self.uid = ""
+    '''Sample individual, including demographic information and daily activity schedules'''
 
+    def __init__(self, person_id):
+        self.id = person_id
+
+        self.household = None
+
+        # Person demographic info
         self.income = 0
         self.age = 0
         self.sex = 0
 
+        self.trips = []
+
+        # Convert trips to activities
+        self.activities = []
         self._gen_activities()
 
     def _gen_activities(self):
-        for trip in self.trips:
-            self.activities.append(
-                Activity(trip.start_time, trip.end_time, activity_type[trip.whyto]))
+        '''Generate persons daily activities using trip data.'''
 
-    def set_uid(self, uid):
-        self.uid = uid
+        # Ensure that trips are ordered before generating activities
+        self.trips.sort(key=lambda a: a.start_time)
+
+        for i in range(len(self.trips)):
+            trip = self.trips[i]
+            last_trip = self.trips[i - 1]
+
+            start_time = last_trip.end_time
+            end_time = trip.start_time
+
+            if start_time > end_time:
+                # Activities should start at 0 and end at 2399
+                self.activities.append(
+                    Activity(0, end_time, activity_type[trip.whyfrom]))
+                self.activities.append(
+                    Activity(start_time, 2399, activity_type[trip.whyfrom]))
+            else:
+                self.activities.append(
+                    Activity(start_time, end_time, activity_type[trip.whyfrom]))
 
     def __str__(self):
         s = f"Person {self.id}:\n"
@@ -173,13 +193,22 @@ class SyntheticPerson:
 
     def attr_dict(self):
         return {"age": str(self.age), "income": str(self.income),
-                "sex": str(self.sex), "householdsize": str(0)}
+                "sex": str(self.sex), "hhsize": str(len(self.household.people)) if self.household else 'NA'}
+
+    def deepcopy(self):
+        p = SyntheticPerson(self.id)
+        p.trips = [trip.deepcopy() for trip in self.trips]
+        p.activities = [activity.deepcopy() for activity in self.activities]
+        p.age = self.age
+        p.sex = self.sex
+        p.income = self.income
+        return p
 
     @staticmethod
     def from_nhts_df(pid, df):
-        trips = [Trip.from_dfrow(row) for i, row in df.iterrows()]
-        syn_person = SyntheticPerson(pid, trips)
-        syn_person.age = df.iloc[0]["R_AGE"]
+        syn_person = SyntheticPerson(pid)
+        syn_person.trips = [Trip.from_dfrow(row) for i, row in df.iterrows()]
+        syn_person.age = df.iloc[0]["R_AGE_IMP"]
         syn_person.sex = df.iloc[0]["R_SEX_IMP"]
         syn_person.income = 0
         return syn_person
@@ -191,7 +220,6 @@ class SyntheticHousehold:
 
         self.people = []
         self.income = 0
-        self.uid = ""
 
     @staticmethod
     def from_nhts_df(hhid, df):
@@ -207,8 +235,11 @@ class SyntheticHousehold:
 
         return syn_hh
 
-    def set_uid(self, uid):
-        self.uid = uid
+    def deepcopy(self):
+        hh = SyntheticHousehold(self.id)
+        hh.income = self.income
+        hh.people = [person.deepcopy() for person in self.people]
+        return hh
 
     def __str__(self):
         s = f"Household {self.id}:\n"
@@ -218,13 +249,25 @@ class SyntheticHousehold:
         return s
 
 
+class Location:
+    def __init__(self, loc_id, loc_type, coords):
+        self.id = loc_id
+        self.location_type = loc_type
+        self.coordinates = coords
+
+    def attr_dict(self):
+        return {"coords": str(self.coordinates), "loctype": self.location_type}
+
+
 def templates(df):
     df.sort_values(by=["HOUSEID", "PERSONID", "STRTTIME"], inplace=True)
 
     # Filter out "other" trip purposes
     useable_trip_purposes = list(trip_purposes.keys())
+    useable_fam_inc = list(family_income.keys())
     filtered = df.loc[(df["WHYFROM"].isin(useable_trip_purposes))
-                      & (df["WHYTO"].isin(useable_trip_purposes))]
+                      & (df["WHYTO"].isin(useable_trip_purposes))
+                      & (df["HHFAMINC"].isin(useable_fam_inc))]
 
     # Split trips by household id
     hhids = filtered["HOUSEID"].unique()
@@ -267,6 +310,8 @@ def merge_census_data(census_hhs, template_hhs):
 
 
 def assign_dummy_locations(households, num_locations):
+    locations = [Location(i, "?", (0, 0, 0)) for i in range(num_locations)]
+
     for hh in households:
         for person in hh.people:
             for activity in person.activities:
@@ -279,7 +324,7 @@ def assign_locations(households):
     activity locations. There are 4 anchor activity types: H (home), W (work),
     S (shop), C (school).
 
-    Each index i, j in the matrix will represent a probability proportional to:
+    Each index i, j in the matrix represents a probability proportional to:
         P(j|i) = A_aj * e^(b_w * D_ij)
     where:
         A_aj:   Attractiveness of location j for destination activity a.
@@ -291,30 +336,24 @@ def assign_locations(households):
     raise NotImplementedError()
 
 
-def assign_uids(households):
-    p_count = 0
-    hh_count = 0
-    for hh in households:
-        for person in hh.people:
-            person.set_uid(f"P_{p_count}")
-            p_count += 1
-
-
 def generate_synthetic(n):
     print("Reading NHTS trip data.")
     trips_df = pandas.read_csv("data/nhts/trippub.csv", ",")
 
     print("Creating template households.")
-    nhts_hh_templates = cache('template_households', lambda: [hhtmp for hhtmp in templates(trips_df)])
+    nhts_hh_templates = cache(
+        'template_households', lambda: [
+            hhtmp for hhtmp in templates(trips_df)])
 
     print("Generating sample population.")
     census_hhs = cache(str(n) + '_population', lambda: generate(n))
 
     print("Matching population households to template households.")
-    synthetic_households = cache(str(n) + '_synthetic', lambda: merge_census_data(census_hhs, nhts_hh_templates))
-
-    print("Assigning unique IDs")
-    assign_uids(synthetic_households)
+    synthetic_households = cache(
+        str(n) + '_synthetic',
+        lambda: merge_census_data(
+            census_hhs,
+            nhts_hh_templates))
 
     print("Assigning activity locations.")
     assign_dummy_locations(synthetic_households, 5000)

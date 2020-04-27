@@ -66,18 +66,26 @@ def generate_graph(synth_hhs):
     '''
     Generate an undirected, multi-edge, bipartite graph using nx.MultiGraph().
     '''
+    person_count = 0
     G = nx.MultiGraph()
     for syn_hh in synth_hhs:
         for person in syn_hh.people:
+
+            # Add person to graph
+            person_id = f"P_{person_count}"
+            G.add_node(person_id, **person.attr_dict())
+            person_count += 1
+
+            # Add edge between person and location for each activity
             for activity in person.activities:
-                if not G.has_node(person.uid):
-                    G.add_node(person.uid, **person.attr_dict())
-
                 act_loc = activity.location
-                if not G.has_node(act_loc.uid):
-                    G.add_node(act_loc.uid, **act_loc.attr_dict())
+                loc_id = f"L_{act_loc.id}"
 
-                G.add_edge(person.uid, act_loc.uid, **activity.attr_dict())
+                # Add location to graph
+                if not G.has_node(act_loc.id):
+                    G.add_node(loc_id, **act_loc.attr_dict())
+
+                G.add_edge(person_id, loc_id, **activity.attr_dict())
 
     return G
 
