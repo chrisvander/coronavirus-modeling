@@ -34,6 +34,7 @@ def write_file(f_id, raw):
 def cache(f_id, funct):
     res = get_file(f_id)
     if res is None:
+        print("Running one-time " + f_id + " and writing to cache")
         raw = funct()
         write_file(f_id, raw)
         return raw

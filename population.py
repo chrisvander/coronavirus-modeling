@@ -232,7 +232,7 @@ def generate(n):
                     print("Didn't include " + str(len(population)) + " people")
                 break
             pbar.update(before-len(population))
-    print("Generated " + str(len(households)) + " households.")
+    print("Generated " + str(len(households)) + " households.\n")
     # print("Sample Households: \n")
     # for i in range(3):
     #     household = random.choice(households)
