@@ -355,8 +355,8 @@ def generate_synthetic(n):
             nhts_hh_templates), folder='synthetic_hh')
 
     print("Assigning activity locations.")
-    # 8 people per location (work, home, etc)
-    assign_dummy_locations(synthetic_households, int(n / 8))
+    # 4 people to a location avg (work, home, etc)
+    assign_dummy_locations(synthetic_households, int(n / 4))
     # assign_locations(synthetic_households)
 
     return synthetic_households

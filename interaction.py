@@ -1,5 +1,6 @@
 import networkx as nx
 import random
+from tqdm import tqdm
 
 '''
 Responsible for converting the environment interaction graph 
@@ -39,7 +40,7 @@ Where G is an generated graph from epidemic.generate_graph
 '''
 def generate_interactions(G):
   interactions = []
-  for person1 in G.nodes():
+  for person1 in tqdm(G.nodes()):
     if (str(person1).startswith('P_')):
       locations = [n for n in G.neighbors(person1)]
       for loc in locations:

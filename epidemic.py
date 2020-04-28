@@ -147,11 +147,13 @@ class EpidemicSim:
             }})
 
     def increment_time(self, node):
-        n = self.get_attr(node, 'time_infected')
-        self.set_attr(node, 'time_infected', n + 1)
+        self.G.node[node]['time_infected'] += 1
 
     def get_attr(self, node, attr):
         return self.G.node[node][attr]
+
+    def get_attrs(self, node):
+        return self.G.node[node]
 
     def set_attr(self, node, attr, val):
         self.G.node[node][attr] = val
@@ -174,27 +176,25 @@ class EpidemicSim:
         acttype can be one of:
         (H)ome, (W)ork, (S)hop, s(C)hool, and (O)ther
         '''
-
         for n in self.get_people():
+            n_attrs = self.get_attrs(n)
             state = self.get_state(n)
             if state is 'E' or state is 'I' or state is 'Q':
                 self.increment_time(n)
-                if self.get_attr(n, 'infection_length') <= self.get_attr(
-                        n, 'time_infected'):
-                    if self.get_attr(n, 'will_die'):
+                if n_attrs['infection_length'] <= n_attrs['time_infected']:
+                    if n_attrs['will_die']:
                         self.update_state(n, 'D')
                     else:
                         self.update_state(n, 'R')
             if state == 'E' and \
-                    self.get_attr(n, 'incubation') == self.get_attr(n, 'time_infected'):
+                    n_attrs['incubation'] == n_attrs['time_infected']:
                 self.update_state(n, 'I')
-            if state == 'I':  # determine whether they should quarantine
-                if self.get_attr(n, 'test_submitted'):
+            elif state == 'I':  # determine whether they should quarantine
+                if n_attrs['test_submitted']:
                     self.set_attr(n, 'days_since_submitted_test',
-                                  self.get_attr(n, 'days_since_submitted_test') + 1
-                                  )
-                    if self.get_attr(n, 'days_since_submitted_test') == self.get_attr(
-                            n, 'test_turnaround'):
+                                    n_attrs['days_since_submitted_test'] + 1
+                                 )
+                    if n_attrs['days_since_submitted_test'] == n_attrs['test_turnaround']:
                         self.update_state(n, 'Q')
                         self.confirmed += 1
                 elif random.random() < self.config['test_rate']:
@@ -205,13 +205,8 @@ class EpidemicSim:
             u_state = self.get_state(u)
             v_state = self.get_state(v)
 
-            # if they've recovered, quarantined, or dead we ignore the
-            # interaction
-            if u_state == 'Q' or v_state == 'Q':
-                continue
-            if u_state == 'R' or v_state == 'R':
-                continue
-            if u_state == 'D' or v_state == 'D':
+            # if one is susceptible, then we may want to infect
+            if u_state != 'S' and v_state != 'S':
                 continue
 
             if random.random() < self.get_infection_on_interaction():
@@ -222,6 +217,7 @@ class EpidemicSim:
 
     def run_full_simulation(self, days, totalPeople):
         # Sort edges of graph by timestep
+
         potential_interactions = generate_interactions(self.G)
         finished = False
         infected = []
