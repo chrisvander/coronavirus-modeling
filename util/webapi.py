@@ -5,25 +5,42 @@ import hashlib
 import os.path
 import pickle
 import codecs
+from tqdm import tqdm
+import zipfile
+import shutil
 
 headers = {
     "Content-Type": "application/json"
 }
 
-# def download_nhts():
-#     chunk_size = 512
-#     url = "https://nhts.ornl.gov/assets/2016/download/Csv.zip"
-#     save_path = './data/nhts.zip'
-#     r = requests.get(url, stream=True)
-#     if not os.path.exists(os.path.dirname(save_path)):
-#         try:
-#             os.makedirs(os.path.dirname(save_path))
-#         except OSError as exc: # Guard against race condition
-#             if exc.errno != errno.EEXIST:
-#                 raise
-#     with open(save_path, 'wb') as fd:
-#         for chunk in r.iter_content(chunk_size=chunk_size):
-#             fd.write(chunk)
+def init_nhts():
+    if os.path.exists('./data/nhts/trippub.csv'):
+        return
+    dirpath = './data/nhts/'
+    if os.path.exists(dirpath) and os.path.isdir(dirpath):
+        shutil.rmtree(dirpath)
+    download_nhts()
+
+
+def download_nhts():
+    print("Downloading CSV files from NHTS...")
+    chunk_size = 512
+    url = "https://nhts.ornl.gov/assets/2016/download/Csv.zip"
+    save_path = './data/nhts.zip'
+    r = requests.get(url, stream=True)
+    if not os.path.exists(os.path.dirname(save_path)):
+        try:
+            os.makedirs(os.path.dirname(save_path))
+        except OSError as exc: # Guard against race condition
+            if exc.errno != errno.EEXIST:
+                raise
+    file_size = int(requests.head(url).headers["Content-Length"])
+    with open(save_path, 'wb') as fd:
+        for chunk in tqdm(r.iter_content(chunk_size=chunk_size), total=int(file_size/chunk_size)):
+            fd.write(chunk)
+    print('Unzipping...')
+    with zipfile.ZipFile('./data/nhts.zip', 'r') as zip_ref:
+        zip_ref.extractall('./data/nhts')
 
 def get_file(f_id, folder=None):
     md5 = hashlib.md5(f_id.encode('utf-8')).hexdigest()
@@ -53,9 +70,10 @@ def write_file(f_id, raw, folder=None):
 def cache(f_id, funct, folder=None):
     res = get_file(f_id, folder=folder)
     if res is None:
-        print("Running one-time " + f_id + " and writing to cache")
+        print("> Caching: " + f_id)
         raw = funct()
         write_file(f_id, raw, folder=folder)
+        print("\t> Done")
         return raw
     return res
 

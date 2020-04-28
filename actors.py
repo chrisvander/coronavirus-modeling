@@ -3,7 +3,7 @@ import random
 import pandas
 from tqdm import tqdm
 from population import generate
-from util.webapi import cache
+from util.webapi import cache, init_nhts
 
 trip_purposes = {
     1: "Home",
@@ -259,6 +259,7 @@ class Location:
 
 def templates():
     print("Reading NHTS trip data.")
+    init_nhts()
     df = pandas.read_csv("data/nhts/trippub.csv", ",")
 
     df.sort_values(by=["HOUSEID", "PERSONID", "STRTTIME"], inplace=True)
