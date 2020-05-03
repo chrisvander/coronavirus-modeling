@@ -375,5 +375,5 @@ if __name__ == "__main__":
         'test_rate': args.t,
         'days': args.maxdays
     })
-    cProfile.run('sim.run()')
+    sim.run()
     
