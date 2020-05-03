@@ -8,6 +8,7 @@ from tqdm import tqdm
 import numpy as np
 from scipy.stats import norm
 import pprint
+import cProfile
 
 '''
     activity types include
@@ -16,8 +17,9 @@ import pprint
 
 default_config = {
     'infection_on_interaction': 0.8,
+    'social_distancing_infection_rate': 0.08,
     'social_distancing': False,
-    'percent_interaction': 0.5,  # if two people are at a location, how likely is it they'll interact
+    'percent_interaction': 0.3,  # if two people are at a location, how likely is it they'll interact
     'test_rate': 0.06,  # percent of people that get tested after showing symptoms
     'death_ratio_gender': {
         '1': 0.62,  # male
@@ -35,12 +37,12 @@ default_config = {
         0: 0.0001,
     },
     'distancing': {  # percent of activities occurring
-        'H': 1,
-        'W': 0.3,
-        'S': 0.2,
-        'C': 0,
-        'O': 1,
-        'enable_after_confirmed': True  # enables only after first confirmed case
+        'H': 1, # percent of activities within the household occurring
+        'W': 0.3, # percent of activities at work (30% essential)
+        'S': 0, # percent of activities at shopping areas
+        'C': 0, # percent of activities at school
+        'O': 0.02, # percent of other activities
+        'enable_after_confirmed': True  # enables only after first detected "quarantined" case
     },
     'days': 1000
 }
@@ -101,7 +103,7 @@ class EpidemicSim:
 
     def get_infection_on_interaction(self):
         if self.config['social_distancing']:
-            return self.config['infection_on_interaction'] * 0.1
+            return self.config['infection_on_interaction'] * self.config['social_distancing_infection_rate']
         return self.config['infection_on_interaction']
 
     def __init__(self, graph, plot, config={}):
@@ -159,7 +161,7 @@ class EpidemicSim:
         self.G.nodes[node][attr] = val
 
     def get_state(self, node):
-        return self.get_attr(node, 'state')
+        return self.G.node[node]['state']
 
     def get_people(self):
         return self.people
@@ -237,7 +239,7 @@ class EpidemicSim:
                   f"\tQ: {(states == 'Q').sum()}" +
                   f"\tR: {(states == 'R').sum()}" +
                   f"\tD: {(states == 'D').sum()}")
-            infected.append((states == 'I').sum())
+            infected.append((states == 'E').sum() + (states == 'I').sum() + (states == 'Q').sum())
             recovered.append((states == 'R').sum())
             dead.append((states == 'D').sum())
             if ((states == 'E').sum() + (states == 'I').sum() + (states == 'Q').sum()) == 0:
@@ -252,6 +254,7 @@ class EpidemicSim:
             S = (states == 'S').sum()
             print('\nSummary:')
             print(f'\tDays to End: \t\t{day}')
+            print(f'\tPeak Infections: \t{max(infected)}')
             print(f'\tInfected Death Rate: \t{(D/(R+D)) * 100:.2f}%')
             print(f'\tPop Death Rate: \t{(D/totalPeople) * 100:.2f}%')
             print(f'\tRecovery Rate: \t\t{(R/(R+D)) * 100:.2f}%')
@@ -276,7 +279,7 @@ class EpidemicSim:
         nx.set_node_attributes(self.G, 0, 'time_infected')
 
         if self.config['social_distancing']:
-            print("\nSOCIAL DISTANCING ENABLED. Infection rate multipler = 0.1")
+            print("\nSOCIAL DISTANCING ENABLED. Infection rate multipler = " + str(self.config['social_distancing_infection_rate']))
 
         total = len(self.get_people())
         # infect the first person
@@ -318,18 +321,31 @@ def generate_graph(synth_hhs):
 
 def parse_args(argv=None):
     argparser = argparse.ArgumentParser()
-    argparser.add_argument('--graph-in', '-i', dest='graph_in')
-    argparser.add_argument('--graph-out', '-o', dest='graph_out')
-    argparser.add_argument('--population-size', '-n', dest='n', type=int, default=1000)
+    argparser.add_argument('--graph-in', '-i', dest='graph_in', 
+        help='import a previously-generated synthetic population')
+    argparser.add_argument('--graph-out', '-o', dest='graph_out',
+        help='export the to-be-generated synthetic population to a file')
+    argparser.add_argument('--population-size', '-n', dest='n', type=int, default=1000,
+        help='the size of the population')
     argparser.add_argument(
         '--social-distancing',
         '-s',
         dest='sd',
         action='store_true',
+        help='enable social distancing',
         default=False)
-    argparser.add_argument('--test-rate', '-t', dest='t', type=float, default=0.05)
-    argparser.add_argument('--plot', '-p', dest='p', action='store_true', default=False)
-    argparser.add_argument('--days', '-d', dest='d', type=int, default=1000)
+    argparser.add_argument('--test-rate', '-t', dest='t', type=float, default=0.05,
+        help='the percent of the population who can get access to a test if they are infected')
+    argparser.add_argument('--plot', '-p', dest='p', action='store_true', default=False,
+        help='use matplotlib to plot the final data')
+    argparser.add_argument('--max-days', dest='maxdays', type=int, default=1000,
+        help='the max number of days for the simulation to last')
+    argparser.add_argument('--sd-infection-rate', '-sr', dest='sdrate', type=float, default=0.08,
+        help='with social distancing enabled, this is the multiplier for infection rate')
+    argparser.add_argument('--infection-rate', '-ir', dest='ir', type=float, default=0.8,
+        help='rate of infection upon interaction (w/o mask or distancing)')
+    argparser.add_argument('--percent-interaction', '-pi', dest='pi', type=float, default=0.3,
+        help='chance of interaction if two people are at the same location')
     # Simulation arguments
     return argparser.parse_args(argv)
 
@@ -352,9 +368,12 @@ if __name__ == "__main__":
 
     # Run simulation
     sim = EpidemicSim(G, args.p, {
-        'infection_on_interaction': 0.8,
+        'infection_on_interaction': args.ir,
+        'percent_interaction': args.pi,
+        'social_distancing_infection_rate': args.sdrate,
         'social_distancing': args.sd,
         'test_rate': args.t,
-        'days': args.d
+        'days': args.maxdays
     })
     sim.run()
+    
