@@ -4,7 +4,6 @@ import pandas
 from tqdm import tqdm
 from population import generate
 from util.webapi import cache, init_nhts
-import shapefile
 from gis import GastonCountyGIS as gcgis
 import numpy as np
 from scipy.spatial import distance_matrix

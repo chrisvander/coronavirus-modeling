@@ -1,0 +1,6 @@
+tqdm
+numpy
+scikit-learn
+geopandas
+pandas
+networkx

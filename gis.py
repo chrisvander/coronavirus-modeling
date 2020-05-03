@@ -1,5 +1,4 @@
 from typing import Tuple, Sequence
-import shapefile
 import geopandas as gpd
 from tqdm import tqdm
 
