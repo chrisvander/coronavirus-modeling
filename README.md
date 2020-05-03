@@ -8,5 +8,7 @@ Recommended use case is to build a graph via `python epidemic.py -o data/graph.t
 Note that this application will download and parse a lot of information from the NHTS and the U.S. Census at the beginning. This information will be cached for future runs of the app.
 
 # Installation
-Clone the repository and `cd` into the root directory. Then, run 
-```pip install -r requirements.txt```
+Clone the repository and `cd` into the root directory. Run `pip install -r requirements.txt` to download all dependencies.
+
+# Running
+From the root directory, you can run 
