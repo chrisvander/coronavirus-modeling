@@ -4,6 +4,10 @@ import pandas
 from tqdm import tqdm
 from population import generate
 from util.webapi import cache, init_nhts
+import shapefile
+from gis import GastonCountyGIS as gcgis
+import numpy as np
+from scipy.spatial import distance_matrix
 
 trip_purposes = {
     1: "Home",
@@ -311,6 +315,79 @@ def merge_census_data(census_hhs, template_hhs):
     return matches
 
 
+def assign_locations(households, n):
+    print("Loading location data:")
+    locations = [loc for loc in gcgis.get_locations()]
+
+    print("Shopping...")
+    shopping = [loc for loc in gcgis.get_shoping_locations()]
+
+    print("Homes...")
+    home = [loc for loc in gcgis.get_home_locations()]
+
+    print("Schools...")
+    schools = [loc for loc in gcgis.get_school_locations()]
+
+    print("Workplaces...")
+    work = [loc for loc in gcgis.get_work_locations()]
+
+    print("Other...")
+    other = [loc for loc in gcgis.get_other_locations()]
+
+    num_locations = len(locations)
+    num_homes = len(home)
+    num_shops = len(shopping)
+    num_schools = len(schools)
+    num_workplaces = len(work)
+    num_other = len(other)
+
+    random.shuffle(shopping)
+    random.shuffle(schools)
+    random.shuffle(home)
+    random.shuffle(other)
+    random.shuffle(work)
+
+    # Downscale lists
+    scale = n / num_locations
+    shopping = shopping[:math.ceil(scale * num_shops)]
+    schools = schools[:math.ceil(scale * num_schools)]
+    work = work[:math.ceil(scale * num_workplaces)]
+    home = home[:math.ceil(scale * num_homes)]
+    other = other[:math.ceil(scale * num_other)]
+    num_homes = len(home)
+    num_shops = len(shopping)
+    num_schools = len(schools)
+    num_workplaces = len(work)
+    num_other = len(other)
+
+    print(f"Sampling from roughly {n} locations:")
+    print(f"\tHome: {num_homes}")
+    print(f"\tWork: {num_workplaces}")
+    print(f"\tSchool: {num_schools}")
+    print(f"\tShop: {num_shops}")
+    print(f"\tOther: {num_other}")
+
+    for hh in households:
+        hh_loc = home[random.randint(0, num_homes - 1)]
+        for person in hh.people:
+            for activity in person.activities:
+                act_type = activity.loc_type
+                if act_type == "H":
+                    activity.assign_location(hh_loc)
+                elif act_type == "W":
+                    work_loc = work[random.randint(0, num_workplaces - 1)]
+                    activity.assign_location(work_loc)
+                elif act_type == "C":
+                    school_loc = schools[random.randint(0, num_schools - 1)]
+                    activity.assign_location(school_loc)
+                elif act_type == "S":
+                    shop_loc = shopping[random.randint(0, num_shops - 1)]
+                    activity.assign_location(shop_loc)
+                else:
+                    other_loc = other[random.randint(0, num_other - 1)]
+                    activity.assign_location(other_loc)
+
+
 def assign_dummy_locations(households, num_locations):
     locations = [Location(i, "?", (0, 0, 0)) for i in range(num_locations)]
 
@@ -320,22 +397,39 @@ def assign_dummy_locations(households, num_locations):
                 activity.assign_location(locations[random.randint(0, num_locations - 1)])
 
 
-def assign_locations(households):
-    '''
-    First, we generate a probability matrix to represent the transition between
-    activity locations. There are 4 anchor activity types: H (home), W (work),
-    S (shop), C (school).
+def generate_locations():
+    def distance(a, b):
+        return np.linalg.norm(a - b)
 
-    Each index i, j in the matrix represents a probability proportional to:
-        P(j|i) = A_aj * e^(b_w * D_ij)
-    where:
-        A_aj:   Attractiveness of location j for destination activity a.
-                Either 0 or 1. This is essentially a boolean mask (b/c you don't go
-                shopping at home a home location or to school at a work location).
-        e_b:    Calibration constant.
-        D_ij:   distance between locations i and j
-    '''
-    raise NotImplementedError()
+    print("Creating location data")
+    locations = [loc for loc in gcgis.get_locations()]
+    coords = np.array([np.array(loc.coordinates) for loc in locations])
+    print(coords.shape)
+    l = len(locations)
+
+    # # Calculate distance matrix
+    # dist_mat = distance_matrix(coords, coords)
+    # print(dist_mat)
+
+    attractiveness = np.zeros((l, 5))
+    for i in range(l):
+        use = locations[i].location_type
+        if use in gcgis.homes:
+            attractiveness[i, 0] = 1
+        if use in gcgis.workplaces:
+            attractiveness[i, 1] = 1
+        if use in gcgis.shopping:
+            attractiveness[i, 2] = 1
+        if use in gcgis.schools:
+            attractiveness[i, 3] = 1
+
+    b_w = 1
+
+    probs = np.zeros((l, 5))
+
+    for i in tqdm(range(l)):
+        for j in range(l):
+            attractiveness[j, 0] * np.exp(b_w * distance(coords[i], coords[j]))
 
 
 def generate_synthetic(n):
@@ -357,7 +451,7 @@ def generate_synthetic(n):
 
     print("Assigning activity locations.")
     # 4 people to a location avg (work, home, etc)
-    assign_dummy_locations(synthetic_households, int(n / 4))
+    assign_locations(synthetic_households, int(n / 4))
     # assign_locations(synthetic_households)
 
     return synthetic_households
