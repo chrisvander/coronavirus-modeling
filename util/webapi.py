@@ -13,6 +13,34 @@ headers = {
     "Content-Type": "application/json"
 }
 
+def init_gis():
+    if os.path.exists('./data/ncgis/nc_gaston_parcels_pt.shp'):
+        return
+    dirpath = './data/ncgis'
+    if os.path.exists(dirpath) and os.path.isdir(dirpath):
+        shutil.rmtree(dirpath)
+    download_gis()
+    
+def download_gis():
+    print("Downloading NCGIS data")
+    chunk_size = 512
+    url = "https://dit-cgia-gis-data.s3.amazonaws.com/NCOM-data/parcels/gaston_parcels.zip"
+    save_path = "./data/ncgis.zip"
+    r = requests.get(url, stream=True)
+    if not os.path.exists(os.path.dirname(save_path)):
+        try:
+            os.makedirs(os.path.dirname(save_path))
+        except OSError as exc: # Guard against race condition
+            if exc.errno != errno.EEXIST:
+                raise
+    file_size = int(requests.head(url).headers["Content-Length"])
+    with open(save_path, 'wb') as fd:
+        for chunk in tqdm(r.iter_content(chunk_size=chunk_size), total=int(file_size/chunk_size)):
+            fd.write(chunk)
+    print('Unzipping...')
+    with zipfile.ZipFile('./data/ncgis.zip', 'r') as zip_ref:
+        zip_ref.extractall('./data/ncgis')
+
 def init_nhts():
     if os.path.exists('./data/nhts/trippub.csv'):
         return

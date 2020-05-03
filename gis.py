@@ -1,6 +1,7 @@
 from typing import Tuple, Sequence
 import geopandas as gpd
 from tqdm import tqdm
+from util.webapi import init_gis
 
 Coordinates = Sequence[float]
 LandUse = str
@@ -66,6 +67,7 @@ class GastonCountyGIS:
         '2020', '2030', '2040', '2110']
     locations = list(set(workplaces + homes + schools + shopping))
 
+    init_gis()
     shape_file = "data/ncgis/nc_gaston_parcels_pt.shp"
     _geodataframe = None
 
