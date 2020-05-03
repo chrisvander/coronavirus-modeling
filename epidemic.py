@@ -8,7 +8,6 @@ from tqdm import tqdm
 import numpy as np
 from scipy.stats import norm
 import pprint
-import cProfile
 
 '''
     activity types include
