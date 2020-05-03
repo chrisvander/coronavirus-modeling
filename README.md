@@ -8,7 +8,25 @@ Recommended use case is to build a graph via `python epidemic.py -o data/graph.t
 Note that this application will download and parse a lot of information from the NHTS and the U.S. Census at the beginning. This information will be cached for future runs of the app.
 
 # Installation
-Clone the repository and `cd` into the root directory. Run `pip install -r requirements.txt` to download all dependencies.
+Clone the repository and `cd` into the root directory. To download all dependencies, run: 
+```
+pip install -r requirements.txt
+``` 
 
 # Running
-From the root directory, you can run 
+```
+# View all parameters
+python epidemic.py --help
+# Save a population with 1000 people
+python epidemic.py -n 1000 -o data/graph.txt
+# Run a simulation using the previous graph as input
+python epidemic.py -i data/graph.txt
+# Enact social distancing
+python epidemic.py -i data/graph.txt --social-distancing
+# Decrease infectivity on social distancing to 5%
+python epidemic.py -i data/graph.txt --social-distancing -sr 0.05
+# Change percent infection on interaction to 75%
+python epidemic.py -i data/graph.txt -pi .75
+# Plot the result
+python epidemic.py -i data/graph.txt --plot
+```
