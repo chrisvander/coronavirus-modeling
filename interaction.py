@@ -1,5 +1,6 @@
 import networkx as nx
 import random
+import time
 from tqdm import tqdm
 
 '''
@@ -56,6 +57,7 @@ def generate_interactions(G):
   return interactions
 
 def sample_interactions(sim, interactions, percent, distancing_protocol):
+  start_time = time.time()
   # we randomly sample a number of interactions
   # after those are sampled, we choose times 
   # that each interaction will occur based on the overlap.
@@ -64,19 +66,9 @@ def sample_interactions(sim, interactions, percent, distancing_protocol):
 
   states = nx.get_node_attributes(sim.G, 'state')
   sample = []
-  removed = 0
   for i in range(len(interactions)):
-    n = interactions[i-removed]
-    if states[n[0]] == 'Q' \
-      or states[n[0]] == 'R' \
-      or states[n[0]] == 'D' \
-      or states[n[1]] == 'Q' \
-      or states[n[1]] == 'R' \
-      or states[n[1]] == 'D':
-      interactions.remove(n)
-      removed += 1
-      continue
-    elif random.random() < percent:
+    n = interactions[i]
+    if random.random() < percent:
       if distancing_protocol['enable_after_confirmed']:
         if sim.confirmed > 0:
           if distancing_protocol[n[3]] > random.random():
