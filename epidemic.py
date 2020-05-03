@@ -149,16 +149,16 @@ class EpidemicSim:
             }})
 
     def increment_time(self, node):
-        self.G.node[node]['time_infected'] += 1
+        self.G.nodes[node]['time_infected'] += 1
 
     def get_attr(self, node, attr):
-        return self.G.node[node][attr]
+        return self.G.nodes[node][attr]
 
     def get_attrs(self, node):
-        return self.G.node[node]
+        return self.G.nodes[node]
 
     def set_attr(self, node, attr, val):
-        self.G.node[node][attr] = val
+        self.G.nodes[node][attr] = val
 
     def get_state(self, node):
         return self.G.node[node]['state']
@@ -194,8 +194,8 @@ class EpidemicSim:
             elif state == 'I':  # determine whether they should quarantine
                 if n_attrs['test_submitted']:
                     self.set_attr(n, 'days_since_submitted_test',
-                                    n_attrs['days_since_submitted_test'] + 1
-                                 )
+                                  n_attrs['days_since_submitted_test'] + 1
+                                  )
                     if n_attrs['days_since_submitted_test'] == n_attrs['test_turnaround']:
                         self.update_state(n, 'Q')
                         self.confirmed += 1
