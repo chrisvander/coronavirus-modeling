@@ -40,6 +40,7 @@ def convert_times(edgedata):
 Where G is an generated graph from epidemic.generate_graph
 '''
 def generate_interactions(G):
+  loc_cache = {}
   interactions = []
   for person1 in tqdm(G.nodes()):
     if (str(person1).startswith('P_')):
@@ -47,13 +48,15 @@ def generate_interactions(G):
       for loc in locations:
         edge = G[person1][loc][0]
         p_data = convert_times(edge)
-        people_at_loc = [n for n in G.neighbors(loc) if n is not person1]
-        for person2 in people_at_loc:
-          p2_data = convert_times(G[person2][loc][0])
-          overlap = calculate_overlap(p_data, p2_data)
-          if len(overlap) > 0:
-            # we have a possible interaction!
-            interactions.append((person1, person2, overlap, edge['acttype']))
+        if loc_cache[loc] is None:
+          loc_cache[loc] = [n for n in G.neighbors(loc)]
+        for person2 in loc_cache[loc]:
+          if n is not person1:
+            p2_data = convert_times(G[person2][loc][0])
+            overlap = calculate_overlap(p_data, p2_data)
+            if len(overlap) > 0:
+              # we have a possible interaction!
+              interactions.append((person1, person2, overlap, edge['acttype']))
   return interactions
 
 def sample_interactions(sim, interactions, percent, distancing_protocol):

@@ -286,7 +286,7 @@ class EpidemicSim:
         self.update_state(patient_zero, 'E')
         self.update_state(patient_zero, 'I')
 
-        print(f'\nSimulating up to {self.days} days')
+        print(f'\nGenerating daily routines...')
         self.run_full_simulation(self.days, total)
 
 
