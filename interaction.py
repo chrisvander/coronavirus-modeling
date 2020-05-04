@@ -48,10 +48,10 @@ def generate_interactions(G):
       for loc in locations:
         edge = G[person1][loc][0]
         p_data = convert_times(edge)
-        if loc_cache[loc] is None:
+        if loc not in loc_cache:
           loc_cache[loc] = [n for n in G.neighbors(loc)]
         for person2 in loc_cache[loc]:
-          if n is not person1:
+          if person2 is not person1:
             p2_data = convert_times(G[person2][loc][0])
             overlap = calculate_overlap(p_data, p2_data)
             if len(overlap) > 0:
