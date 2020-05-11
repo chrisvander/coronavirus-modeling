@@ -10,7 +10,7 @@ Note that this application will download and parse a lot of information from the
 # Installation
 Clone the repository and `cd` into the root directory. To download all dependencies, run: 
 ```
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ``` 
 
 # Running
