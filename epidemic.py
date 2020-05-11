@@ -160,7 +160,7 @@ class EpidemicSim:
         self.G.nodes[node][attr] = val
 
     def get_state(self, node):
-        return self.G.node[node]['state']
+        return self.G.nodes[node]['state']
 
     def get_people(self):
         return self.people
