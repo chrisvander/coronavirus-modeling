@@ -13,6 +13,8 @@ Clone the repository and `cd` into the root directory. To download all dependenc
 pip3 install -r requirements.txt
 ``` 
 
+Note that this depends on an active Python 3 installation on your computer.
+
 # Running
 ```
 # View all parameters
